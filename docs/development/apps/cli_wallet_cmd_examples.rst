@@ -89,7 +89,7 @@ If you want it to be open for your machine only, replace 0.0.0.0 by localhost.
 Use the Public API node 
 ============================
 
-- Here is the latest list of [Public Full Node](https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js#L67) information
+- Here is the latest list of [Public Full Node](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information
 
 **Create a Wallet (4a)**: 
 
@@ -97,7 +97,7 @@ This pattern uses the Public API node of *OpenLedger* and connect via secured we
 
 ::
 
-    ./programs/cli_wallet/cli_wallet -s wss://bitshares.openledger.info/ws
+    ./programs/cli_wallet/cli_wallet -s wss://localcoin.openledger.info/ws
 
 **Create a Wallet (4b)**:
 
@@ -107,7 +107,7 @@ You can choose between Websocket RPC or RPC-HTTP requests. You can also set both
 
 ::
 
-    ./programs/cli_wallet/cli_wallet -s wss://bitshares.openledger.info/ws 
+    ./programs/cli_wallet/cli_wallet -s wss://localcoin.openledger.info/ws 
                                      -H 127.0.0.1:8092 
                                      -r 127.0.0.1:8093                                                                        
 

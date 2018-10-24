@@ -18,6 +18,6 @@ The asset ID of the FBA is then included in the hardfork which implements the fe
 
 (ref) 
 
-- https://github.com/bitshares/bitshares-core/wiki/Creating-a-new-FBA
+- https://github.com/localcoin/localcoin-core/wiki/Creating-a-new-FBA
 
 

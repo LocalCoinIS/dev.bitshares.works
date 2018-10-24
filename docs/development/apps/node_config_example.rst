@@ -1,5 +1,5 @@
 
-.. _bts-config-ini-eg:
+.. _llc-config-ini-eg:
 
 Configuration
 ====================
@@ -61,10 +61,10 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	witness-id = "1.6.1"
 
 	# Tuple of [PublicKey, WIF private key] (may specify multiple times)
-	#private-key = ["BTS6MRyAjQq8...........GDW5CV","5KQwrPbwdL..............yXtP79zkvFD3"]
+	#private-key = ["LLC6MRyAjQq8...........GDW5CV","5KQwrPbwdL..............yXtP79zkvFD3"]
 
 	# Tuple of [PublicKey, WIF private key] (may specify multiple times)
-	debug-private-key = ["BTS6MRyAjQq8...........GDW5CV","5KQwrPbwdL..............yXtP79zkvFD3"]
+	debug-private-key = ["LLC6MRyAjQq8...........GDW5CV","5KQwrPbwdL..............yXtP79zkvFD3"]
 
 	# Account ID to track history for (may specify multiple times)
 	# track-account = 

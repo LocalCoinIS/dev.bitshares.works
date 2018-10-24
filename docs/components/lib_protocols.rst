@@ -5,11 +5,11 @@
 Protocols
 ***************************************
 
-*BitShares Core - graphene::chain*
+*LocalCoin Core - graphene::chain*
 
-This document purpose: to bring BitShares Protocols information (files) close to users.
+This document purpose: to bring LocalCoin Protocols information (files) close to users.
 
-These are a collection of the BitShares Protocols information. Sometimes it's difficult to find and read through all of them.  The original files locate: (..\\libraries\\chain\\include\\graphene\\chain\\protocol\\xxx.hpp)
+These are a collection of the LocalCoin Protocols information. Sometimes it's difficult to find and read through all of them.  The original files locate: (..\\libraries\\chain\\include\\graphene\\chain\\protocol\\xxx.hpp)
 
 ----------------
 
@@ -1895,7 +1895,7 @@ vote
 	
 	
 	
-BTS Holders
+LLC Holders
 ================
 
 committee_member 
@@ -1975,7 +1975,7 @@ config
 .. code-block:: cpp
 
 	#include <graphene/chain/config.hpp>
-  - `config.hpp <https://github.com/bitshares/bitshares-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_
+  - `config.hpp <https://github.com/localcoin/localcoin-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_
 
 
 ext 

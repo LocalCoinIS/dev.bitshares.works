@@ -7,9 +7,9 @@ Operations
 
 *graphene::chain::base_operation*
 
-This document purpose: to describe BitShares available operations details and the object structures. 
+This document purpose: to describe LocalCoin available operations details and the object structures. 
 
-Learning BitShares-Core Available Operations! You can find Operations and OperationIDs `here. <https://github.com/abitmore/bitshares-core/blob/170523826b82ba754eeae8706a891797b4b37ee8/libraries/chain/include/graphene/chain/protocol/operations.hpp#L50>`_
+Learning LocalCoin-Core Available Operations! You can find Operations and OperationIDs `here. <https://github.com/abitmore/localcoin-core/blob/170523826b82ba754eeae8706a891797b4b37ee8/libraries/chain/include/graphene/chain/protocol/operations.hpp#L50>`_
 
 -------------
 
@@ -258,13 +258,13 @@ asset_claim_fees_operation
 asset_claim_pool_operation
 -------------------------------
 
-- Transfers BTS from the fee pool of a specified asset back to the issuer's balance. 
+- Transfers LLC from the fee pool of a specified asset back to the issuer's balance. 
 - Parameters
 
   - `fee`  Payment for the operation execution
-  - `issuer`  Account which will be used for transfering BTS
+  - `issuer`  Account which will be used for transfering LLC
   - `asset_id`  Id of the asset whose fee pool is going to be drained
-  - `amount_to_claim`  Amount of BTS to claim from the fee pool
+  - `amount_to_claim`  Amount of LLC to claim from the fee pool
   - `extensions`  Field for future expansion
   
 - Precondition

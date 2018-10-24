@@ -4,7 +4,7 @@ Testnets
 **************
 
 
-We offer the Open Public Testnets that has been deployed and is fully functional for anyone to use and is shared among developers. The Open Public Testnets is a great space to start learning about BitShares-Core and BitShares-UI wallet. You can find all the relevant information about the public network in the next section.
+We offer the Open Public Testnets that has been deployed and is fully functional for anyone to use and is shared among developers. The Open Public Testnets is a great space to start learning about LocalCoin-Core and LocalCoin-UI wallet. You can find all the relevant information about the public network in the next section.
 
 Quick Start
 -------------------
@@ -14,7 +14,7 @@ Quick Start
 
     testnets/public_testnet_details	
 
-* :ref:`Code Coverage Testing (wiki) <how-to-testing-bts>`
+* :ref:`Code Coverage Testing (wiki) <how-to-testing-llc>`
 
 ------------
 
@@ -51,20 +51,20 @@ Other References
 Tools
 -----------
 
-This tool allows you to check BitShares blockchain detailed health. You can observe the BitShares blockchain operations/transactions, maeket volumes, assets, and fees. Also you can search "block", "Account", "Object", "Asset", and Transaction by the ID. 
+This tool allows you to check LocalCoin blockchain detailed health. You can observe the LocalCoin blockchain operations/transactions, maeket volumes, assets, and fees. Also you can search "block", "Account", "Object", "Asset", and Transaction by the ID. 
 
 .. Note:: In the Testnet explorer, you may not find many activities. If you want to see the currest activities, pleaser check the Mainnet Explorer.
 
-* **Bitshares Blockchain Explorer for Testnet:** http://bitshares-testnet.xyz/ 
+* **Localcoin Blockchain Explorer for Testnet:** http://localcoin-testnet.xyz/ 
   
-The below API tools allow you to try BitShares APIs. You can set a value and click [Try it out!], then you will get a return. The return include a used Curl path format, Requested URL, and Response Body. Those information are very valuable to learn BitShares. 
+The below API tools allow you to try LocalCoin APIs. You can set a value and click [Try it out!], then you will get a return. The return include a used Curl path format, Requested URL, and Response Body. Those information are very valuable to learn LocalCoin. 
 
 
 * APIs - the Teatnet Explorer uses to query the **Testnet**
   
-  - http://148.251.10.231:5000/apidocs/ -> ES Wrapper : Wrapper to expose **Elasticsearch** Bitshares node data to  clients
+  - http://148.251.10.231:5000/apidocs/ -> ES Wrapper : Wrapper to expose **Elasticsearch** Localcoin node data to  clients
 
-On this page, we introduced a tool for the Testnet. We have the same tool for :ref:`the Mainnet of BitShares blockchain <explorer-wrappers>`.
+On this page, we introduced a tool for the Testnet. We have the same tool for :ref:`the Mainnet of LocalCoin blockchain <explorer-wrappers>`.
 
 
 

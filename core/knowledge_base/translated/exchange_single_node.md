@@ -1,6 +1,6 @@
-## How to prepare BitShares Exchange Guide (Single Node Edition)
+## How to prepare LocalCoin Exchange Guide (Single Node Edition)
 
-The purpose of this article is to assist third-party exchanges to go online for BitShares transactions.
+The purpose of this article is to assist third-party exchanges to go online for LocalCoin transactions.
 
 The scheme described in this section is a single node scheme. Compared to the two-node scenario described in the previous document, the single-node solution can save memory, hard disk, and synchronization time.
 
@@ -23,25 +23,25 @@ The scheme described in this section is a single node scheme. Compared to the tw
 
 #### 1.1 Consensus
 
-The BitShares uses the DPOS consensus mechanism to vote for the block forge by the person holding the BTS. The standard block interval is 3 seconds.
+The LocalCoin uses the DPOS consensus mechanism to vote for the block forge by the person holding the LLC. The standard block interval is 3 seconds.
 
 #### 1.2 Account
 
-1) In BitShares, funds are stored in an account, unlike Bitcoin where there is an address. For the exchange, it is necessary to open an account for users to deposit.
+1) In LocalCoin, funds are stored in an account, unlike Bitcoin where there is an address. For the exchange, it is necessary to open an account for users to deposit.
 
    You can use a web wallet or light wallet to register a new account.
    
    > Note: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
  
-   - [BitShares-UI Release](https://github.com/bitshares/bitshares-ui/releases)
-   - BitShare UI wallet https://wallet.bitshares.org
-   - [Create an Account Guide](https://github.com/bitshares/how.bitshares.works/blob/master/bbf/user_guide/create_account.md#bitshares-account-and-wallet)
+   - [LocalCoin-UI Release](https://github.com/localcoin/localcoin-ui/releases)
+   - LocalCoin UI wallet https://wallet.localcoin.org
+   - [Create an Account Guide](https://github.com/localcoin/how.localcoin.works/blob/master/bbf/user_guide/create_account.md#localcoin-account-and-wallet)
    
    (If it is the official webpage wallet or light wallet 171102 or above, the default is the account mode (Cloud Wallet) when registering for the first time, you can click "Advanced" to enter the wallet mode (Local Wallet) ).
    
    Not all accounts can be registered for free. Generally, a flat or numeric account can be registered for free, such as my-exchange, or myexchange2017.   
    
-   In the light wallet account page, a number is displayed below the account number. This number is the built-in ID of the account in the BitShares system, which will be used below.
+   In the light wallet account page, a number is displayed below the account number. This number is the built-in ID of the account in the LocalCoin system, which will be used below.
    
     > Note: You would find your account ID by opening a side menu - [Accounts] and select an Account tab.
 
@@ -82,7 +82,7 @@ The BitShares uses the DPOS consensus mechanism to vote for the block forge by t
 
 #### 1.3 Assets
 
-1) There are various assets in the BitShares system, of which the core asset is the BTS. The approach of the exchange to other assets in the BitShares system is similar to that of the BTS.
+1) There are various assets in the LocalCoin system, of which the core asset is the LLC. The approach of the exchange to other assets in the LocalCoin system is similar to that of the LLC.
 2) Each account can have multiple assets at the same time.
 
 #### 1.4 BlockChain Structure
@@ -108,11 +108,11 @@ Install 64-bit Ubuntu 16.04 LTS (it will not work on 32-bit Ubuntu), or 64-bit U
 
 ### 3. Program Preparation
 
-   To start-off the BitShares system, you need to run these programs: normal node witness_node, command line wallet cli_wallet.
+   To start-off the LocalCoin system, you need to run these programs: normal node witness_node, command line wallet cli_wallet.
 
 #### 3.1 Architecture Description
 
-- The witness_node is connected to the BitShares network in a P2P manner, receives the latest block from the network, and broadcasts the locally signed transaction packet to the network.
+- The witness_node is connected to the LocalCoin network in a P2P manner, receives the latest block from the network, and broadcasts the locally signed transaction packet to the network.
 - The witness_node provides an API for other program calls (hereafter referred to as node APIs) via websocket + HTTP RPC.
 - Cli_wallet connects to witness_node via websocket.
 - Cli_wallet manages wallet files, which contain an encrypted user private key, and a wallet file can contain multiple private keys.
@@ -124,9 +124,9 @@ Install 64-bit Ubuntu 16.04 LTS (it will not work on 32-bit Ubuntu), or 64-bit U
 
 #### 3.2 Windows
 
-The compiled Windows executable is available for download on Github, at https://github.com/bitshares/bitshares-core/releases/latest ,
+The compiled Windows executable is available for download on Github, at https://github.com/localcoin/localcoin-core/releases/latest ,
 
-The file is `BitShares-Core-2.0.xxxxxx-x64-cli-tools.zip` and it can be unzipped. It contains three exe files and two dll files. Here is the [installation guide](../installation/windows_cli_tool.md#cli-wallet-on-windows-x64)
+The file is `LocalCoin-Core-2.0.xxxxxx-x64-cli-tools.zip` and it can be unzipped. It contains three exe files and two dll files. Here is the [installation guide](../installation/windows_cli_tool.md#cli-wallet-on-windows-x64)
 
 
 #### 3.3 Linux
@@ -136,8 +136,8 @@ If you are using a Linux system, you need to compile several of these programs y
 	sudo apt-get update
 	sudo apt-get install autoconf cmake git libboost-all-dev libssl-dev doxygen g++ libcurl4-openssl-dev
 
-	git clone https://github.com/bitshares/bitshares-core.git
-	cd bitshares-core
+	git clone https://github.com/localcoin/localcoin-core.git
+	cd localcoin-core
 	git checkout <LATEST_RELEASE_TAG>
 	git submodule update --init --recursive
 	mkdir build
@@ -228,7 +228,7 @@ For exchanges, some modifications to the `config.ini` configuration file are rec
 
    After this, the console log for the last 24 hours is kept under the `witness_node_data_dir/logs/default/` directory.
 
-3) The following parameters will reduce the memory required for operation. The principle is that the historical transaction record index of the BTS built-in transaction engine is not saved because the exchange does not normally use this data.
+3) The following parameters will reduce the memory required for operation. The principle is that the historical transaction record index of the LLC built-in transaction engine is not saved because the exchange does not normally use this data.
 
 	   history-per-size = 0
 
@@ -372,7 +372,7 @@ Considering security, you can use two accounts to handle the deposit and withdra
 	{
 	  "brain_priv_key": ".....",
 	  "wif_priv_key": "5JxyJx2KyDmAx5kpkMthWEpqGjzpwtGtEJigSMz5XE1AtrQaZXu",
-	  "pub_key": "BTS69uKRvM8dAPn8En4SCi2nMTHKXt1rWrohFbwaPwv2rAbT3XFzf"
+	  "pub_key": "LLC69uKRvM8dAPn8En4SCi2nMTHKXt1rWrohFbwaPwv2rAbT3XFzf"
 	}
 
    In the light wallet, on the permission page, modify the memo (comment) key to `pub_key` in the above result.
@@ -406,7 +406,7 @@ Since no active authority key was imported, the cli_wallet responsible for handl
 
 #### 6.3 Obtaining the Active Authority Key of the Withdrawal Account from the Light Wallet
 
-Reference: [User Guide - Permissions](https://github.com/bitshares/how.bitshares.works/blob/master/bbf/user_guide/permissions.md#public-key-and-private-key)
+Reference: [User Guide - Permissions](https://github.com/localcoin/how.localcoin.works/blob/master/bbf/user_guide/permissions.md#public-key-and-private-key)
 
 #### 6.4 Import the withdrawal account's active authorization key into cli_wallet responsible for withdrawal
 
@@ -454,7 +454,7 @@ Return:
       "witness_signature":"1f53542bb60f1f7a653bac70d6b1613e73b9adc952031e30e591e601dd60d493ba5c9a832e155ff0c40ea1dd53512e9f93bf65a8191497ea67d701bc2502f93af7", 
       "transactions": [], 
       "block_id": "00000001b656820f72f6b28cda811778632d4998", 
-      "signing_key": "BTS6ZQEFsPmG6jWspNDdZHkehNmPpG7gkSHkphmRZQWaJ2LrcaVSi", 
+      "signing_key": "LLC6ZQEFsPmG6jWspNDdZHkehNmPpG7gkSHkphmRZQWaJ2LrcaVSi", 
       "transaction_ids": []
       }
 }
@@ -468,8 +468,8 @@ If the execution is successful, the result will be result, otherwise there will 
 * The HTTP RPC request URI is /RPC .
 * Enter the command in the wallet and return the result is beautified; when using the HTTP RPC request, the original data in json format is returned. With regard to raw data, there are some things to note:
 * The amount is {"amount":467116432,"asset_id":"1.3.0"} format, where
-  * The `asset_id` can be found by the `get_asset` command. The `asset_id` of the BTS is 1.3.0. Other assets have other ids.
-  * amount is the value after the decimal point is removed. For example, BTS is `5 decimal` places. In the above example, it is actually 4671.16432 BTS.
+  * The `asset_id` can be found by the `get_asset` command. The `asset_id` of the LLC is 1.3.0. Other assets have other ids.
+  * amount is the value after the decimal point is removed. For example, LLC is `5 decimal` places. In the above example, it is actually 4671.16432 LLC.
 * The account is in the form of 1.2.xxxxx. Get account information via `get_account`
 * Operation type (op) is a numeric format, such as 0 for transfer operation
 
@@ -479,7 +479,7 @@ If the execution is successful, the result will be result, otherwise there will 
 
 9.1 Obtaining the Current *Unable to Return Block* Number
 
-The possibility of using Bitcoin and others to use the confirmation number to reduce the probability of a fallback in the transaction is different. In the BitShares, the *unreturnable block* number can be used to determine whether the transaction can be rolled back.
+The possibility of using Bitcoin and others to use the confirmation number to reduce the probability of a fallback in the transaction is different. In the LocalCoin, the *unreturnable block* number can be used to determine whether the transaction can be rolled back.
 
 *Unable to roll back* transactions in blocks and earlier blocks can be guaranteed not to roll back.
 
@@ -521,7 +521,7 @@ The result is an array, sorted in reverse chronological order, with the most rec
 ```json
 	{
 	"memo":"",
-	"description":"Transfer 1 BTS from a to b -- Unlock wallet to see memo. (Fee: 0.22941 BTS)",
+	"description":"Transfer 1 LLC from a to b -- Unlock wallet to see memo. (Fee: 0.22941 LLC)",
 	"op":{
 	"id":"1.11.1234567",
 	"op":[
@@ -538,8 +538,8 @@ The result is an array, sorted in reverse chronological order, with the most rec
 				 "asset_id":"1.3.0"
 			},
 			"memo":{
-				 "from":"BTS7NLcZJzqq3mvKfcqoN52ainajDckyMp5SYRgzicfbHD6u587ib",
-				 "to":"BTS7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
+				 "from":"LLC7NLcZJzqq3mvKfcqoN52ainajDckyMp5SYRgzicfbHD6u587ib",
+				 "to":"LLC7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
 				 "nonce": "5333758904325274680",
 				 "message": "0b809fa8169453422343434366514a153981ea"
 			},
@@ -662,14 +662,14 @@ Use the get_account_id command to check whether the customer’s withdrawal acco
 
 Use the transfer2 command to send a withdrawal transaction. Such as:
 
-	unlocked >>> transfer2 withdrawal-account to-account 100 BTS "some memo"
+	unlocked >>> transfer2 withdrawal-account to-account 100 LLC "some memo"
 
 The parameters are: source account name, destination account name, amount, currency, remarks
 
 The command will sign and broadcast the transaction and return an array. The first element is the transaction id and the second element is the detailed transaction content.
 
 **Note:**
-1) If the currency is BTS, the number of decimal places is up to 5 digits. If it is other assets, you can view the decimal places of the asset with the `precision` field with the get_asset command.
+1) If the currency is LLC, the number of decimal places is up to 5 digits. If it is other assets, you can view the decimal places of the asset with the `precision` field with the get_asset command.
 2) You can also use the transfer command, but this does not directly return the transaction ID. Instead, it needs to call another API to calculate it, so it is not recommended.
 3) Remarks are usually encoded in UTF-8
 4) It is recommended to record relevant data for future reference, such as transaction id, detailed transaction content in json format, etc.
@@ -697,7 +697,7 @@ It is recommended to record the `id (1.11.x)`, `block_num`, and `trx_in_block` i
 
 In some cases, after the transaction may be sent, it is not packaged into the block in time.
 
-Unlike Bitcoin, there is a timeout in the BTS transaction.
+Unlike Bitcoin, there is a timeout in the LLC transaction.
 
 When using cli_wallet to sign a broadcast transaction, this field value defaults to the local system time plus 2 minutes.
 
@@ -730,7 +730,7 @@ Therefore, if a transaction broadcast appears but does not appear in the account
   * If not resolved, use backup recovery
   * If there is no backup, re-synchronization may take longer
 
-* Multi-signature: BitShares natively supports account-level multi-signature, and there is a proposal-approval mechanism that can initiate multi-signature requests online and then confirm the completion of multi-signature transactions. Refer to related tutorials
+* Multi-signature: LocalCoin natively supports account-level multi-signature, and there is a proposal-approval mechanism that can initiate multi-signature requests online and then confirm the completion of multi-signature transactions. Refer to related tutorials
 
 * Hardware Wallet: No Support
 
@@ -744,11 +744,11 @@ Therefore, if a transaction broadcast appears but does not appear in the account
 
 ### 12. Related information
 
-* Graphic tutorial http://jc.btsabc.org/
-  * Self-built node tutorial http://btsabc.org/article-477-1.html
-  * Get account private key http://btsabc.org/article-761-1.html
-* English Docking Documents http://docs.bitshares.org/integration/exchanges/step-by-step.html
-* English API Documentation http://docs.bitshares.org/api/index.html	
+* Graphic tutorial http://jc.llcabc.org/
+  * Self-built node tutorial http://llcabc.org/article-477-1.html
+  * Get account private key http://llcabc.org/article-761-1.html
+* English Docking Documents http://docs.localcoin.org/integration/exchanges/step-by-step.html
+* English API Documentation http://docs.localcoin.org/api/index.html	
 
 
 ***
@@ -757,7 +757,7 @@ Therefore, if a transaction broadcast appears but does not appear in the account
 
 (ref) 
 
-This information originates [abitmore/bts-cn-docs](https://github.com/abitmore/bts-cn-docs/blob/master/BTS%E4%BA%A4%E6%98%93%E6%89%80%E5%AF%B9%E6%8E%A5%E6%8C%87%E5%8D%97%EF%BC%88%E5%8D%95%E8%8A%82%E7%82%B9%E7%89%88%EF%BC%89.txt) repository. 
+This information originates [abitmore/llc-cn-docs](https://github.com/abitmore/llc-cn-docs/blob/master/LLC%E4%BA%A4%E6%98%93%E6%89%80%E5%AF%B9%E6%8E%A5%E6%8C%87%E5%8D%97%EF%BC%88%E5%8D%95%E8%8A%82%E7%82%B9%E7%89%88%EF%BC%89.txt) repository. 
 
 *(Translated by an application and adjusted by human. Some words might not be accurate.)*
 

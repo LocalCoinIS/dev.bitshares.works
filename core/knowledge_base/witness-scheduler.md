@@ -4,7 +4,7 @@
 
 The algorithm which determines the order of witnesses is referred to as the witness scheduling algorithm.
 
-This was designed by a community bounty in thread https://bitsharestalk.org/index.php/topic,15547.0 however, Graphene has an additional requirement which is not taken into account by the solutions in the thread:
+This was designed by a community bounty in thread https://localcointalk.org/index.php/topic,15547.0 however, Graphene has an additional requirement which is not taken into account by the solutions in the thread:
 
 The membership and length of the list of witnesses may change over time.
 
@@ -72,7 +72,7 @@ If every block schedules a witness, our adversary with m malicious witnesses get
 ***
 
 (ref)
-- https://github.com/bitshares/bitshares-core/wiki/witness-scheduler
+- https://github.com/localcoin/localcoin-core/wiki/witness-scheduler
 
 (Vikram Rajkumar edited this page on Jun 10, 2015 · 1 revision )
 

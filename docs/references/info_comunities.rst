@@ -1,41 +1,41 @@
 
-.. _bitshares-communities:
+.. _localcoin-communities:
 
 ********************
-BitShares Community
+LocalCoin Community
 ********************      
 	  
 Communities
 ======================
 	 
-* `BitShares Community <https://t.me/bitshares_community>`_
-* `Forum - BitSharesTalk`_ 
-* `Telagram - BitSharesDEX`_
-* `Telagram - BitShares Traders`_
-* `Discord - BitShares`_
+* `LocalCoin Community <https://t.me/localcoin_community>`_
+* `Forum - LocalCoinTalk`_ 
+* `Telagram - LocalCoinDEX`_
+* `Telagram - LocalCoin Traders`_
+* `Discord - LocalCoin`_
 * `BitSares on Steemit`_
 * `Twitter`_
 * `Reddit`_	
-* `BitSharesTalk.io`_
+* `LocalCoinTalk.io`_
 * (*will be added more*)
 
-.. _Forum - BitSharesTalk: https://bitsharestalk.org/
-.. _Telagram - BitSharesDEX: https://t.me/BitSharesDEX
-.. _Telagram - BitSharesEXCHANGES: https://t.me/BitSharesEXCHANGES
-.. _Telagram - BitShares Traders: https://t.me/BitShares_Traders
-.. _Discord - BitShares: https://discord.gg/GsjQfAJ
-.. _BitSares on Steemit: https://steemit.com/trending/bitshares
-.. _Twitter: https://twitter.com/bitshares
-.. _Reddit: https://www.reddit.com/r/BitShares/
-.. _BitSharesTalk.io: https://bitsharestalk.io/forums
+.. _Forum - LocalCoinTalk: https://localcointalk.org/
+.. _Telagram - LocalCoinDEX: https://t.me/LocalCoinDEX
+.. _Telagram - LocalCoinEXCHANGES: https://t.me/LocalCoinEXCHANGES
+.. _Telagram - LocalCoin Traders: https://t.me/LocalCoin_Traders
+.. _Discord - LocalCoin: https://discord.gg/GsjQfAJ
+.. _BitSares on Steemit: https://steemit.com/trending/localcoin
+.. _Twitter: https://twitter.com/localcoin
+.. _Reddit: https://www.reddit.com/r/LocalCoin/
+.. _LocalCoinTalk.io: https://localcointalk.io/forums
 
 
-Beyond Bitcoin - Bitshares
+Beyond Bitcoin - Localcoin
 ----------------------------
 
 
-- `BitShares Discord Hangouts <https://discord.gg/RPJEsGp>`_
-  - `BitShares Hangout: Discord Tips <https://steemit.com/bitshares/@ash/bitshares-hangout-discord-tips>`_
+- `LocalCoin Discord Hangouts <https://discord.gg/RPJEsGp>`_
+  - `LocalCoin Hangout: Discord Tips <https://steemit.com/localcoin/@ash/localcoin-hangout-discord-tips>`_
 
 --------------------------
 
@@ -44,29 +44,29 @@ Beyond Bitcoin - Bitshares
 
 
 ************************
-BitShares Blockchain
+LocalCoin Blockchain
 ************************
 
-BitShares Blockchain Foundation
+LocalCoin Blockchain Foundation
 =======================================
 
-- `Bitshares Foundation <http://www.bitshares.foundation/>`_
-- `Bitshares Foundation : Worker <http://www.bitshares.foundation/worker>`_
-- `Bitshares Foundation : Accounting <http://www.bitshares.foundation/accounting>`_
-- `Bitshares Foundation : Public Mailing Lists <http://lists.bitshares.foundation/listinfo>`_
-- `Bitshares Foundation : Spokesperson <http://www.bitshares.foundation/spokesperson>`_
+- `Localcoin Foundation <http://www.localcoin.foundation/>`_
+- `Localcoin Foundation : Worker <http://www.localcoin.foundation/worker>`_
+- `Localcoin Foundation : Accounting <http://www.localcoin.foundation/accounting>`_
+- `Localcoin Foundation : Public Mailing Lists <http://lists.localcoin.foundation/listinfo>`_
+- `Localcoin Foundation : Spokesperson <http://www.localcoin.foundation/spokesperson>`_
 
-BitShares UI Wallet
+LocalCoin UI Wallet
 ====================
-- `BitShare UI wallet <https://wallet.bitshares.org>`_
+- `LocalCoin UI wallet <https://wallet.localcoin.org>`_
 
 
-Bitshares Block Exploer
+Localcoin Block Exploer
 =============================
 
 - `Cryptofresh <https://www.cryptofresh.com/>`_
 - `Open Explorer <http://open-explorer.io/>`_
-- `bts.ai <https://bts.ai/>`_
+- `llc.ai <https://llc.ai/>`_
 
 Blockchain Activity
 ========================

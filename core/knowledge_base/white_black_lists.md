@@ -10,7 +10,7 @@
 
 Some 3rd party service providers may want to select which customers are allowed to hold their assets (e.g., after verified their identity for KYC/AML). Those services can use so called **whitelists** (or, alternatively, blacklists) of their assets that will prevent unauthorized participants to use this particular asset.
 
-In BitShares 2.0, account names (life-time members only) and also user-issued assets (i.e., UIA) have their individual whitelists. Hence, if you issue an IOU on the blockchain, you can define who can hold and trade your tokens, if you wish.
+In LocalCoin, account names (life-time members only) and also user-issued assets (i.e., UIA) have their individual whitelists. Hence, if you issue an IOU on the blockchain, you can define who can hold and trade your tokens, if you wish.
 
 User whitelists on contrast can be used by independent KYC/AML providers to state proper verification. An asset issuer may then use those providers to oursource identity verification completely.
 
@@ -75,7 +75,7 @@ enum `graphene::chain::account_whitelist_operation::account_listing`
 
 Asset User white- and black-lists serve the need for companies to restrict service to a subset of accounts. For instance, a fiat gateway may require to follow KYC/AML regulations and can hence only deal with those customers that have been verified accordingly. If the issuer of an user-issued asset desires, he may set a restriction so that only users on the white-list (and/or **not** on the blacklist) are allowed to hold his token.
 
-Instead of putting all verified accounts into the respective asset’s white-list directly, BitShares 2.0 allows to define one or several white-list *authorities*. In practice, the white- and black-lists of these accounts are combined and serve as white- and black-lists for the asset.
+Instead of putting all verified accounts into the respective asset’s white-list directly, LocalCoin allows to define one or several white-list *authorities*. In practice, the white- and black-lists of these accounts are combined and serve as white- and black-lists for the asset.
 
 This allows for easy out-sourcing of KYC/AML verification to 3rd-party providers.
 
@@ -171,15 +171,15 @@ enum `graphene::chain::asset_issuer_permission_flags`
 
 ## Asset Market Whitelists
 
-An issuer of an user-issued-asset may want to restrict trading partners for his assets for legal reasons. For instance, a gateway for US dollar may not be allowed to let his customers trade USD against CNY because additional licenses would be required. Hence, in BitShares 2.0 we let issuers chose to restrict trading partners with white- and black-lists.
+An issuer of an user-issued-asset may want to restrict trading partners for his assets for legal reasons. For instance, a gateway for US dollar may not be allowed to let his customers trade USD against CNY because additional licenses would be required. Hence, in LocalCoin we let issuers chose to restrict trading partners with white- and black-lists.
 
 ### Example
 
-A gateway with IOU `G.USD` that wants to prevent his customers from trading `G.USD` against `bitCNY` can do so by adding `bitCNY` to the blacklist of `G.USD` by issuing::
+A gateway with IOU `G.USD` that wants to prevent his customers from trading `G.USD` against `CNY` can do so by adding `CNY` to the blacklist of `G.USD` by issuing::
 
     >>> update_asset G.USD "" "{blacklist_markets:[CNY]}" true
 
-Alternatively, if an issuer may want to only open the market `G.USD : bitUSD` with his asset, he can do so as well with::
+Alternatively, if an issuer may want to only open the market `G.USD : USD` with his asset, he can do so as well with::
 
     >>> update_asset G.USD "" "{whitelist_markets:[USD]}" true
 
@@ -257,9 +257,9 @@ enum `graphene::chain::asset_issuer_permission_flags`
 
 (ref)
 
-- http://docs.bitshares.org/integration/supporting-features.html
-- http://docs.bitshares.org/integration/user-whitelist.html
-- http://docs.bitshares.org/integration/asset-whitelist.html
+- http://docs.localcoin.org/integration/supporting-features.html
+- http://docs.localcoin.org/integration/user-whitelist.html
+- http://docs.localcoin.org/integration/asset-whitelist.html
 - 
 
 

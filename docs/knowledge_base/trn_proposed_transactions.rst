@@ -15,13 +15,13 @@ The proposal system allows for arbitrarily complex or recursively nested authori
 
 
 .. image:: ../_images/trn-proposed1.png
-        :alt: BitShares 
+        :alt: LocalCoin 
         :width: 700px
         :align: center
 
 		
 		
-.. Note:: that each account in the figure can carry a **different weight**. :ref:`Read more information about Multi-Signature, Weights, and Threshold. <bts-multi-sign>`
+.. Note:: that each account in the figure can carry a **different weight**. :ref:`Read more information about Multi-Signature, Weights, and Threshold. <llc-multi-sign>`
 
 
 |

@@ -1,28 +1,28 @@
 
 ****************************
-BitShares Developer Portal
+LocalCoin Developer Portal
 ****************************
 
-.. image:: bitshares-logo.png
+.. image:: localcoin-logo.png
         :alt: Graphene Welcome
         :width: 80px
         :align: center
 		
 ----------
 
-.. centered:: **Welcome to the BitShares Developers Portal**
+.. centered:: **Welcome to the LocalCoin Developers Portal**
 
 
-Welcome to the documentation portal for the BitShares Blockchain. The content on this page is managed by the BitShares community and is constantly improved.
+Welcome to the documentation portal for the LocalCoin Blockchain. The content on this page is managed by the LocalCoin community and is constantly improved.
 
-The purpose of this site is to provide in-depth documentation about the BitShares Blockchain and make it easier for users and developers to leverage the full power of the BitShares Blockchain.
+The purpose of this site is to provide in-depth documentation about the LocalCoin Blockchain and make it easier for users and developers to leverage the full power of the LocalCoin Blockchain.
 
 
 
-- `BitShares Whitepaper <http://www.bitshares.foundation/papers/BitSharesBlockchain.pdf>`_
-- `BitShares Blockchain Foundation Announcements <http://www.bitshares.foundation/>`_
-- `BitShares Bug Bounty Program <https://hackthedex.io/>`_
-- `BitShares Documentation - Users Guide <http://how.bitshares.works/en/latest/>`_
+- `LocalCoin Whitepaper <http://www.localcoin.foundation/papers/LocalCoinBlockchain.pdf>`_
+- `LocalCoin Blockchain Foundation Announcements <http://www.localcoin.foundation/>`_
+- `LocalCoin Bug Bounty Program <https://hackthedex.io/>`_
+- `LocalCoin Documentation - Users Guide <http://how.localcoin.works/en/latest/>`_
 
 
 ----------

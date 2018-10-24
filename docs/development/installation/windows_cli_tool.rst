@@ -13,20 +13,20 @@ CLI-Wallet on Windows (x64)
 
 In this section, we will show you how to install cli-wallet tools for Windows and try several methods to get the data from blockchain. 
 
-How to install BitShares Core
+How to install LocalCoin Core
 ===========================================================
 
 CLI-Wallet on Windows (x64)
 -------------------------------------------
 
-1. Download the BitShares-Core-*-x64-cli-tools.zip file from https://github.com/bitshares/bitshares-core/releases
-2. Unzip the file to your workstation. (e.g., d:\BitShares\)
+1. Download the LocalCoin-Core-*-x64-cli-tools.zip file from https://github.com/localcoin/localcoin-core/releases
+2. Unzip the file to your workstation. (e.g., d:\LocalCoin\)
 3. Download the **cacer.pem** file from Mozilla: https://curl.haxx.se/docs/caextract.html
-4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\BitShares\)
+4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\LocalCoin\)
 5. Open a Windows command prompt (cmd.exe)
-6. Navigate to your install directory. (e.g. d:\BitShares\)
-7. Set an environment variable by typing: `set SSL_CERT_FILE=d:/BitShares/cacert.pem`
-8. Start the wallet: `cli_wallet -s wss://{ANY VALID AUTHORITY}/ws`. For example, `cli_wallet -s wss://bitshares.openledger.info/ws`
+6. Navigate to your install directory. (e.g. d:\LocalCoin\)
+7. Set an environment variable by typing: `set SSL_CERT_FILE=d:/LocalCoin/cacert.pem`
+8. Start the wallet: `cli_wallet -s wss://{ANY VALID AUTHORITY}/ws`. For example, `cli_wallet -s wss://localcoin.openledger.info/ws`
 
 
 -------
@@ -39,17 +39,17 @@ Start the CLI-Wallet (in Windows command prompt)
 
 ::
 
-    >cli_wallet -s wss://bitshares.openledger.info/ws
+    >cli_wallet -s wss://localcoin.openledger.info/ws
 
 If you open the cli-wallet successfully, you will see similar messages and receive ``new >>>`` prompt. Set a password and unlock the cli-wallte.::
 
 
     Logging RPC to file: logs\rpc\rpc.log
     2029115ms th_a       main.cpp:136                  main                 ] key_to_wif( committee_private_key ): 5KCBDTcyDqzsqehcb52tW5nU6pXife6V2rX9Yf7c3saYSzbDZ5W
-    2029119ms th_a       main.cpp:140                  main                 ] nathan_pub_key: BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+    2029119ms th_a       main.cpp:140                  main                 ] nathan_pub_key: LLC6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
     2029121ms th_a       main.cpp:141                  main                 ] key_to_wif( nathan_private_key ): 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
     Starting a new wallet with chain ID 4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8 (from egenesis)
-    2029128ms th_a       main.cpp:188                  main                 ] wdata.ws_server:   wss://bitshares.openledger.info/ws
+    2029128ms th_a       main.cpp:188                  main                 ] wdata.ws_server:   wss://localcoin.openledger.info/ws
     2029807ms th_a       main.cpp:193                  main                 ] wdata.ws_user:  wdata.ws_password:
     Please use the set_password method to initialize a new wallet before continuing
     new >>> 
@@ -218,7 +218,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>> list_account_balances "cedar036"
     list_account_balances "cedar036"
-    75.22668 BTS
+    75.22668 LLC
     3 OPEN.STEEM
 
     unlocked >>>
@@ -244,7 +244,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
         "weight_threshold": 1,
         "account_auths": [],
         "key_auths": [[
-            "BTS7pRNvabZG2uU5SS9AyUWmsCdKijC1tHjCtiTDH7AeRkdH4qoVk",
+            "LLC7pRNvabZG2uU5SS9AyUWmsCdKijC1tHjCtiTDH7AeRkdH4qoVk",
             1
           ]
         ],
@@ -254,14 +254,14 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
         "weight_threshold": 1,
         "account_auths": [],
         "key_auths": [[
-            "BTS8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
+            "LLC8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
             1
           ]
         ],
         "address_auths": []
       },
       "options": {
-        "memo_key": "BTS8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
+        "memo_key": "LLC8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
         "voting_account": "1.2.96393",
         "num_witness": 0,
         "num_committee": 0,
@@ -299,10 +299,10 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>> get_account_history "cedar036" "4"
     get_account_history "cedar036" "4"
-    2018-01-12T23:48:57 Transfer 40.46468 BTS from blocktrades to cedar036   (Fee: 0.01662 BTS)    
-    2018-01-12T22:31:00 Transfer 3 OPEN.STEEM from tsugimoto0105 to cedar036   (Fee: 0.01662 BTS)
-    2017-12-25T18:56:03 Transfer 0.00100 BTS from cedar036 to sharebits17 -- could not decrypt memo   (Fee: 0.23700 BTS)
-    2017-12-25T17:44:15 Transfer 35 BTS from bitshares-users to cedar036   (Fee: 0.21851 BTS)
+    2018-01-12T23:48:57 Transfer 40.46468 LLC from blocktrades to cedar036   (Fee: 0.01662 LLC)    
+    2018-01-12T22:31:00 Transfer 3 OPEN.STEEM from tsugimoto0105 to cedar036   (Fee: 0.01662 LLC)
+    2017-12-25T18:56:03 Transfer 0.00100 LLC from cedar036 to sharebits17 -- could not decrypt memo   (Fee: 0.23700 LLC)
+    2017-12-25T17:44:15 Transfer 35 LLC from localcoin-users to cedar036   (Fee: 0.21851 LLC)
 
     unlocked >>>
 
@@ -323,11 +323,11 @@ Asset Calls
 
 - list_assets::
 
-    unlocked >>> list_assets "BTS" "2"
-    list_assets "BTS" "2"
+    unlocked >>> list_assets "LLC" "2"
+    list_assets "LLC" "2"
     [{
         "id": "1.3.0",
-        "symbol": "BTS",
+        "symbol": "LLC",
         "precision": 5,
         "issuer": "1.2.3",
         "options": {
@@ -356,7 +356,7 @@ Asset Calls
         "dynamic_asset_data_id": "2.3.0"
       },{
         "id": "1.3.368",
-        "symbol": "BTS.SHARE",
+        "symbol": "LLC.SHARE",
         "precision": 4,
         "issuer": "1.2.31073",
         "options": {
@@ -379,7 +379,7 @@ Asset Calls
           "blacklist_authorities": [],
           "whitelist_markets": [],
           "blacklist_markets": [],
-          "description": "share of btsbots",
+          "description": "share of llcbots",
           "extensions": []
         },
         "dynamic_asset_data_id": "2.3.368"
@@ -392,11 +392,11 @@ Asset Calls
 
 - ``get_asset``::
 
-    unlocked >>> get_asset "BTS"
-    get_asset "BTS"
+    unlocked >>> get_asset "LLC"
+    get_asset "LLC"
     {
       "id": "1.3.0",
-      "symbol": "BTS",
+      "symbol": "LLC",
       "precision": 5,
       "issuer": "1.2.3",
       "options": {
@@ -430,8 +430,8 @@ Asset Calls
 
 ::
 
-    unlocked >>> get_asset "bts"
-    get_asset "bts"
+    unlocked >>> get_asset "llc"
+    get_asset "llc"
     10 assert_exception: Assert Exception
     a:
         {}

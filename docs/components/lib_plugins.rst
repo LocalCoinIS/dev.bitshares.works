@@ -5,7 +5,7 @@
 Plugins
 *******************************************
 
-This section lists existing BitShares pluging folders and file names. By clicking each folder name (after the Table of Contents), each folder in the GitHub opens. 
+This section lists existing LocalCoin pluging folders and file names. By clicking each folder name (after the Table of Contents), each folder in the GitHub opens. 
 
 * File directory: (../ibraries/plugins/xxx.cpp)
 * File directory: (../ibraries/plugins/{folder name}/include/graphene/{folder name}/xxx.hpp)
@@ -15,7 +15,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
    
 -------
 
-`account_history <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/account_history>`_
+`account_history <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/account_history>`_
 ===============================
 
 * account_history_plugin.cpp 
@@ -23,7 +23,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
 
 -------------------------
 
-`debug_witness <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/debug_witness>`_
+`debug_witness <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/debug_witness>`_
 ===============================
 
 * debug_api.cpp
@@ -34,7 +34,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
    
 -------------------------
  
-`delayed_node <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/delayed_node>`_
+`delayed_node <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/delayed_node>`_
 ===============================
 
 * delayed_node_plugin.hpp
@@ -42,7 +42,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
 
 --------------------------
 
-`elasticsearch <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/elasticsearch>`_
+`elasticsearch <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/elasticsearch>`_
 ===============================
 
 * elasticsearch_plugin.cpp 
@@ -50,7 +50,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
 
 ---------------------------
 
-`es_objects <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/es_objects>`_
+`es_objects <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/es_objects>`_
 =============================================
 
 * es_objects.cpp
@@ -58,7 +58,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
 
 -------------------------------
 
-`grouped_objects <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/grouped_orders>`_
+`grouped_objects <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/grouped_orders>`_
 =============================================
 
 * grouped_orders_plugin.cpp
@@ -67,7 +67,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
 
 ---------------------------------
 
-`market_history <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/market_history>`_
+`market_history <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/market_history>`_
 ==============================================
 
 * market_history_plugin.cpp
@@ -75,7 +75,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
 
 -----------------------------------
 
-`snapshot <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/snapshot>`_
+`snapshot <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/snapshot>`_
 =============================================
 
 * snapshot.cpp
@@ -83,7 +83,7 @@ This section lists existing BitShares pluging folders and file names. By clickin
 
 ------------------------------------
 
-`witness <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/witness>`_
+`witness <https://github.com/localcoin/localcoin-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/witness>`_
 ===============================================
 
 * witness.cpp

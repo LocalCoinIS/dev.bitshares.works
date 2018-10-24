@@ -1,5 +1,5 @@
 
-.. _how-to-testing-bts:
+.. _how-to-testing-llc:
 
 Code Coverage Testing
 ==============================
@@ -12,7 +12,7 @@ Code Coverage Testing
    
 -------
 
-* `BitShares-Core Test folder on GitHub <https://github.com/bitshares/bitshares-core/tree/master/tests>`_
+* `LocalCoin-Core Test folder on GitHub <https://github.com/localcoin/localcoin-core/tree/master/tests>`_
 
 
 Code Coverage Testing Information

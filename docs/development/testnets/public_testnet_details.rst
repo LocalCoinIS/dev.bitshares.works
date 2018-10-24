@@ -5,7 +5,7 @@
 Quick Start Guide - Public Testnet
 *************************************
 
-The BitShares Open Public Testnet has been deployed and is fully functional for anyone to use and is shared among developers. All developers take the opportunity to construct a tutorial.
+The LocalCoin Open Public Testnet has been deployed and is fully functional for anyone to use and is shared among developers. All developers take the opportunity to construct a tutorial.
 
 
 .. contents:: Table of Contents
@@ -16,9 +16,9 @@ The BitShares Open Public Testnet has been deployed and is fully functional for 
 Use a UI Wallet on Public Testnet
 =======================================
 
-- Go to a Web Wallet - Public testnet: (http://testnet.bitshares.eu/) 
+- Go to a Web Wallet - Public testnet: (http://testnet.localcoin.eu/) 
 - If you need to create an account, set the testnet faucet address
-   - Faucet: (https://faucet.testnet.bitshares.eu/)
+   - Faucet: (https://faucet.testnet.localcoin.eu/)
    - Go to [Setting] menu - [Faucet] and set the above Faucet address 
 - Create an account
    - For a CLOUD Wallet: Use a [CREATE ACCOUNT] button
@@ -43,12 +43,12 @@ To see more options: Go to :ref:`Installation Guide <installation-guide>`.
 	 sudo apt-get update
 	 sudo apt-get install autoconf cmake git libboost-all-dev libssl-dev g++ libcurl4-openssl-dev
 
-2. Build BitShares Core - Select **testnet** branch
+2. Build LocalCoin Core - Select **testnet** branch
 
 *In order to run a full node, get the sources (branch testnet) and compile*::
 
-	 git clone https://github.com/bitshares/bitshares-core.git bitshares-core-testnet
-	 cd bitshares-core-testnet    
+	 git clone https://github.com/localcoin/localcoin-core.git localcoin-core-testnet
+	 cd localcoin-core-testnet    
 	 git checkout testnet
 	 cmake
 
@@ -65,11 +65,11 @@ To see more options: Go to :ref:`Installation Guide <installation-guide>`.
 Other References
 ---------------------
 
-- `Testnet - Python Scripts <https://github.com/BitSharesEurope/testnet-pythonscripts>`_
+- `Testnet - Python Scripts <https://github.com/LocalCoinEurope/testnet-pythonscripts>`_
 
-- **Seed node**: `testnet.bitshares.eu:11010`
+- **Seed node**: `testnet.localcoin.eu:11010`
 - Chain-id: `39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447`
-- `Genesis Block - for Testnet <https://github.com/bitshares/bitshares-core/blob/testnet/genesis.json>`_
+- `Genesis Block - for Testnet <https://github.com/localcoin/localcoin-core/blob/testnet/genesis.json>`_
 
 
 |

@@ -7,7 +7,7 @@ ElasticSearch Plugin
 
 ElasticSearch Plugin v1
 
-The document explains motivations, technical challenges and sample use of a new plug-in created for bitshares to store account history data into an elasticsearch database.
+The document explains motivations, technical challenges and sample use of a new plug-in created for localcoin to store account history data into an elasticsearch database.
 
 ---------
 
@@ -22,9 +22,9 @@ Motivation
 There are 2 main problems this plug-in tries to solve:
 
 - The amount of RAM needed to run a full node. Current options for this are basically store account history: yes/no, store some of the account history, track history for specific accounts, etc. Plugin allows to have all the account history data without the amount of RAM required in current implementation.
-- The number of github issues in regards to new api calls to lookup account history in different ways. ``elasticsearch-plugin`` will allow users to search account history querying directly into the database without the bitshares-core team creating and maintaining API calls for every case.
+- The number of github issues in regards to new api calls to lookup account history in different ways. ``elasticsearch-plugin`` will allow users to search account history querying directly into the database without the localcoin-core team creating and maintaining API calls for every case.
 
-Additionally we are after a secure way to store error free full account data. The huge amount of operations data involved in bitshares blockchain and the way it is serialized makes this a big challenge.
+Additionally we are after a secure way to store error free full account data. The huge amount of operations data involved in localcoin blockchain and the way it is serialized makes this a big challenge.
 
 Even more, saving data to Elastic Search database(from now on: ES) will bring additional value to clients connected to the new full node with real time statistics and fast access to data.
 
@@ -87,7 +87,7 @@ As a poc we also added amount and asset_id of transfer operations to illustrate 
 Hardware needed
 ----------------------------------
 
-It is very recommended that you use SSD disks in your node if you are trying to synchronize bitshares blockchain. It will make the task a lot faster.
+It is very recommended that you use SSD disks in your node if you are trying to synchronize localcoin blockchain. It will make the task a lot faster.
 
 You need 500 gigs of space to be safe for a while, 32 gigs or more of ram is recommended.
 
@@ -194,10 +194,10 @@ Make sure ES is running, can start it by::
 
 ES will listen on localhost port 9200 ``127.0.0.1:9200``
 
-Clone repo and install bitshares::
+Clone repo and install localcoin::
 
-    git clone https://github.com/bitshares/bitshares-core
-    cd bitshares-core
+    git clone https://github.com/localcoin/localcoin-core
+    cd localcoin-core
     git submodule update --init --recursive
     BOOST_ROOT=$HOME/opt/boost_1_63_0
     cmake -DBOOST_ROOT="$BOOST_ROOT" -DCMAKE_BUILD_TYPE=RelWithDebInfo .
@@ -215,7 +215,7 @@ The ES plugin have the following parameters passed by command line::
 :elasticsearch-bulk-sync:  The number of lines(ops * 2) to send to database at syncronized state - default: 100 
 :elasticsearch-visitor:   Index visitor additional inside op data - default: false
 :elasticsearch-basic-auth:   Send auth data i nthe form "username:password" - default: no auth ""
-:elasticsearch-index-prefix:   A prefix for your indexes - default: "bitshares-"
+:elasticsearch-index-prefix:   A prefix for your indexes - default: "localcoin-"
 
 Starting Node
 -------------------
@@ -234,7 +234,7 @@ A few minutes after the node start the first batch of 5000 ops will be inserted 
 
 If you only have command line available you can query the database directly throw curl as:::
 
-	root@NC-PH-1346-07:~/bitshares/elastic/bitshares-core# curl -X GET 'http://localhost:9200/bitshares-*/data/_count?pretty=true' -H 'Content-Type: application/json' -d '
+	root@NC-PH-1346-07:~/localcoin/elastic/localcoin-core# curl -X GET 'http://localhost:9200/localcoin-*/data/_count?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
 			"bool" : { "must" : [{"match_all": {}}] }
@@ -250,7 +250,7 @@ If you only have command line available you can query the database directly thro
 		"failed" : 0
 	  }
 	}
-	root@NC-PH-1346-07:~/bitshares/elastic/bitshares-core# 
+	root@NC-PH-1346-07:~/localcoin/elastic/localcoin-core# 
 
 	
 360000 records are inserted at this point of the replay in ES, means it is working.
@@ -260,7 +260,7 @@ If you only have command line available you can query the database directly thro
 
 A synchronized node will look like this(screen capture 02/08/2018)::
 
-	root@NC-PH-1346-07:~# curl -X GET 'http://localhost:9200/bitshares-*/data/_count?pretty=true' -H 'Content-Type: application/json' -d '
+	root@NC-PH-1346-07:~# curl -X GET 'http://localhost:9200/localcoin-*/data/_count?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
 			"bool" : { "must" : [{"match_all": {}}] }
@@ -290,49 +290,49 @@ The plugin creates monthly indexes in the ES database, index names are as ``grap
 List your indexes as::
 
 	NC-PH-1346-07:~# curl -X GET 'http://localhost:9200/_cat/indices' 
-	yellow open bitshares-2018-02 voS1uchzSxqxqkiaKNrEYg 5 1  18984984 0  10.8gb  10.8gb
-	yellow open bitshares-2018-06 D6wyX58lRyG3QOflmPwJZw 5 1  28514130 0  15.6gb  15.6gb
-	yellow open bitshares-2017-10 73xRTA-fSTm479H4kOENuw 5 1   9326346 0   5.2gb   5.2gb
-	yellow open bitshares-2016-08 -MMp3VGGRZqG2YL1LQunbg 5 1    551835 0 270.1mb 270.1mb
-	yellow open bitshares-2016-07 Ao56gO9LQ-asMhX50rbcCg 5 1    609087 0 303.2mb 303.2mb
-	yellow open bitshares-2018-05 9xuof-PiRQWburpW8ZXHVg 5 1  29665610 0  17.3gb  17.3gb
-	yellow open bitshares-2017-01 SpfwEzGcSoy9Hd6c6fzv2g 5 1   1197124 0   659mb   659mb
-	yellow open bitshares-2017-12 tF5af4OvTLqcx3IYUJSQig 5 1  13244366 0   7.5gb   7.5gb
-	yellow open bitshares-2016-03 yy91IvyATOCEoFHjgDbalg 5 1    597461 0 297.4mb 297.4mb
-	yellow open bitshares-2015-12 z-ZAZqHsQL2EDNpf3_ghGA 5 1    349985 0 151.3mb 151.3mb
-	yellow open bitshares-2017-07 OOr_xW4STsCm3sev1xtTRQ 5 1  17890903 0   9.6gb   9.6gb
-	yellow open bitshares-2016-04 jt9q50ADQuylV4l25zGAaw 5 1    413798 0 205.6mb 205.6mb
-	yellow open bitshares-2016-11 mWz7DpjSQyqJ_rL8gtMqWw 5 1    495556 0   260mb   260mb
-	yellow open bitshares-2016-12 2qht_wrXTUmNqDvczpHYzw 5 1    917034 0 506.6mb 506.6mb
-	yellow open bitshares-2016-10 vAMb0kW6Stqz6CNbuu7PEQ 5 1    416570 0 208.8mb 208.8mb
-	yellow open bitshares-2015-11 ETNFuF3sTPe-gTSzX3bdIg 5 1    301079 0 131.9mb 131.9mb
-	yellow open bitshares-2017-08 73Q2Asw-Rf228oQLoSCLGw 5 1   9916248 0   5.6gb   5.6gb
-	yellow open bitshares-2016-05 3c95AvKcQk2puBwVt_HIqQ 5 1    498493 0   246mb   246mb
-	yellow open bitshares-2017-02 lsiiz7PmS2q9_P2BQpNkNQ 5 1   1104282 0 586.7mb 586.7mb
-	yellow open bitshares-2017-11 4pqwIRdWSwSe5198YNz-Nw 5 1  14107174 0     8gb     8gb
-	yellow open bitshares-2018-07 fdmfXLqSTESODyLI_7cjXg 5 1 133879948 0  51.3gb  51.3gb
-	yellow open bitshares-2016-06 Is11IdcnT8mfBPpoLUjJyw 5 1    656358 0 330.3mb 330.3mb
-	yellow open bitshares-2018-04 MEA8fCsgSbOVXa0Z05cfsA 5 1  20940461 0  11.9gb  11.9gb
-	yellow open bitshares-2018-03 fMjxhFwHSP-6ewrl0Ns6ZQ 5 1  20335546 0    12gb    12gb
-	yellow open bitshares-2017-09 o-b2Bf3LR0-J1kUiv4FpHA 5 1  11075939 0   6.3gb   6.3gb
-	yellow open bitshares-2018-01 jw9rYlmTSvuLC1hHcYyU4Q 5 1  19396703 0  11.2gb  11.2gb
-	yellow open bitshares-2018-08 EDRxQvxhQJe3Vam_FxZMWg 5 1   8038498 0     3gb     3gb
-	yellow open bitshares-2016-09 fo2AL0y7T_q_HtXEYCv35Q 5 1    409164 0 203.4mb 203.4mb
-	yellow open bitshares-2016-01 3sjjs-4oQMm5HG-vUTuyoA 5 1    372772 0 168.7mb 168.7mb
-	yellow open bitshares-2017-03 ZxjWksRyTaGstm6T2Kxl9A 5 1   2167788 0   1.1gb   1.1gb
-	yellow open bitshares-2016-02 toWbFwI-RB2wEGrR8873rQ 5 1    468174 0 222.7mb 222.7mb
-	yellow open bitshares-2017-05 IEZQ-rtmQU2kKNcRb58Egg 5 1  10278394 0   5.6gb   5.6gb
-	yellow open bitshares-2017-04 S1h2eBGiS3quNJU7CqPR7Q 5 1   3316120 0   1.8gb   1.8gb
-	yellow open bitshares-2017-06 0HYkECRbSwGDrmDFof8nqA 5 1  10795239 0     6gb     6gb
-	yellow open bitshares-2015-10 XyKOlrTWSK6vQgdXm8SAtQ 5 1    161004 0  84.5mb  84.5mb
+	yellow open localcoin-2018-02 voS1uchzSxqxqkiaKNrEYg 5 1  18984984 0  10.8gb  10.8gb
+	yellow open localcoin-2018-06 D6wyX58lRyG3QOflmPwJZw 5 1  28514130 0  15.6gb  15.6gb
+	yellow open localcoin-2017-10 73xRTA-fSTm479H4kOENuw 5 1   9326346 0   5.2gb   5.2gb
+	yellow open localcoin-2016-08 -MMp3VGGRZqG2YL1LQunbg 5 1    551835 0 270.1mb 270.1mb
+	yellow open localcoin-2016-07 Ao56gO9LQ-asMhX50rbcCg 5 1    609087 0 303.2mb 303.2mb
+	yellow open localcoin-2018-05 9xuof-PiRQWburpW8ZXHVg 5 1  29665610 0  17.3gb  17.3gb
+	yellow open localcoin-2017-01 SpfwEzGcSoy9Hd6c6fzv2g 5 1   1197124 0   659mb   659mb
+	yellow open localcoin-2017-12 tF5af4OvTLqcx3IYUJSQig 5 1  13244366 0   7.5gb   7.5gb
+	yellow open localcoin-2016-03 yy91IvyATOCEoFHjgDbalg 5 1    597461 0 297.4mb 297.4mb
+	yellow open localcoin-2015-12 z-ZAZqHsQL2EDNpf3_ghGA 5 1    349985 0 151.3mb 151.3mb
+	yellow open localcoin-2017-07 OOr_xW4STsCm3sev1xtTRQ 5 1  17890903 0   9.6gb   9.6gb
+	yellow open localcoin-2016-04 jt9q50ADQuylV4l25zGAaw 5 1    413798 0 205.6mb 205.6mb
+	yellow open localcoin-2016-11 mWz7DpjSQyqJ_rL8gtMqWw 5 1    495556 0   260mb   260mb
+	yellow open localcoin-2016-12 2qht_wrXTUmNqDvczpHYzw 5 1    917034 0 506.6mb 506.6mb
+	yellow open localcoin-2016-10 vAMb0kW6Stqz6CNbuu7PEQ 5 1    416570 0 208.8mb 208.8mb
+	yellow open localcoin-2015-11 ETNFuF3sTPe-gTSzX3bdIg 5 1    301079 0 131.9mb 131.9mb
+	yellow open localcoin-2017-08 73Q2Asw-Rf228oQLoSCLGw 5 1   9916248 0   5.6gb   5.6gb
+	yellow open localcoin-2016-05 3c95AvKcQk2puBwVt_HIqQ 5 1    498493 0   246mb   246mb
+	yellow open localcoin-2017-02 lsiiz7PmS2q9_P2BQpNkNQ 5 1   1104282 0 586.7mb 586.7mb
+	yellow open localcoin-2017-11 4pqwIRdWSwSe5198YNz-Nw 5 1  14107174 0     8gb     8gb
+	yellow open localcoin-2018-07 fdmfXLqSTESODyLI_7cjXg 5 1 133879948 0  51.3gb  51.3gb
+	yellow open localcoin-2016-06 Is11IdcnT8mfBPpoLUjJyw 5 1    656358 0 330.3mb 330.3mb
+	yellow open localcoin-2018-04 MEA8fCsgSbOVXa0Z05cfsA 5 1  20940461 0  11.9gb  11.9gb
+	yellow open localcoin-2018-03 fMjxhFwHSP-6ewrl0Ns6ZQ 5 1  20335546 0    12gb    12gb
+	yellow open localcoin-2017-09 o-b2Bf3LR0-J1kUiv4FpHA 5 1  11075939 0   6.3gb   6.3gb
+	yellow open localcoin-2018-01 jw9rYlmTSvuLC1hHcYyU4Q 5 1  19396703 0  11.2gb  11.2gb
+	yellow open localcoin-2018-08 EDRxQvxhQJe3Vam_FxZMWg 5 1   8038498 0     3gb     3gb
+	yellow open localcoin-2016-09 fo2AL0y7T_q_HtXEYCv35Q 5 1    409164 0 203.4mb 203.4mb
+	yellow open localcoin-2016-01 3sjjs-4oQMm5HG-vUTuyoA 5 1    372772 0 168.7mb 168.7mb
+	yellow open localcoin-2017-03 ZxjWksRyTaGstm6T2Kxl9A 5 1   2167788 0   1.1gb   1.1gb
+	yellow open localcoin-2016-02 toWbFwI-RB2wEGrR8873rQ 5 1    468174 0 222.7mb 222.7mb
+	yellow open localcoin-2017-05 IEZQ-rtmQU2kKNcRb58Egg 5 1  10278394 0   5.6gb   5.6gb
+	yellow open localcoin-2017-04 S1h2eBGiS3quNJU7CqPR7Q 5 1   3316120 0   1.8gb   1.8gb
+	yellow open localcoin-2017-06 0HYkECRbSwGDrmDFof8nqA 5 1  10795239 0     6gb     6gb
+	yellow open localcoin-2015-10 XyKOlrTWSK6vQgdXm8SAtQ 5 1    161004 0  84.5mb  84.5mb
 	root@NC-PH-1346-07:~# 
 
-If you don't see any index here then something is wrong with the bitshares-core node setup with elasticsearch plugin.
+If you don't see any index here then something is wrong with the localcoin-core node setup with elasticsearch plugin.
 
 Pre-Define Settings
 =========================
 
-By default data indexes will be created with default elasticsearch settings. Node owner can tweak the default settings for all the ``bitshares-*`` indexes before the addition of any data.
+By default data indexes will be created with default elasticsearch settings. Node owner can tweak the default settings for all the ``localcoin-*`` indexes before the addition of any data.
 
 An example of a good index configuration is as follows::
 
@@ -357,16 +357,16 @@ Get operations by account, time and operation type
 
 References: 
 
-- https://github.com/bitshares/bitshares-core/issues/358
-- https://github.com/bitshares/bitshares-core/issues/413
-- https://github.com/bitshares/bitshares-core/pull/405 
-- https://github.com/bitshares/bitshares-core/pull/379 
-- https://github.com/bitshares/bitshares-core/pull/430 
-- https://github.com/bitshares/bitshares-ui/issues/68
+- https://github.com/localcoin/localcoin-core/issues/358
+- https://github.com/localcoin/localcoin-core/issues/413
+- https://github.com/localcoin/localcoin-core/pull/405 
+- https://github.com/localcoin/localcoin-core/pull/379 
+- https://github.com/localcoin/localcoin-core/pull/430 
+- https://github.com/localcoin/localcoin-ui/issues/68
 
 This is one of the issues that has been requested constantly. It can be easily queried with ES plugin by calling the _search endpoint doing:::
 
-	curl -X GET 'http://localhost:9200/bitshares-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
+	curl -X GET 'http://localhost:9200/localcoin-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
 			"bool" : { "must" : [{"term": { "account_history.account.keyword": "1.2.282"}}, {"range": {"block_data.block_time": {"gte": "2015-10-26T00:00:00", "lte": "2015-10-29T23:59:59"}}}] }
@@ -380,11 +380,11 @@ This is one of the issues that has been requested constantly. It can be easily q
 Filter based on block number or block range
 -----------------------------------------------------
 
-https://github.com/bitshares/bitshares-core/issues/61
+https://github.com/localcoin/localcoin-core/issues/61
 
 ::
 
-	curl -X GET 'http://localhost:9200/bitshares-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
+	curl -X GET 'http://localhost:9200/localcoin-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
 			"bool" : { "must" : [{"term": { "account_history.account.keyword": "1.2.356589"}}, {"range": {"block_data.block_num": {"gte": "17824289", "lte": "17824290"}                                                                                                                  
@@ -396,11 +396,11 @@ https://github.com/bitshares/bitshares-core/issues/61
 Get operations by transaction hash
 -------------------------------------------
 
-Refs: https://github.com/bitshares/bitshares-core/pull/373
+Refs: https://github.com/localcoin/localcoin-core/pull/373
 
 The ``get_transaction_id`` can be done as::
 
-	curl -X GET 'http://localhost:9200/bitshares-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
+	curl -X GET 'http://localhost:9200/localcoin-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
 			"bool" : { "must" : [{"term": { "block_data.block_num": 19421114}},{"term": { "operation_history.trx_in_block": 0}}] }
@@ -410,7 +410,7 @@ The ``get_transaction_id`` can be done as::
 
 The above will return all ops inside trx, if you only need the trx_id field you can add ``source`` and just return the fields you need::
 
-	curl -X GET 'http://localhost:9200/bitshares-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
+	curl -X GET 'http://localhost:9200/localcoin-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"_source": ["block_data.trx_id"],
 		"query" : {
@@ -421,7 +421,7 @@ The above will return all ops inside trx, if you only need the trx_id field you 
 
 The ``get_transaction_from_id`` is very easy::
 
-	curl -X GET 'http://localhost:9200/bitshares-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
+	curl -X GET 'http://localhost:9200/localcoin-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
 			"bool" : { "must" : [{"term": { "block_data.trx_id": "6f2d5064637391089127aa9feb36e2092347466c"}}] }
@@ -441,7 +441,7 @@ By the same team of elasticsearch there is a front end named kibana (https://www
 More visitor code = more indexed data = more filters to use
 ----------------------------------------------------------------
 
-Just as an example, it will be easy to index asset of trading operations by extending the visitor code of them. point 3 of https://github.com/bitshares/bitshares-core/issues/358 request trading pair, can be solved by indexing the asset of the trading ops as mentioned.
+Just as an example, it will be easy to index asset of trading operations by extending the visitor code of them. point 3 of https://github.com/localcoin/localcoin-core/issues/358 request trading pair, can be solved by indexing the asset of the trading ops as mentioned.
 
 Remember ES already have all the needed info in the ``op`` text field of the ``operation_history`` object. Client can get all the ops of an account, loop throw them and convert the op string into json being able to filter by the asset or any other field needed. There is no need to index everything but it is possible.
 
@@ -455,7 +455,7 @@ Wrapper
 
 It is not recommended to expose the elasticsearch api fully to the internet. Instead, applications will connect to a wrapper for data:
 
-https://github.com/oxarbitrage/bitshares-es-wrapper
+https://github.com/oxarbitrage/localcoin-es-wrapper
 
 Elasticsearch database will listen in localhost and the wrapper in the same machine will expose the reduced set of API calls to the internet.
 

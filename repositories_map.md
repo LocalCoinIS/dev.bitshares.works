@@ -1,4 +1,4 @@
-### how.bitshares.works & dev.bitshares.works 
+### how.localcoin.works & dev.localcoin.works 
 
 To be filled.
 

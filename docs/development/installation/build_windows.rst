@@ -1,7 +1,7 @@
 .. _build-windows:
 
 ************************************************
-Build BitShares-Core with Visual Studio 2015
+Build LocalCoin-Core with Visual Studio 2015
 ************************************************
 
 .. contents:: Table of Contents
@@ -18,7 +18,7 @@ Environmental preparation
 Setup Visual Studio 2015 with Update 1
 ----------------------------------------
 
-*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/bitshares/bitshares-core/issues/389>`_
+*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/localcoin/localcoin-core/issues/389>`_
 
 * **Download Visual Studio 2015 Update 1**
 
@@ -62,7 +62,7 @@ Download Software and Tools
 
 * **OpenSSL**
 
- BitShares Core depends on OpenSSL version 1.0.1 or 1.0.2, and you must build this from source. This article uses 1.0.1u as an example. Cannot use OpenSSL 1.1.0.
+ LocalCoin Core depends on OpenSSL version 1.0.1 or 1.0.2, and you must build this from source. This article uses 1.0.1u as an example. Cannot use OpenSSL 1.1.0.
 
  *References*::
 
@@ -81,12 +81,12 @@ Download Software and Tools
 	  or
 	https://www.openssl.org/source/old/1.0.1/openssl-1.0.1u.tar.gz
 
- - Decompression to the base directory `C:\bts\`.
- - the source code directory is `C:\bts\openssl-1.0.1u` (do not have multiple nested directories)
+ - Decompression to the base directory `C:\llc\`.
+ - the source code directory is `C:\llc\openssl-1.0.1u` (do not have multiple nested directories)
 
 * **Boost**
 
- BitShares Core depends on the Boost libraries, only version 1.57 ~ 1.60. 1.57.0 is used here. ( 1.60 encountered a command line parameter parsing problem)
+ LocalCoin Core depends on the Boost libraries, only version 1.57 ~ 1.60. 1.57.0 is used here. ( 1.60 encountered a command line parameter parsing problem)
 
 
  - Download OpenSSL Source Code from;::
@@ -97,8 +97,8 @@ Download Software and Tools
 
  **Note:** The compiled library is also available for download on the Internet, but I have encountered problems in downloading and using it. Later, I solved it through my own compilation.
 
- - Extract (unzip) the source code to the base directory `C:\bts\`.
- - the source code directory is `C:\bts\boost_1_57_0` (do not have multiple nested directories)
+ - Extract (unzip) the source code to the base directory `C:\llc\`.
+ - the source code directory is `C:\llc\boost_1_57_0` (do not have multiple nested directories)
 
 * **CMake**
 
@@ -107,8 +107,8 @@ Download Software and Tools
 	https://cmake.org/download/
 	https://cmake.org/files/v3.9/cmake-3.9.4-win64-x64.zip
 
- - Extract (unzip) the source code to the base directory `C:\bts\`.
- - the source code directory is `C:\bts\cmake-3.9.4-win64-x64` (do not have multiple nested directories)
+ - Extract (unzip) the source code to the base directory `C:\llc\`.
+ - the source code directory is `C:\llc\cmake-3.9.4-win64-x64` (do not have multiple nested directories)
 
 
 Build the Library Dependencies
@@ -129,13 +129,13 @@ Build the Library Dependencies
     set PATH=C:\Program Files\NASM;%PATH%
 
     c:
-    cd C:\bts\openssl-1.0.1u
-    perl Configure VC-WIN64A --prefix=C:\bts\openssl-1.0.1u-x64-release-static
+    cd C:\llc\openssl-1.0.1u
+    perl Configure VC-WIN64A --prefix=C:\llc\openssl-1.0.1u-x64-release-static
     ms\do_win64a
     nmake -f ms\nt.mak
     nmake -f ms\nt.mak install
 
- - After the compilation is completed, a `C:\bts\openssl-1.0.1u-x64-release-static` directory will be generated, which is a compiled library file.
+ - After the compilation is completed, a `C:\llc\openssl-1.0.1u-x64-release-static` directory will be generated, which is a compiled library file.
 
  **Problems encountered and solutions:**
 
@@ -149,7 +149,7 @@ Build the Library Dependencies
  - Run **VS2015 x64 Native Tools Command Prompt** and execute the below commands::
 
 	c:
-	cd C:\bts\boost_1_57_0
+	cd C:\llc\boost_1_57_0
 	bootstrap
 	b2 architecture=x86 address-model=64 --build-type=complete --toolset=msvc-14.0 --threading=multi --variant=release release stage
 
@@ -163,7 +163,7 @@ Build the Library Dependencies
 	http://www.stack.nl/~dimitri/doxygen/download.html
 	http://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.13.windows.x64.bin.zip
 
- - Extract it to `C:\bts\doxygen-1.8.13.windows.x64.bin` (do not have multiple nested directories)
+ - Extract it to `C:\llc\doxygen-1.8.13.windows.x64.bin` (do not have multiple nested directories)
 
 
 * **Git**
@@ -173,28 +173,28 @@ Build the Library Dependencies
        Https://git-scm.com/download/win
 
 
-BitShares-Core
+LocalCoin-Core
 ----------------------------------------
 
-* **Download and Install BitShares-Core Source code**
+* **Download and Install LocalCoin-Core Source code**
 
  Find and run `Git Bash` from the Start menu. In the open command line interface, execute the following command::
 
-    cd /c/bts
-    git clone https://github.com/bitshares/bitshares-core
-    cd bitshares-core
+    cd /c/llc
+    git clone https://github.com/localcoin/localcoin-core
+    cd localcoin-core
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
 
  **Note:**
 
  * Please modify the specific directory according to the actual situation
- * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [BitShares Core latest release](https://github.com/bitshares/bitshares-core/releases).
+ * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of localcoin-core. If you need to compile other versions, modify accordingly. Find [LocalCoin Core latest release](https://github.com/localcoin/localcoin-core/releases).
 
  **At the end of this, your base directory should look like this**::
 
-	c:\bts
-	+- bitshares-core
+	c:\llc
+	+- localcoin-core
 	+- boost_1_57_0
 	+- cmake-3.9.4-win64-x64
 	+- openssl-1.0.1u
@@ -205,12 +205,12 @@ BitShares-Core
 Set up the Environment for Build
 ----------------------------------------
 
-* **Create a File C:\bts\setenv_x64.bat**
+* **Create a File C:\llc\setenv_x64.bat**
 
  - Add the below lines and save it.::
 
 	@echo off
-	Set GRA_ROOT=C:\bts
+	Set GRA_ROOT=C:\llc
 	Set OPENSSL_ROOT=%GRA_ROOT%\openssl-1.0.1u-x64-release-static
 	Set OPENSSL_ROOT_DIR=%OPENSSL_ROOT%
 	Set OPENSSL_INCLUDE_DIR=%OPENSSL_ROOT%\include
@@ -227,7 +227,7 @@ Set up the Environment for Build
  - Execute the below commands::
 
 	c:
-	cd C:\bts
+	cd C:\llc
 	setenv_x64.bat
 	cmake-gui
 
@@ -237,8 +237,8 @@ Set up the Environment for Build
 * **CMake GUI**
 
  - Set the values in the CMake GUI
-   - Where is the source code: Enter or select bitshares-core source directory `C:/bts/bitshares-core`
-   - Where to build the binaries: Enter or choose to compile the output directory, such as `C:/bts/bin`
+   - Where is the source code: Enter or select localcoin-core source directory `C:/llc/localcoin-core`
+   - Where to build the binaries: Enter or choose to compile the output directory, such as `C:/llc/bin`
  - Click the [Configure] button.
    - If prompted to compile the output directory does not exist, point [Yes] Create directory
  - In the popup box,
@@ -255,7 +255,7 @@ Visual Studio
 
 * **Build** 
 
- - Compile Bitshares-core
+ - Compile Localcoin-core
    - The default is `Debug` in the upper toolbar, modified to `Release`
    - another option mode is `x64` by default and does not require modification
  - Build two executable 
@@ -263,8 +263,8 @@ Visual Studio
 
  After the compilation is complete, an executable file is generated::
 
-        * C:\bts\bin\programs\witness_node\Release\witness_node.exe
-        * C:\bts\bin\programs\cli_wallet\Release\cli_wallet.exe
+        * C:\llc\bin\programs\witness_node\Release\witness_node.exe
+        * C:\llc\bin\programs\cli_wallet\Release\cli_wallet.exe
 
 Others
 ----------------------------------------
@@ -286,11 +286,11 @@ Others
 
 Note: This is a translation of the document contributed by Abit More. The original can be found here:
 
--https://github.com/abitmore/bts-cn-docs/blob/master/%E4%BD%BF%E7%94%A8VisualStudio2015%E7%BC%96%E8%AF%91BitShares-Core.txt
+-https://github.com/abitmore/llc-cn-docs/blob/master/%E4%BD%BF%E7%94%A8VisualStudio2015%E7%BC%96%E8%AF%91LocalCoin-Core.txt
 
 Also, referenced the below
 
-- https://github.com/bitshares/bitshares-core/wiki/BUILD_WIN32
+- https://github.com/localcoin/localcoin-core/wiki/BUILD_WIN32
 
 
 

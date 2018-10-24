@@ -17,13 +17,13 @@ Each link opens each namespace classes functions on one page.
 
 ---------------
 
-The below links will take you to BitShares-Core Doxygen documentation website.
+The below links will take you to LocalCoin-Core Doxygen documentation website.
 
-* BitShares-Core Doxygen documentation
+* LocalCoin-Core Doxygen documentation
 
-  - `graphene::app Namespace Reference <https://bitshares.org/doxygen/namespacegraphene_1_1app.html>`_
-  - `graphene::chain Namespace Reference <https://bitshares.org/doxygen/namespacegraphene_1_1chain.html>`_  
-  - `graphene::wallet Namespace Reference <https://bitshares.org/doxygen/namespacegraphene_1_1wallet.html>`_ 
+  - `graphene::app Namespace Reference <https://localcoin.org/doxygen/namespacegraphene_1_1app.html>`_
+  - `graphene::chain Namespace Reference <https://localcoin.org/doxygen/namespacegraphene_1_1chain.html>`_  
+  - `graphene::wallet Namespace Reference <https://localcoin.org/doxygen/namespacegraphene_1_1wallet.html>`_ 
 
 
     

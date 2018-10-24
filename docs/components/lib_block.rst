@@ -23,7 +23,7 @@ The below is simple blockchain structure image.
 
 
 .. image:: ../../_static/structures/block_structure_si1.png
-        :alt: BitShares Architecture
+        :alt: LocalCoin Architecture
         :width: 700px
         :align: center
 
@@ -56,7 +56,7 @@ block_header
 
 
 .. Note:: when we need to add data to `extensions`, remember to review ``database::_generate_block()``.
-  - More info in https://github.com/bitshares/bitshares-core/issues/1136
+  - More info in https://github.com/localcoin/localcoin-core/issues/1136
       
 signed_block_header
 ---------------------
@@ -118,7 +118,7 @@ Block (detail image)
 ===========================
 		
 .. image:: ../../_static/structures/block_structure_detail1.png
-        :alt: BitShares Architecture
+        :alt: LocalCoin Architecture
         :width: 700px
         :align: center
 

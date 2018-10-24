@@ -12,14 +12,14 @@ Database
 
 config.hpp
 -----------------
-The blockchain parameters can be modified in the `libraries/chain/include/graphene/chain/config.hpp <https://github.com/bitshares/bitshares-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_ file:
+The blockchain parameters can be modified in the `libraries/chain/include/graphene/chain/config.hpp <https://github.com/localcoin/localcoin-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_ file:
 
 .. code-block:: cpp 
 
 	#pragma once
 
-	#define GRAPHENE_SYMBOL "BTS"
-	#define GRAPHENE_ADDRESS_PREFIX "BTS"
+	#define GRAPHENE_SYMBOL "LLC"
+	#define GRAPHENE_ADDRESS_PREFIX "LLC"
 
 	#define GRAPHENE_MIN_ACCOUNT_NAME_LENGTH 1
 	#define GRAPHENE_MAX_ACCOUNT_NAME_LENGTH 63
@@ -116,7 +116,7 @@ The blockchain parameters can be modified in the `libraries/chain/include/graphe
 	#define GRAPHENE_RECENTLY_MISSED_COUNT_INCREMENT             4
 	#define GRAPHENE_RECENTLY_MISSED_COUNT_DECREMENT             3
 
-	#define GRAPHENE_CURRENT_DB_VERSION                          "BTS2.18"
+	#define GRAPHENE_CURRENT_DB_VERSION                          "LLC2.18"
 
 	#define GRAPHENE_IRREVERSIBLE_THRESHOLD                      (70 * GRAPHENE_1_PERCENT)
 
@@ -154,7 +154,7 @@ Database
 
 (/libraries/chain/include/graphene/chain/database.hpp)
 
-- `graphene::chain::database Class Reference (opens doxygen) <https://bitshares.org/doxygen/classgraphene_1_1chain_1_1database.html>`_ 
+- `graphene::chain::database Class Reference (opens doxygen) <https://localcoin.org/doxygen/classgraphene_1_1chain_1_1database.html>`_ 
 
 .. code-block:: cpp 
 
@@ -656,7 +656,7 @@ Database
          // Counts nested proposal updates
          uint32_t                           _push_proposal_nesting_depth = 0;
 
-         /// Tracks assets affected by bitshares-core issue #453 before hard fork #615 in one block
+         /// Tracks assets affected by localcoin-core issue #453 before hard fork #615 in one block
          flat_set<asset_id_type>           _issue_453_affected_assets;
 
          /// Pointers to core asset object and global objects who will have immutable addresses after created

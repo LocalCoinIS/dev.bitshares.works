@@ -1457,7 +1457,7 @@ This function fetches all relevant objects for the given account. If the string 
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Quitting from BitShares wallet.</para><para>The current wallet will be closed. </para>        </detaileddescription>
+<para>Quitting from LocalCoin wallet.</para><para>The current wallet will be closed. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="libraries/wallet/include/graphene/wallet/wallet.hpp" line="670" column="1" bodyfile="libraries/wallet/wallet.cpp" bodystart="3841" bodyend="3844"/>
@@ -2014,7 +2014,7 @@ This function fetches all relevant objects for the given account. If the string 
 <parametername>amount</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the amount to send (in nominal units <ndash/> to send half of a BTS, specify 0.5) </para></parameterdescription>
+<para>the amount to send (in nominal units <ndash/> to send half of a LLC, specify 0.5) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -2374,7 +2374,7 @@ This function fetches all relevant objects for the given account. If the string 
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Place a limit order attempting to sell one asset for another.</para><para>Buying and selling are the same operation on Graphene; if you want to buy BTS with USD, you should sell USD for BTS.</para><para>The blockchain will attempt to sell the <computeroutput>symbol_to_sell</computeroutput> for as much <computeroutput>symbol_to_receive</computeroutput> as possible, as long as the price is at least <computeroutput>min_to_receive</computeroutput> / <computeroutput>amount_to_sell</computeroutput>.</para><para>In addition to the transaction fees, market fees will apply as specified by the issuer of both the selling asset and the receiving asset as a percentage of the amount exchanged.</para><para>If either the selling asset or the receiving asset is whitelist restricted, the order will only be created if the seller is on the whitelist of the restricted asset type.</para><para>Market orders are matched in the order they are included in the block chain.</para><para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>Allow order expiration to be set here. Document default/max expiration time</para></xrefdescription></xrefsect></para><para><parameterlist kind="param"><parameteritem>
+<para>Place a limit order attempting to sell one asset for another.</para><para>Buying and selling are the same operation on Graphene; if you want to buy LLC with USD, you should sell USD for LLC.</para><para>The blockchain will attempt to sell the <computeroutput>symbol_to_sell</computeroutput> for as much <computeroutput>symbol_to_receive</computeroutput> as possible, as long as the price is at least <computeroutput>min_to_receive</computeroutput> / <computeroutput>amount_to_sell</computeroutput>.</para><para>In addition to the transaction fees, market fees will apply as specified by the issuer of both the selling asset and the receiving asset as a percentage of the amount exchanged.</para><para>If either the selling asset or the receiving asset is whitelist restricted, the order will only be created if the seller is on the whitelist of the restricted asset type.</para><para>Market orders are matched in the order they are included in the block chain.</para><para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>Allow order expiration to be set here. Document default/max expiration time</para></xrefdescription></xrefsect></para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>seller_account</parametername>
 </parameternamelist>

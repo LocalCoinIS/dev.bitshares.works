@@ -1081,7 +1081,7 @@ debug_dump
 	   const auto& bids = db.get_index_type<collateral_bid_index>().indices();
 	   const auto& settle_index = db.get_index_type<force_settlement_index>().indices();
 	   map<asset_id_type,share_type> total_balances;
-	   map<asset_id_type,share_type> total_debts;
+	   map<asset_id_type,share_type> total_dellc;
 	   share_type core_in_orders;
 	   share_type reported_core_in_orders;
 
@@ -1118,7 +1118,7 @@ debug_dump
 		  auto col = o.get_collateral();
 		  if( col.asset_id == asset_id_type() ) core_in_orders += col.amount;
 		  total_balances[col.asset_id] += col.amount;
-		  total_debts[o.get_debt().asset_id] += o.get_debt().amount;
+		  total_dellc[o.get_debt().asset_id] += o.get_debt().amount;
 	   }
 	   for( const asset_object& asset_obj : db.get_index_type<asset_index>().indices() )
 	   {
@@ -1793,7 +1793,7 @@ init_genesis
 	   };
 
 	   map<asset_id_type, share_type> total_supplies;
-	   map<asset_id_type, share_type> total_debts;
+	   map<asset_id_type, share_type> total_dellc;
 
 	   // Create initial assets
 	   for( const genesis_state_type::initial_asset_type& asset : genesis_state.initial_assets )
@@ -1806,7 +1806,7 @@ init_genesis
 		  if( asset.is_bitasset )
 		  {
 			 int collateral_holder_number = 0;
-			 total_debts[ new_asset_id ] = 0;
+			 total_dellc[ new_asset_id ] = 0;
 			 for( const auto& collateral_rec : asset.collateral_records )
 			 {
 				account_create_operation cop;
@@ -1831,7 +1831,7 @@ init_genesis
 				});
 
 				total_supplies[ asset_id_type(0) ] += collateral_rec.collateral;
-				total_debts[ new_asset_id ] += collateral_rec.debt;
+				total_dellc[ new_asset_id ] += collateral_rec.debt;
 				++collateral_holder_number;
 			 }
 
@@ -1914,9 +1914,9 @@ init_genesis
 		  if( it->bitasset_data_id.valid() )
 		  {
 			 auto supply_itr = total_supplies.find( it->id );
-			 auto debt_itr = total_debts.find( it->id );
+			 auto debt_itr = total_dellc.find( it->id );
 			 FC_ASSERT( supply_itr != total_supplies.end() );
-			 FC_ASSERT( debt_itr != total_debts.end() );
+			 FC_ASSERT( debt_itr != total_dellc.end() );
 			 if( supply_itr->second != debt_itr->second )
 			 {
 				has_imbalanced_assets = true;
@@ -2207,7 +2207,7 @@ pay_workers
 
 		  // Note: if there is a good chance that passed_time_count == day_count,
 		  //       for better performance, can avoid the 128 bit calculation by adding a check.
-		  //       Since it's not the case on BitShares mainnet, we're not using a check here.
+		  //       Since it's not the case on LocalCoin mainnet, we're not using a check here.
 		  fc::uint128 pay(requested_pay.value);
 		  pay *= passed_time_count;
 		  pay /= day_count;
@@ -3026,12 +3026,12 @@ process_hf_868_890
 	 * Prior to hardfork 868, switching a bitasset's shorting asset would not reset its
 	 * feeds. This method will run at the hardfork time, and erase (or nullify) feeds
 	 * that have incorrect backing assets.
-	 * https://github.com/bitshares/bitshares-core/issues/868
+	 * https://github.com/localcoin/localcoin-core/issues/868
 	 *
 	 * Prior to hardfork 890, changing a bitasset's feed expiration time would not
 	 * trigger a median feed update. This method will run at the hardfork time, and
 	 * correct all median feed data.
-	 * https://github.com/bitshares/bitshares-core/issues/890
+	 * https://github.com/localcoin/localcoin-core/issues/890
 	 *
 	 * @param db the database
 	 * @param skip_check_call_orders true if check_call_orders() should not be called
@@ -3052,7 +3052,7 @@ process_hf_868_890
 		  // Incorrect witness & committee feeds can simply be removed.
 		  // For non-witness-fed and non-committee-fed assets, set incorrect
 		  // feeds to price(), since we can't simply remove them. For more information:
-		  // https://github.com/bitshares/bitshares-core/pull/832#issuecomment-384112633
+		  // https://github.com/localcoin/localcoin-core/pull/832#issuecomment-384112633
 		  bool is_witness_or_committee_fed = false;
 		  if ( current_asset.options.flags & ( witness_fed_asset | committee_fed_asset ) )
 			 is_witness_or_committee_fed = true;
@@ -3099,7 +3099,7 @@ process_hf_868_890
 				   ("asset_sym", current_asset.symbol)("asset_id", current_asset.id) );
 		  }
 
-		  // always update the median feed due to https://github.com/bitshares/bitshares-core/issues/890
+		  // always update the median feed due to https://github.com/localcoin/localcoin-core/issues/890
 		  db.modify( bitasset_data, [&head_time]( asset_bitasset_data_object &obj ) {
 			 obj.update_median_feeds( head_time );
 		  });
@@ -3112,7 +3112,7 @@ process_hf_868_890
 				   ("asset_sym", current_asset.symbol)("asset_id", current_asset.id) );
 		  }
 
-		  // Note: due to bitshares-core issue #935, the check below (using median_changed) is incorrect.
+		  // Note: due to localcoin-core issue #935, the check below (using median_changed) is incorrect.
 		  //       However, `skip_check_call_orders` will likely be true in both testnet and mainnet,
 		  //         so effectively the incorrect code won't make a difference.
 		  //       Additionally, we have code to update all call orders again during hardfork core-935
@@ -3141,7 +3141,7 @@ process_hf_935
 	 * Prior to hardfork 935, `check_call_orders` may be unintendedly skipped when
 	 * median price feed has changed. This method will run at the hardfork time, and
 	 * call `check_call_orders` for all markets.
-	 * https://github.com/bitshares/bitshares-core/issues/935
+	 * https://github.com/localcoin/localcoin-core/issues/935
 	 *
 	 * @param db the database
 	 */
@@ -4040,7 +4040,7 @@ apply_order
 	   // Question: will a new limit order trigger a black swan event?
 	   //
 	   // 1. as of writing, it's possible due to the call-order-and-limit-order overlapping issue:
-	   //       https://github.com/bitshares/bitshares-core/issues/606 .
+	   //       https://github.com/localcoin/localcoin-core/issues/606 .
 	   //    when it happens, a call order can be very big but don't match with the opposite,
 	   //    even when price feed is too far away, further than swan price,
 	   //    if the new limit order is in the same direction with the call orders, it can eat up all the opposite,
@@ -4664,7 +4664,7 @@ check_call_orders
 		   if( after_hardfork_436 && ( bitasset.current_feed.settlement_price > ~call_itr->call_price ) )
 			  return margin_called;
 
-		   // Old rule: margin calls can only buy high https://github.com/bitshares/bitshares-core/issues/606
+		   // Old rule: margin calls can only buy high https://github.com/localcoin/localcoin-core/issues/606
 		   if( before_core_hardfork_606 && match_price > ~call_itr->call_price )
 			  return margin_called;
 
@@ -5870,7 +5870,7 @@ update_expired_feeds
 		  }
 	   } // for each asset whose feed is expired
 
-	   // process assets affected by bitshares-core issue 453 before hard fork 615
+	   // process assets affected by localcoin-core issue 453 before hard fork 615
 	   if( !after_hardfork_615 )
 	   {
 		  for( asset_id_type a : _issue_453_affected_assets )

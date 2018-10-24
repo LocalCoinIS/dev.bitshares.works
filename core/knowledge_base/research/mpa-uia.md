@@ -5,7 +5,7 @@
 ***
 
 
-Actually according to chain logic, MPA can be backed by UIA, except that the MPA is owned by `committee-account` , related code is [here](https://github.com/bitshares/bitshares-core/blob/2.0.180425/libraries/chain/asset_evaluator.cpp#L94-L110).
+Actually according to chain logic, MPA can be backed by UIA, except that the MPA is owned by `committee-account` , related code is [here](https://github.com/localcoin/localcoin-core/blob/2.0.180425/libraries/chain/asset_evaluator.cpp#L94-L110).
 
 
 UIA = User Issued Asset
@@ -15,7 +15,7 @@ PM = Prediction Market
 Smartcoins = MPA - produced by the committee
 Bitasset = MPA, produced by users
 
-Q. Does BitShares want to allow MPA1 to be backed by MPA2 to be backed by CORE? --> "YES"
+Q. Does LocalCoin want to allow MPA1 to be backed by MPA2 to be backed by CORE? --> "YES"
  
 PM is a specific variant of bitasset.
  

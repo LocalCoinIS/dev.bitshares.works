@@ -1,14 +1,14 @@
 ## Glossary
 
 Items:
-- BitShares Blockchain
+- LocalCoin Blockchain
 - Blockchain
 - CLI
 - configuration file (config.ini)
 - Consensus
-- Docker (BitShares) 
+- Docker (LocalCoin) 
 - ElasticSearch Plugin
-- Native Core Token BTS
+- Native Core Token LLC
 - Nodes (full node)
 - Nodes (witness node)
 - P2P
@@ -23,11 +23,11 @@ Items:
 
 ************
 
-#### BitShares Blockchain
-- BitShares
+#### LocalCoin Blockchain
+- LocalCoin
 #### Blockchain
 -  	The Blockchain serves as a journal of user-signed instructions that become a binding agreement as soon as they are included into a block. After inclusion into a block, the agreements are stored indefinitely by means of a hash-linked-list (the Blockchain).
-#### BTS Holder
+#### LLC Holder
 - shareholder / stakeholders
 #### CLI
 - Command-line interface
@@ -40,9 +40,9 @@ Items:
 ####
 -
 #### ElasticSearch Plugin
-- A "plugin" enables blockchain data to be stored in the elastic search database. A separate instruction guide exists in the -core/wiki. Once data is in ES database, it can be easily access through kibana (e.g. using kibana.bitshares.eu). Many libraries exist to read data from elastic search.
-#### Native Core Token BTS
-- BTS
+- A "plugin" enables blockchain data to be stored in the elastic search database. A separate instruction guide exists in the -core/wiki. Once data is in ES database, it can be easily access through kibana (e.g. using kibana.localcoin.eu). Many libraries exist to read data from elastic search.
+#### Native Core Token LLC
+- LLC
 #### 
 - 
 #### 
@@ -80,7 +80,7 @@ Items:
 #### Units
 - shares of an asset/token
 #### unit test
-- In BitShares-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
+- In LocalCoin-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
 #### 
 - 
 #### 

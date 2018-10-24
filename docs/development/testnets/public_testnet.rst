@@ -20,10 +20,10 @@ How to Set up Public Open Testnet
 ----------------------------------------------------
 
 
-1.1 BitShares-Core Testnet branch:: 
+1.1 LocalCoin-Core Testnet branch:: 
 
-    git clone https://github.com/bitshares/bitshares-core.git bitshares-core-testnet
-    cd bitshares-core-testnet/
+    git clone https://github.com/localcoin/localcoin-core.git localcoin-core-testnet
+    cd localcoin-core-testnet/
     git checkout testnet
 
 
@@ -32,17 +32,17 @@ How to Set up Public Open Testnet
 **Blockchain Parameters**
 
 The blockchain parameters can be modified in the
-`libraries/chain/include/graphene/chain/config.hpp <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/config.hpp>`_ file::
+`libraries/chain/include/graphene/chain/config.hpp <https://github.com/localcoin/localcoin-core/blob/master/libraries/chain/include/graphene/chain/config.hpp>`_ file::
 
     vim libraries/chain/include/graphene/chain/config.hpp
 
 **Default Seed Node List**
 
-We can add a default list of seed nodes that the witness is supposed to try to connect to in `libraries/app/application.cpp <https://github.com/bitshares/bitshares-core/blob/master/libraries/app/application.cpp>`_ and will add the IP/Address and port of the machine we are going to setup later already::
+We can add a default list of seed nodes that the witness is supposed to try to connect to in `libraries/app/application.cpp <https://github.com/localcoin/localcoin-core/blob/master/libraries/app/application.cpp>`_ and will add the IP/Address and port of the machine we are going to setup later already::
 
-    testnet.bitshares.eu:11010
+    testnet.localcoin.eu:11010
 
-The full change set can be seen in the corresponding `git commit <https://github.com/BitSharesEurope/graphene-testnet/commit/94f0a95be6f80cb5a7926ba6cc920dd795eb3a19>`_
+The full change set can be seen in the corresponding `git commit <https://github.com/LocalCoinEurope/graphene-testnet/commit/94f0a95be6f80cb5a7926ba6cc920dd795eb3a19>`_
 
 1.3 Initial Compilation
 
@@ -347,10 +347,10 @@ Since we need to provide a way for people to enter the network/blockchain, we ne
 
 6.2 Fetching the web wallet
 
-Afterwards, we download the bitshares-ui repository from Cryptonomex and install the Node dependencies::
+Afterwards, we download the localcoin-ui repository from Cryptonomex and install the Node dependencies::
 
-    git clone https://github.com/bitshares/bitshares-ui
-    cd bitshares-ui/
+    git clone https://github.com/localcoin/localcoin-ui
+    cd localcoin-ui/
 
     for I in dl web; do cd $I; npm install; cd ..; done
 

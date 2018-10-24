@@ -9,51 +9,51 @@ Development Environments
 -------
 
 
-BitShares offers you to install BitShares-Core into different platforms; :ref:`Linux:Ubuntu (x64) <build-ubuntu>` , :ref:`OS X <build-osx>` , and :ref:`Windows <build-windows>`.   There are dependencies to check when you download OpenSSL and  Boost. Please make sure which versions you downloaded. 
+LocalCoin offers you to install LocalCoin-Core into different platforms; :ref:`Linux:Ubuntu (x64) <build-ubuntu>` , :ref:`OS X <build-osx>` , and :ref:`Windows <build-windows>`.   There are dependencies to check when you download OpenSSL and  Boost. Please make sure which versions you downloaded. 
 
-Also, if you are a Windows user, you have other two choices to install BitShares Core to your Windows (x64) Operation System.  One is :ref:`CLI-Wallet tools for Windows (x64) <cli-tool>` , another one is :ref:`Windows SubSystem for Linux (WSL) <build-wsl>` .
+Also, if you are a Windows user, you have other two choices to install LocalCoin Core to your Windows (x64) Operation System.  One is :ref:`CLI-Wallet tools for Windows (x64) <cli-tool>` , another one is :ref:`Windows SubSystem for Linux (WSL) <build-wsl>` .
 
-The CLI-wallet tools for Windows (x64) allow you to have CLI wallet without the BitShares Core installation. After you download the cli-wallet tools (zip file) and unzip it, you will find all files you need to run CLI wallet.  
+The CLI-wallet tools for Windows (x64) allow you to have CLI wallet without the LocalCoin Core installation. After you download the cli-wallet tools (zip file) and unzip it, you will find all files you need to run CLI wallet.  
 
-Another option, Windows SubSystem for Linux (WSL).  The WSL is for a developer who uses a Windows 10 (x64) Operation System and wants to build BitShares Core on Ubuntu. 
+Another option, Windows SubSystem for Linux (WSL).  The WSL is for a developer who uses a Windows 10 (x64) Operation System and wants to build LocalCoin Core on Ubuntu. 
 
 > See :ref:`System Requirements <system-requirements-node>` : (updated: 2018-07-02).
 
 
 -------------------
 
-BitShares Code and Files 
+LocalCoin Code and Files 
 ===============================
 
 
 - Open Source program
-- Language uses (mainly): BitShares-Core(C++), python
-- `BitShares GitHub <https://github.com/bitshares>`_
-   - **BitShares-Core (C++)** - BitShares Blockchain implementation and command-line interface.
-   - **Bitshares-FC** - Fast-compiling C++ library 
-   - **BitShares python** - Fully featured client-side library for the BitShares Blockchain - written entirely in python.
-   - **BitShares-UI** - Fully featured Graphical User Interface / Reference Wallet for the BitShares Blockchain.
-   - **BSIPs** - BitShares Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the BitShares blockchain and technical ecosystem.
-   - **BitSharesjs** - JavaScript tools for BitShares Encryption and Serialization.
-   - **BitSharesjs-ws** - Javascript websocket interface for Bitshares 
+- Language uses (mainly): LocalCoin-Core(C++), python
+- `LocalCoin GitHub <https://github.com/localcoin>`_
+   - **LocalCoin-Core (C++)** - LocalCoin Blockchain implementation and command-line interface.
+   - **Localcoin-FC** - Fast-compiling C++ library 
+   - **LocalCoin python** - Fully featured client-side library for the LocalCoin Blockchain - written entirely in python.
+   - **LocalCoin-UI** - Fully featured Graphical User Interface / Reference Wallet for the LocalCoin Blockchain.
+   - **BSIPs** - LocalCoin Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the LocalCoin blockchain and technical ecosystem.
+   - **LocalCoinjs** - JavaScript tools for LocalCoin Encryption and Serialization.
+   - **LocalCoinjs-ws** - Javascript websocket interface for Localcoin 
    - (more...)
 
 ----------
    
 
-BitShares Core: Projects Guide 
+LocalCoin Core: Projects Guide 
 ==================================
 
 Project Guide
 ------------------
 
-- `Contribution Guide [DRAFT] <https://github.com/bitshares/bitshares-core/wiki/Contribution-Guide>`_
-- `Contribution Guide Project <https://github.com/bitshares/bitshares-core/projects/6>`_
+- `Contribution Guide [DRAFT] <https://github.com/localcoin/localcoin-core/wiki/Contribution-Guide>`_
+- `Contribution Guide Project <https://github.com/localcoin/localcoin-core/projects/6>`_
 
-BitShares-Core (Team) 
+LocalCoin-Core (Team) 
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The BitShares-Core team is a team of developers who manage the BitShares-Core code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Bitshares community. 
+The LocalCoin-Core team is a team of developers who manage the LocalCoin-Core code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Localcoin community. 
 
 * Roles
 
@@ -62,12 +62,12 @@ The BitShares-Core team is a team of developers who manage the BitShares-Core co
   - upgrading protocol if needed
   - making Project plans for the future release
   - creating/ announcing  Release 
-  - supporting the BitShares community/ answering questions
+  - supporting the LocalCoin community/ answering questions
   
 	
 ------------------	
 	
-BitShares Core: GitFlow
+LocalCoin Core: GitFlow
 =========================
 
 Purpose
@@ -84,16 +84,16 @@ Purpose
 Non-Consensus: Development / Release / Bugfix Workflows
 -----------------------------------------------------------
 
-.. image:: ../../_static/structures/bts-non-concensus.png
-        :alt: BitShares
+.. image:: ../../_static/structures/llc-non-concensus.png
+        :alt: LocalCoin
         :width: 750px
         :align: center
 
 Consensus: Development / Release / Bugfix Workflows
 ------------------------------------------------------
 
-.. image:: ../../_static/structures/bts-concensus.png
-        :alt: BitShares 
+.. image:: ../../_static/structures/llc-concensus.png
+        :alt: LocalCoin 
         :width: 750px
         :align: center
 
@@ -140,8 +140,8 @@ For a release,
 8. The "release" branch is merged into "master", and a version tag is created on "master".
 9. The "release" branch is merged back into "develop" and "hardfork".
 10. The "release" branch is merged into "testnet". This will produce a merge conflict for the hardfork dates, which must be resolved without changing the testnet hardfork date.
-11. Update ``Doxyfile`` with the last version tag. Update online code documentation by using updated ``Doxyfile`` as config file in the master branch. Send pull request to https://github.com/bitshares/bitshares.github.io with new content in html format.
-12. Update `download page of bitshares.org site <https://github.com/bitshares/bitshares.github.io/blob/master/_includes/download.html>`_
+11. Update ``Doxyfile`` with the last version tag. Update online code documentation by using updated ``Doxyfile`` as config file in the master branch. Send pull request to https://github.com/localcoin/localcoin.github.io with new content in html format.
+12. Update `download page of localcoin.org site <https://github.com/localcoin/localcoin.github.io/blob/master/_includes/download.html>`_
 
 **Note:** Solving conflicts by github(web) will merge branches in unintended directions. Avoid solving this way, merge and resolve conflicts manually through the git command line. Conflicts generally occur when merging release to testnet.
 
@@ -165,8 +165,8 @@ Presumably the developer who creates the fix will work on his private master bra
 Emergency Fix Workflows
 -----------------------------
 
-.. image:: ../../_static/structures/bts-emergency-fix.png
-        :alt: BitShares
+.. image:: ../../_static/structures/llc-emergency-fix.png
+        :alt: LocalCoin
         :width: 750px
         :align: center
 		

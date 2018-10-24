@@ -86,7 +86,7 @@ The `verify_account_authority` call will return `true` if the provided keys have
 ***
 
 (ref)
-- http://docs.bitshares.org/integration/merchants/login-protocol.html
+- http://docs.localcoin.org/integration/merchants/login-protocol.html
 
 ***
 

@@ -20,10 +20,10 @@ Ubuntu 16.04 LTS (64-bit)
     sudo apt-get update
     sudo apt-get install autoconf cmake make automake libtool git libboost-all-dev libssl-dev g++ libcurl4-openssl-dev
 
-2. Build BitShares Core::
+2. Build LocalCoin Core::
 
-    git clone https://github.com/bitshares/bitshares-core.git
-    cd bitshares-core
+    git clone https://github.com/localcoin/localcoin-core.git
+    cd localcoin-core
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
     cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo .
@@ -61,13 +61,13 @@ Download the Boost tarball for Boost 1.57.0. (*Ubuntu 14.04 ships old version of
     ./bootstrap.sh "--prefix=$BOOST_ROOT"
     ./b2 install
 
-3. Build BitShares Core
+3. Build LocalCoin Core
 
 ::
 
     cd ..
-    git clone https://github.com/bitshares/bitshares-core.git
-    cd bitshares-core
+    git clone https://github.com/localcoin/localcoin-core.git
+    cd localcoin-core
     git submodule update --init --recursive
     cmake -DBOOST_ROOT="$BOOST_ROOT" -DCMAKE_BUILD_TYPE=Release .
     make 
@@ -86,7 +86,7 @@ We recommend building on Ubuntu 16.04 LTS (64-bit), and the build dependencies m
 - Ubuntu 16.04 LTS (**64-bit**)
  
  
-.. Note:: BitShares requires a 64-bit operating system to build, and will not build on a 32-bit OS.
+.. Note:: LocalCoin requires a 64-bit operating system to build, and will not build on a 32-bit OS.
 
 Boost
 ---------
@@ -120,12 +120,12 @@ Details `here <https://github.com/DECENTfoundation/DECENT-Network/issues/194>`_
 
 Steps to fix::
 
-    cd ~/bitshares-core/libraries/fc/vendor/websocketpp
+    cd ~/localcoin-core/libraries/fc/vendor/websocketpp
     git remote set-url origin https://github.com/DECENTfoundation/websocketpp.git
     git fetch
     git checkout 
 
-And then build BitShares Core.
+And then build LocalCoin Core.
 
 
 |

@@ -50,18 +50,18 @@ Asset Market Whitelists
 An issuer of an user-issued-asset may want to restrict trading partners for his
 assets for legal reasons. For instance, a gateway for US dollar may not be
 allowed to let his customers trade USD against CNY because additional licenses
-would be required. Hence, in BitShares 2.0 we let issuers chose to restrict
+would be required. Hence, in LocalCoin we let issuers chose to restrict
 trading partners with white- and black-lists.
 
 **Example**
 
 A gateway with IOU ``G.USD`` that wants to prevent his customers from trading
-``G.USD`` against ``bitCNY`` can do so by adding ``bitCNY`` to the blacklist of
+``G.USD`` against ``CNY`` can do so by adding ``CNY`` to the blacklist of
 ``G.USD`` by issuing:::
 
     >>> update_asset G.USD "" "{blacklist_markets:[CNY]}" true
 
-Alternatively, if an issuer may want to only open the market ``G.USD : bitUSD``
+Alternatively, if an issuer may want to only open the market ``G.USD : USD``
 with his asset, he can do so as well with:::
 
     >>> update_asset G.USD "" "{whitelist_markets:[USD]}" true
@@ -96,7 +96,7 @@ asset desires, he may set a restriction so that only users on the white-list
 (and/or **not** on the blacklist) are allowed to hold his token.
 
 Instead of putting all verified accounts into the respective asset's white-list
-directly, BitShares 2.0 allows to define one or several white-list
+directly, LocalCoin allows to define one or several white-list
 *authorities*. In practice, the white- and black-lists of these accounts are
 combined and serve as white- and black-lists for the asset.
 

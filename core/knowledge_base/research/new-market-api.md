@@ -35,7 +35,7 @@ From @abitmore on February 16, 2016 22:14
 
 From @pmconrad on February 17, 2016 19:4
 
-blind_sign and unblind_signature belong to this: https://bitsharestalk.org/index.php/topic,17315.msg220421.html#msg220421
+blind_sign and unblind_signature belong to this: https://localcointalk.org/index.php/topic,17315.msg220421.html#msg220421
 I suppose these two shouldn't even be there - AFAIK they're not used anywhere in graphene currently, and if they are the API should include the blind_hash function as well.
 
 I don't know anything about the range stuff nor the blind_factor stuff.
@@ -48,8 +48,8 @@ I don't know anything about the range stuff nor the blind_factor stuff.
 - Documentation of new market API #582
 - es_objects plugin #500
 - Add API to query for recent order histories of one account in one market #503
-- https://github.com/bitshares/bitshares-core/issues/171
-- Improve performance of `get_ticker` API #509 https://github.com/bitshares/bitshares-core/issues/509
+- https://github.com/localcoin/localcoin-core/issues/171
+- Improve performance of `get_ticker` API #509 https://github.com/localcoin/localcoin-core/issues/509
 - get_top_markets api #512
 - add get_top_markets api call #560
 - add get_top_markets #737

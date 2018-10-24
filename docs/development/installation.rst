@@ -8,13 +8,13 @@ Getting Started
 Installation
 ========================
 
-BitShares Core is the BitShares blockchain implementation and command-line interface. The web wallet is `BitShares UI <https://github.com/bitshares/bitshares-ui>`_.
+LocalCoin Core is the LocalCoin blockchain implementation and command-line interface. The web wallet is `LocalCoin UI <https://github.com/localcoin/localcoin-ui>`_.
 
-Visit `BitShares.org <https://bitshares.org/>`_ to learn about BitShares and join the community at `BitSharesTalk.org <https://bitsharestalk.org/>`_.
+Visit `LocalCoin.org <https://localcoin.org/>`_ to learn about LocalCoin and join the community at `LocalCoinTalk.org <https://localcointalk.org/>`_.
 
-**NOTE:** The official BitShares git repository location, default branch, and submodule remotes were recently changed. Existing repositories can be updated with the following steps::
+**NOTE:** The official LocalCoin git repository location, default branch, and submodule remotes were recently changed. Existing repositories can be updated with the following steps::
 
-	git remote set-url origin https://github.com/bitshares/bitshares-core.git
+	git remote set-url origin https://github.com/localcoin/localcoin-core.git
 	git checkout master
 	git remote set-head origin --auto
 	git pull
@@ -22,7 +22,7 @@ Visit `BitShares.org <https://bitshares.org/>`_ to learn about BitShares and joi
 	git submodule update --init --recursive
 	
 	
-.. Attention:: See BitShares :ref:`system requirements <system-requirements-node>`.
+.. Attention:: See LocalCoin :ref:`system requirements <system-requirements-node>`.
 
 
 Download and Build
@@ -40,7 +40,7 @@ Select an operation system and install and build.
     installation/windows_cli_tool
 	
 
-Build and Run BitShares-Core in WSL (Installation Option)
+Build and Run LocalCoin-Core in WSL (Installation Option)
 ---------------------------------------------------------
 
 .. toctree:: 

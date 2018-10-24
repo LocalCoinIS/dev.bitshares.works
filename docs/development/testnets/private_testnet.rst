@@ -19,7 +19,7 @@ How to Set up Private Testnet
 1. Prerequisites 
 -------------------------------------------
 
-If you have not installed BitShares-Core and built yet. Please see :ref:`Installation Guide <installation-guide>`. And make sure you have both ``witness_node`` and ``cli_wallet`` already compiled successfully.
+If you have not installed LocalCoin-Core and built yet. Please see :ref:`Installation Guide <installation-guide>`. And make sure you have both ``witness_node`` and ``cli_wallet`` already compiled successfully.
 
 2. Create a Testnet Folder
 -------------------------------------------
@@ -211,7 +211,7 @@ Now we have the private key imported into the wallet but still no funds assoccia
 
     import_balance nathan ["5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"] true
 
-As a result, we have one account (named `nathan`) imported into the wallet and this account is well funded with BTS as we have claimed the funds stored in the genesis file. You can view this account information and the balance by using the below commands:
+As a result, we have one account (named `nathan`) imported into the wallet and this account is well funded with LLC as we have claimed the funds stored in the genesis file. You can view this account information and the balance by using the below commands:
 
 .. code-block:: json
 
@@ -242,12 +242,12 @@ And the resposne should be something similar to this
     {
     "brain_priv_key": "MYAL SOEVER UNSHARP PHYSIC JOURNEY SHEUGH BEDLAM WLOKA FOOLERY GUAYABA DENTILE RADIATE TIEPIN ARMS FOGYISH COQUET",
     "wif_priv_key": "5JDh3XmHK8CDaQSxQZHh5PUV3zwzG68uVcrTfmg9yQ9idNisYnE",
-    "pub_key": "BTS78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5"
+    "pub_key": "LLC78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5"
     }
 
 We can now register an account. The ``register_account`` command allows you to register an account using only a public key::
 
-    register_account alpha BTS78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5 BTS78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5 nathan nathan 0 true
+    register_account alpha LLC78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5 LLC78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5 nathan nathan 0 true
 
 > Use a public key ``pub_key`` which you just created by ``suggest_brain_key``. 
 
@@ -272,7 +272,7 @@ We can now open a new wallet for alpha user::
  
 The ``get_private_key`` command allows us to obtain the WIF private key corresponding to a public key. The private key must already be in the wallet::
 
-    get_private_key BTS78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5
+    get_private_key LLC78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5
 
 > You can try to make sure your ``suggest_brain_key`` outputs key pair. You should get the same pair of keys set.
 

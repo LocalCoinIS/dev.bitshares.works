@@ -1,15 +1,15 @@
 ## Knowledge Base
 
-- [BitShares-Core Libraries files list and Coding flows](../knowledge_base/files_methods_lists.md)
+- [LocalCoin-Core Libraries files list and Coding flows](../knowledge_base/files_methods_lists.md)
 - [Documented issues](../knowledge_base/documented_issues/README.md#documented-issues)
 
 ### BSIP
-- [BitShares Improvement Proposal(BSIP)](../knowledge_base/bsip_funding.md#businesses-developers-and-business-developers)
-- [BSIP Repository](https://github.com/bitshares/bsips)
+- [LocalCoin Improvement Proposal(BSIP)](../knowledge_base/bsip_funding.md#businesses-developers-and-business-developers)
+- [BSIP Repository](https://github.com/localcoin/bsips)
 
 
 ### Accounts
-- [BitShares UI - How to create and manage Cloud wallet and/or Local wallet Accounts](../knowledge_base/bitshares-ui-wallet-account-mode.md)
+- [LocalCoin UI - How to create and manage Cloud wallet and/or Local wallet Accounts](../knowledge_base/localcoin-ui-wallet-account-mode.md)
 - [Multi-Signature](../knowledge_base/multi-signature.md#multi-signature)
 
 

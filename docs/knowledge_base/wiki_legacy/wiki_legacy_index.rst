@@ -5,7 +5,7 @@
 Wiki Legacy 
 *****************************
 
-This page links were in BitShares Core Wiki.
+This page links were in LocalCoin Core Wiki.
 
 -----------------
 
@@ -24,8 +24,8 @@ This page links were in BitShares Core Wiki.
     design_issues
     DEV_README
     embedded_genesis
-    howto_import_bitShares_09_delegate
-    import_bitshares_093c_wallets_into_20
+    howto_import_localCoin_09_delegate
+    import_localcoin_093c_wallets_into_20
     plasma_wallet_api
     resolvable-bitassets
     theoretical_theories

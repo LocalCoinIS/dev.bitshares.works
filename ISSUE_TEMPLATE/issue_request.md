@@ -1,6 +1,6 @@
 ---
 name: Any other
-about: Create an issue to inform and improve the BitShares Developers Documentation.
+about: Create an issue to inform and improve the LocalCoin Developers Documentation.
 
 ---
 

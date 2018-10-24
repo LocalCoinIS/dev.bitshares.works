@@ -3,7 +3,7 @@
 Support and Optimizations 
 ***************************
 
-This section purpose is to collect and provide useful information for the BitShares developments. We would like to add other tools, libraries, and support information as we proceed. 
+This section purpose is to collect and provide useful information for the LocalCoin developments. We would like to add other tools, libraries, and support information as we proceed. 
  
 
 .. contents:: Table of Contents
@@ -11,13 +11,13 @@ This section purpose is to collect and provide useful information for the BitSha
    
 -------
 
-Python - BitShares
+Python - LocalCoin
 ===============================
-- `Python Library for BitShares: GitHub <https://github.com/bitshares/python-bitshares#python-library-for-bitshares>`_
+- `Python Library for LocalCoin: GitHub <https://github.com/localcoin/python-localcoin#python-library-for-localcoin>`_
 
-  - Fully featured client-side library for the BitShares Blockchain - written entirely in python. 
+  - Fully featured client-side library for the LocalCoin Blockchain - written entirely in python. 
 
-- `Python-Bitshares 0.1 Documentation <http://docs.pybitshares.com/>`_ - http://pybitshares.com/
+- `Python-Localcoin 0.1 Documentation <http://docs.pylocalcoin.com/>`_ - http://pylocalcoin.com/
 - :ref:`(more...) <lib-python>`
  
 
@@ -26,19 +26,19 @@ API Support & References
 
 - :ref:`explorer-wrappers`
 
-  - For Mainnet and Tesenet: ES Wrapper to query the Bitshares data. *Try it out!*
-  - Check the BitShares blockchain health. 
+  - For Mainnet and Tesenet: ES Wrapper to query the Localcoin data. *Try it out!*
+  - Check the LocalCoin blockchain health. 
 
-- `BitShares Explorer REST API - Installation Guide <https://github.com/oxarbitrage/bitshares-explorer-api#bitshares-explorer-rest-api>`_
+- `LocalCoin Explorer REST API - Installation Guide <https://github.com/oxarbitrage/localcoin-explorer-api#localcoin-explorer-rest-api>`_
 
-  - Step by step on everything needed to have your own BitShares Explorer API up and running for a production environment.
+  - Step by step on everything needed to have your own LocalCoin Explorer API up and running for a production environment.
 
   
 Libraries
 ======================
 
-- `BitShares-fc: Doxygen Documentation <http://open-explorer.io/doxygen/fc/>`_
-- `BitShares-fc: GitHub <https://github.com/bitshares/bitshares-fc#fc>`_
+- `LocalCoin-fc: Doxygen Documentation <http://open-explorer.io/doxygen/fc/>`_
+- `LocalCoin-fc: GitHub <https://github.com/localcoin/localcoin-fc#fc>`_
 
   - FC stands for fast-compiling c++ library and provides a set of utility libraries useful for the development of asynchronous libraries. 
 
@@ -50,17 +50,17 @@ SDKs
 Tools
 ========================
 
-- `Docker Container <https://github.com/bitshares/bitshares-core/blob/master/README-docker.md>`_
+- `Docker Container <https://github.com/localcoin/localcoin-core/blob/master/README-docker.md>`_
 
   -  Built-in Dockerfile to support docker containers. This README serves as documentation.
   
-- `bitsharesjs <https://github.com/bitshares/bitsharesjs#bitsharesjs-bitsharesjs>`_
+- `localcoinjs <https://github.com/localcoin/localcoinjs#localcoinjs-localcoinjs>`_
 
-  - JavaScript tools for BitShares Encryption and Serialization
+  - JavaScript tools for LocalCoin Encryption and Serialization
   
-- `bitsharesjs-ws <https://github.com/bitshares/bitsharesjs-ws#bitshares-websocket-interface-bitsharesjs-ws>`_
+- `localcoinjs-ws <https://github.com/localcoin/localcoinjs-ws#localcoin-websocket-interface-localcoinjs-ws>`_
 
-  - Javascript websocket interface for Bitshares 
+  - Javascript websocket interface for Localcoin 
   
   
 - :ref:`what-if-test`
@@ -78,7 +78,7 @@ Tools
 
 Plugins
 ===========================
-- `Discussion: "Create plugin script" (#1302) <https://github.com/bitshares/bitshares-core/pull/1302>`_
+- `Discussion: "Create plugin script" (#1302) <https://github.com/localcoin/localcoin-core/pull/1302>`_
 - :ref:`elastic-search-plugin`
 
   - How to store account history data into an elasticsearch database.
@@ -87,7 +87,7 @@ Plugins
 
   - Help to reduce RAM usage significantly by using witness_node executable options.
 
-- `Plugin Template - (create a demo API hello) <https://github.com/bitshares/bitshares-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
+- `Plugin Template - (create a demo API hello) <https://github.com/localcoin/localcoin-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
   
 
   

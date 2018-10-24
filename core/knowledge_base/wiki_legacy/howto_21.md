@@ -84,7 +84,7 @@ Detach from screen
 
 Extract your wif keys for user and balances as per xeroc's instructions
 
-How-to-become-an-active-witness-in-BitShares-2.0
+How-to-become-an-active-witness-in-LocalCoin-2.0
 
 *Navigate to cli_wallet*
 
@@ -100,7 +100,7 @@ Note: -w is your directory wallet
 
 Setup witness as per xerocs instructions
 
-[Howto-become-an-active-witness-in-BitShares-2.0](https://github.com/cryptonomex/graphene/wiki/How%20to%20become%20an%20active%20witness%20in%20BitShares%202.0)
+[Howto-become-an-active-witness-in-LocalCoin-2.0](https://github.com/cryptonomex/graphene/wiki/How%20to%20become%20an%20active%20witness%20in%20LocalCoin%202.0)
 
 Remember to copy your keys, witness id Note you need to wait for a maintenance period to be voted in
 

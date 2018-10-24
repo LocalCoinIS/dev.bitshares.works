@@ -11,16 +11,16 @@
 
 ***
 
-You installed BitShares Core successfully!
+You installed LocalCoin Core successfully!
 
-After you installed BitShares Core, you have `witness_node.exe` and `cli_wallet.exe` to run.  Both executables pass various parameters and set a configuration file (i.e., `config,ini` , `wallet.json`). 
+After you installed LocalCoin Core, you have `witness_node.exe` and `cli_wallet.exe` to run.  Both executables pass various parameters and set a configuration file (i.e., `config,ini` , `wallet.json`). 
 
-We will talk about each operation to understand the BitShares Core Overview operations.
+We will talk about each operation to understand the LocalCoin Core Overview operations.
 
 ***
 
 ## Nodes
-First, we need to connect to the network to interact to the BitShares Blockchain. The Nodes have the role. The nodes in the network both verify all transactions and blocks against the current state of the overall network (i.e., broadcast messages across a network). 
+First, we need to connect to the network to interact to the LocalCoin Blockchain. The Nodes have the role. The nodes in the network both verify all transactions and blocks against the current state of the overall network (i.e., broadcast messages across a network). 
 
 #### [Types of nodes](/core/nodes_full_witness/full_nodes.md#full-nodes-witness-nodes)
 
@@ -31,7 +31,7 @@ Both are implemented by the same executable, but the additional parameters can d
 
 ## Witness Node
 
-#### [Running a BitShares API node](/core/nodes_full_witness/running-api-node.md#running-a-bitshares-api-node)
+#### [Running a LocalCoin API node](/core/nodes_full_witness/running-api-node.md#running-a-localcoin-api-node)
 
 In your terminal, you can execute the witness_node (see the below command), the command will launch the witness node and automatically create a data directory including a [config.file](/core/nodes_full_witness/full_nodes.md#configuration). And the operation starts downloading the data to fully synchronize the blockchain if you start without any parameters. 
 
@@ -39,7 +39,7 @@ In your terminal, you can execute the witness_node (see the below command), the 
 
 You might see downloading the data (i.e., a history of the blockchain data ) on your screen. It will take several hours to sync.  You might want to prepare a better  hardware before you run this process if you would like to receive the data. 
 
-If you want to avoid downloading the history of the BitShares blockchain data, you can set some plugins - [Memory Reduction for Nodes](/forge/plugins/nodes_memory_reduction.md#memory-reduction-for-nodes). 
+If you want to avoid downloading the history of the LocalCoin blockchain data, you can set some plugins - [Memory Reduction for Nodes](/forge/plugins/nodes_memory_reduction.md#memory-reduction-for-nodes). 
 
 #### API node, config.ini, and plugins
 
@@ -64,32 +64,32 @@ Above plugins limit the operations per account 1000 to save RAM. For this operat
 
 So far, we talked about the Nodes which connect to the network directory and checked the parameters in  the config.ini to customize your connection. This pattern requires IP address to set the endpoint. 
 
-If you do not have own node to run, you can use the public API server (public full node) to connect the BitShares blockchain. Here is a latest list of [Public Full Node](https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js#L67) information.
+If you do not have own node to run, you can use the public API server (public full node) to connect the LocalCoin blockchain. Here is a latest list of [Public Full Node](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information.
 
 
 ## Network Configuration
 
-The BitShares client uses a peer-to-peer(p2p) network to connect and broadcast transactions
-For businesses, BitShares offers two patterns of network nodes ([trusted full node](/core/wallet/wallet_network.md#general-network-and-wallet-configuration) and [delayed full node](/core/wallet/wallet_network.md#delayed-full-node) ).
+The LocalCoin client uses a peer-to-peer(p2p) network to connect and broadcast transactions
+For businesses, LocalCoin offers two patterns of network nodes ([trusted full node](/core/wallet/wallet_network.md#general-network-and-wallet-configuration) and [delayed full node](/core/wallet/wallet_network.md#delayed-full-node) ).
 
-In this section, we will explain about the Network Configurations of BitShares.
+In this section, we will explain about the Network Configurations of LocalCoin.
 
 #### [Trusted full node](/core/wallet/wallet_network.md#general-network-and-wallet-configuration)
 
 We saw, in the previous section, the witness_nodes (full_nodes) accept parameters (e.g., `--rpc-endpoint`) and connect to the network directly. We call it trusted (Trusted Full Node) since it is supposed to be under our control.
 
-In the BitShares, there are two types of network configuration setups. For general purpose setups, we recommend a reduced complexity setup (i.e., General Setup). For high security, we provide a so called delayed full node which accepts the parameter trusted-node for an RPC endpoint of a trusted validating node (i.e., Secure Network Setup).
+In the LocalCoin, there are two types of network configuration setups. For general purpose setups, we recommend a reduced complexity setup (i.e., General Setup). For high security, we provide a so called delayed full node which accepts the parameter trusted-node for an RPC endpoint of a trusted validating node (i.e., Secure Network Setup).
 
-In the both settings, the trusted full node is your entry point to the BitShares P2P network.  It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
+In the both settings, the trusted full node is your entry point to the LocalCoin P2P network.  It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
 
 #### [Delayed full node](/core/wallet/wallet_network.md#delayed-full-node)
 
 The delayed full node is used for the Secure Network setup.  The delayed full node will provide us with a delayed and several times confirmed and verified blockchain.  How long is that's depending on the block interval and the number of witnesses, this may lead to a few minutes of delay. The delayed node will delay blocks until they are permanent.  Therefore,  all transactions that are confirmed by the delayed node are irreversible
 
 
-Any BitShares application (gateway, explorer, wallet, trading program, etc) interacts with the decentralized network (blockchain) are connecting to one or many API Nodes. If you plan to run a business on top of BitShares, you will probably want one or several API nodes of your property.  Also, if you are planning to create an exchange, that should only interface with the delayed full node for the security reasons.
+Any LocalCoin application (gateway, explorer, wallet, trading program, etc) interacts with the decentralized network (blockchain) are connecting to one or many API Nodes. If you plan to run a business on top of LocalCoin, you will probably want one or several API nodes of your property.  Also, if you are planning to create an exchange, that should only interface with the delayed full node for the security reasons.
  
-If you plan to run a business on top of BitShares, you will probably want one or several API nodes of your property.  Also, if you are planning to create an exchange, that should only interface with the delayed full node for the security reasons.
+If you plan to run a business on top of LocalCoin, you will probably want one or several API nodes of your property.  Also, if you are planning to create an exchange, that should only interface with the delayed full node for the security reasons.
 
 
  
@@ -109,7 +109,7 @@ The Nodes are connected to the network and verify all transactions and block pro
 
 The cli_wallet creates a local [`wallet.json`](/core/wallet/cli_wallet.md#overview) file that contains the encrypted private keys.  The key is required to access the funds and add new data to the blockchain with a signature from a private key. 
 
-Connecting the cli_wallet requires a running full node (not necessarily locally) and connect to it. You might have own node to use. If you do not have it, you can select one of [BitShares Public Full Nodes](https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js#L67), or nodes that run by _businesses_ or _individuals_.
+Connecting the cli_wallet requires a running full node (not necessarily locally) and connect to it. You might have own node to use. If you do not have it, you can select one of [LocalCoin Public Full Nodes](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67), or nodes that run by _businesses_ or _individuals_.
 
 
 
@@ -150,7 +150,7 @@ Let's look at this examples, first we start the witness_node with `--rpc-endpoin
 
 If you open the cli-wallet successfully, you will receive `new >>>` prompt to set a password. The below are example output. Use a `set_password` to set a password. And after set the password, use a `unlock` command to unlock the wallet. 
 
-After unlock the cli-wallet, you can issue any command available to the cli-wallet ([Wallet APIs](https://bitshares.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html)) or [construct your own transaction manually](/core/tutorials/trn_construct_transaction.md#how-to-construct-any-transaction---manually).
+After unlock the cli-wallet, you can issue any command available to the cli-wallet ([Wallet APIs](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html)) or [construct your own transaction manually](/core/tutorials/trn_construct_transaction.md#how-to-construct-any-transaction---manually).
 
 > The password is used to encrypt the private keys in the wallet.
 
@@ -200,18 +200,18 @@ You can choose between [Websocket RPC](/core/api/websocket_calls_notifications.m
 
 We show you how you can use the Public API Node in your `cli_wallet` command line. 
 
-- You can find a latest list of [Public Full Node](https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js#L67) information. 
+- You can find a latest list of [Public Full Node](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information. 
 
-**Example:**  We use the public API node of OpenLedger `wss://bitshares.openledger.info/ws` and connect via secured websocket connection:
+**Example:**  We use the public API node of OpenLedger `wss://localcoin.openledger.info/ws` and connect via secured websocket connection:
 
-	./programs/cli_wallet/cli_wallet -s wss://bitshares.openledger.info/ws
+	./programs/cli_wallet/cli_wallet -s wss://localcoin.openledger.info/ws
 
 
 This will open the cli-wallet and unless you already have a local wallet, it will ask you to provide a password for your local wallet. Once a wallet has been created (default wallet file is a wallet.json), you will receive,
 
 	>>> new
 
-We mentioned before, you can set a password and unlock the wallet. After unlocked the wallet, you can issue [`Wallet API calls`](https://bitshares.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html).
+We mentioned before, you can set a password and unlock the wallet. After unlocked the wallet, you can issue [`Wallet API calls`](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html).
 
 ### About Wallet API Calls
 
@@ -223,10 +223,10 @@ The Wallet APIs include Wallet Calls, Account Calls, Transaction Calls, Asset Ca
 
 ## API
 
-Now, let's look into [BitShares APIs](/core/api/apis-about.md#apis-categories). APIs are separated into two categories; Blockchain API and Wallet API. 
+Now, let's look into [LocalCoin APIs](/core/api/apis-about.md#apis-categories). APIs are separated into two categories; Blockchain API and Wallet API. 
 
-- **[Blockchain API](https://bitshares.org/doxygen/namespacegraphene_1_1app.html):** It's used to query blockchain data (account, assets, trading history, etc).
-- **[Wallet API](https://bitshares.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html):** It has your private keys loaded and is required when interacting with the blockchain with new transactions.
+- **[Blockchain API](https://localcoin.org/doxygen/namespacegraphene_1_1app.html):** It's used to query blockchain data (account, assets, trading history, etc).
+- **[Wallet API](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html):** It has your private keys loaded and is required when interacting with the blockchain with new transactions.
 
 The set of available calls depend on whether you connect to the full node (witness_node) or the wallet (cli_wallet). Both support [RPC-JSON](/core/api/rpc.md#remote-procedure-calls). The full node also supports the [websocket protocol](/core/api/websocket_calls_notifications.md#websocket-calls-notifications) with [notifications](/core/api/websocket_calls_notifications.md#database-notifications).  
 
@@ -250,11 +250,11 @@ For sensitive businesses that want to ensure that deposits are irreversible, we 
 
 ### [Objects and IDs](/core/api/object_ids.md#objects-and-ids)
 
-We will use the Objects and IDs when we search the BitShares Blockchain. 
+We will use the Objects and IDs when we search the LocalCoin Blockchain. 
 
-BitShares 2.0 has a different model to represent the blockchain(space), its transactions(type) and accounts(unique ids). On the BitShares blockchains there are **no addresses**, but objects identified by a **unique id, an type and a space**.
+LocalCoin has a different model to represent the blockchain(space), its transactions(type) and accounts(unique ids). On the LocalCoin blockchains there are **no addresses**, but objects identified by a **unique id, an type and a space**.
 
-**BitShares Objects Format**
+**LocalCoin Objects Format**
 
 		space.type.id
 
@@ -272,11 +272,11 @@ In the protocol space, there are raw objects such as, accounts, assets, committe
 
 **Examples2: asset object (1.3.x)**
 
-		unlocked >>> list_assets "BTS" "2"
-		list_assets "BTS" "2"
+		unlocked >>> list_assets "LLC" "2"
+		list_assets "LLC" "2"
 		[{
 				"id": "1.3.0",
-				"symbol": "BTS",
+				"symbol": "LLC",
 				"precision": 5,
 				"issuer": "1.2.3",
 
@@ -301,19 +301,19 @@ In the protocol space, there are raw objects such as, accounts, assets, committe
 - Hierarchical Corporate Accounts
 
 
-In order to use BitShares, you will need to register an account. All you need to provide is
+In order to use LocalCoin, you will need to register an account. All you need to provide is
 
     an account name
     a password
 
-Note that, in contrast to any other platform you have ever used: Creating an account at one of our partners will make your account available at all the other partners as well. Hence, your account name can be seen similar to a mail address in such that it is unique and every participant in the BitShares network can interact with you independent of the actual partner providing the wallet.
+Note that, in contrast to any other platform you have ever used: Creating an account at one of our partners will make your account available at all the other partners as well. Hence, your account name can be seen similar to a mail address in such that it is unique and every participant in the LocalCoin network can interact with you independent of the actual partner providing the wallet.
 
 
-BitShares 2.0 accounts have to be registered on the blockchain. Upon registration they are assigned an incrementing identifier (account id).
+LocalCoin accounts have to be registered on the blockchain. Upon registration they are assigned an incrementing identifier (account id).
 
 This comes with many advantages: Besides improved scalability, we have separated the identity from the transaction authorizing signature. In practice, owning an account name is independent from being able to spend its funds. Furthermore, both rights (we call them permissions) can split among an arbitrary complex relation of people (we call them authorities) using weights and a required thresholds.
 
-Thanks to separating authorities from identities, BitShares 2.0 can be much faster in processing delay while having much smaller transaction sizes. Hence, all participants are forced to have a named account on the blockchain. Furthermore, most transactions are tied to an account name and can thus be linked to individuals (this includes transfers, trades, shorts, etc. but not stealthed transactions).
+Thanks to separating authorities from identities, LocalCoin can be much faster in processing delay while having much smaller transaction sizes. Hence, all participants are forced to have a named account on the blockchain. Furthermore, most transactions are tied to an account name and can thus be linked to individuals (this includes transfers, trades, shorts, etc. but not stealthed transactions).
 
 
 
@@ -321,7 +321,7 @@ Thanks to separating authorities from identities, BitShares 2.0 can be much fast
 
 #### Referral  Program
 
-BitShares has several different kinds of accounts: * Basic Account, and * Lifetime Member.
+LocalCoin has several different kinds of accounts: * Basic Account, and * Lifetime Member.
 
 Basic Accounts are free, but do not qualify for the referral program, nor any cash back on transaction fees.
 
@@ -349,12 +349,12 @@ Lifetime Members pay an upgrade fee and earn 80% cash back on every fee they pay
 
 #### genesis.json
 										 
-If you are interested to use BitShares Testnets later, you will learn about a "genesis.json" file which you can set up the initial state of the network. You will create "my-genesis.json" file to customize to match your needs. (i.e.,[Genesis Block](https://github.com/bitshares/bitshares-core/blob/testnet/genesis.json) - for Testnet).
+If you are interested to use LocalCoin Testnets later, you will learn about a "genesis.json" file which you can set up the initial state of the network. You will create "my-genesis.json" file to customize to match your needs. (i.e.,[Genesis Block](https://github.com/localcoin/localcoin-core/blob/testnet/genesis.json) - for Testnet).
 
-Here is more information about How to setup BitShares [Private Testnet](/core/testnets/private_testnet.md#3-creating-a-genesis-file-for-a-private-testnet) and BitShares [Public Testnet](/core/testnets/public_testnet.md#2-genesis-configuration). 
+Here is more information about How to setup LocalCoin [Private Testnet](/core/testnets/private_testnet.md#3-creating-a-genesis-file-for-a-private-testnet) and LocalCoin [Public Testnet](/core/testnets/public_testnet.md#2-genesis-configuration). 
 
 
-So far, we are learning about the **node** which connect to the network directory and take the parameters. BitShares has two levels of network setups (trusted full node and delayed full node) for businesses. If you do not have own node to run, you can use the public api server (public full node). 
+So far, we are learning about the **node** which connect to the network directory and take the parameters. LocalCoin has two levels of network setups (trusted full node and delayed full node) for businesses. If you do not have own node to run, you can use the public api server (public full node). 
 
 ***
 *****

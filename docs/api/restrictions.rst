@@ -59,7 +59,7 @@ Since restricted APIs require login, they are **only** accessible over the webso
 Accessing Restricted API's 
 ==============================
 
-You can restrict API’s to particular users by specifying an ``api-access`` in a :ref:`configuration <bts-config-ini-eg>` file or by using the ``--api-access /full/path/to/api-access.json`` startup node command. 
+You can restrict API’s to particular users by specifying an ``api-access`` in a :ref:`configuration <llc-config-ini-eg>` file or by using the ``--api-access /full/path/to/api-access.json`` startup node command. 
 
 **Example:**
 
@@ -91,7 +91,7 @@ You can restrict API’s to particular users by specifying an ``api-access`` in 
     }
 
 - Passwords are stored in ``ase64`` as as salted `sha256` hashes. 
-- A simple Python script, ``saltpass.py`` is avaliable `[click here] <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ to obtain hash and salt values from a password. 
+- A simple Python script, ``saltpass.py`` is avaliable `[click here] <https://github.com/localcoin/localcoin-core/blob/master/programs/witness_node/saltpass.py>`_ to obtain hash and salt values from a password. 
 - A single asterisk ``*`` may be specified as username or password hash to accept any value.
 
 With the above configuration, how to call `add_node` from the `network_node` API
@@ -107,9 +107,9 @@ With the above configuration, how to call `add_node` from the `network_node` API
 
 The full node offers a set of API(s), of which only the database calls are avaiable via RPC. Calls that are restricted by default (i.e. ``network_node_api``) or have been restricted by configuration are not accessible via RPC because a statefull protocol (websocket) is required for login.
 
-The `network_node API <https://bitshares.org/doxygen/classgraphene_1_1app_1_1network__node__api.html>`_ requires login, it is only accessible over the websocket RPC. 
+The `network_node API <https://localcoin.org/doxygen/classgraphene_1_1app_1_1network__node__api.html>`_ requires login, it is only accessible over the websocket RPC. 
 
-Please check. Our `doxygen <https://bitshares.org/doxygen/>`_ documentation contains the most up-to-date information about APIs.
+Please check. Our `doxygen <https://localcoin.org/doxygen/>`_ documentation contains the most up-to-date information about APIs.
 
 
 ------------------
@@ -147,7 +147,7 @@ The ``login_api`` class implements the bottom layer of the RPC API. All other AP
 .. doxygenclass:: graphene::app::login_api
    :members:
 
-.. _doxygen: http://bitshares.org/doxygen
+.. _doxygen: http://localcoin.org/doxygen
 
 
 

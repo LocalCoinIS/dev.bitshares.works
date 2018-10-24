@@ -1,9 +1,9 @@
-## Howto import an existing delegate as witness in BitShares 2.0
+## Howto import an existing delegate as witness in LocalCoin
 
 
-### Preparations in BitShares 0.9 network
+### Preparations in LocalCoin 0.9 network
 
-We need to Extract the signing public and private key from BitShares 0.9.
+We need to Extract the signing public and private key from LocalCoin 0.9.
 
 Let's obtain the `<publickey>`:
 
@@ -12,14 +12,14 @@ Let's obtain the `<publickey>`:
     Block Signing Key: <publickey>
     [...]
 
-Remark: Public keys in the BitShares network have the prefix BTS. Hence, in the case of the Graphene testnet you should replace BTS by GPH.
+Remark: Public keys in the LocalCoin network have the prefix LLC. Hence, in the case of the Graphene testnet you should replace LLC by GPH.
 
 and the corresponding `<wifkey>`:
 
     >>> wallet_dump_account_private_key <delegatename> signing_key
     "<wifkey>"
 
-### BitShares 2.0 network (or Graphene testnet)
+### LocalCoin network (or Graphene testnet)
 
 #### Download the genesis block (only for testnet)
 
@@ -43,7 +43,7 @@ The witness_id can be obtain from the blockchain:
 
     locked >>> get_witness <delegatename>
 
-where `<delegatename` is the name of the account used as delegate in BitShares0.9. This delegate is a "witness" in BitShares 2.0.
+where `<delegatename` is the name of the account used as delegate in LocalCoin0.9. This delegate is a "witness" in LocalCoin.
 
 ### Running a block producing witness
 

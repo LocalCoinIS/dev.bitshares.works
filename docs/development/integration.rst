@@ -15,12 +15,12 @@ Banks, exchanges and merchants are integrating with the Graphene technology alre
 Basic Knowledge
 =========================
 
-If you have not read `BitShares Documentation for all users <http://how.bitshares.works/en/latest>`_ (http://how.bitshares.works/en/latest), we suggest you to read through as your basic knowledge of BitShares. 
+If you have not read `LocalCoin Documentation for all users <http://how.localcoin.works/en/latest>`_ (http://how.localcoin.works/en/latest), we suggest you to read through as your basic knowledge of LocalCoin. 
 
 We provide here the necessary information to securely operate as a merchant, trader, exchange, or fiat-gateway. The below-listed contents should be known to all of them before starting to integrate.
 
 
-* `What is different BitShares <http://how.bitshares.works/en/latest/technology/difference_bitshares.html>`_ (http://how.bitshares.works/en/latest)
+* `What is different LocalCoin <http://how.localcoin.works/en/latest/technology/difference_localcoin.html>`_ (http://how.localcoin.works/en/latest)
 * :ref:`blockchain-interaction-top`
 * :ref:`often-used-calls`
 

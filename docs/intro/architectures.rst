@@ -4,9 +4,9 @@ Introduction & Architectures
 ******************************
 
 
-Welcome to BitShares! In this section, we are looking into the BitShares Architecture overview (entities and structures), and how the Core team processes the development work.
+Welcome to LocalCoin! In this section, we are looking into the LocalCoin Architecture overview (entities and structures), and how the Core team processes the development work.
 
-If developers who are interested in contributing to the Core team, they might want to check the Contribution Guide and the GitFlow to understand how BitShares-Core team handles the repository files and branches.  The Core team current project, issues, and releases plans are located in the BitShares Core repository under the Issues and the Projects tabs.m. 
+If developers who are interested in contributing to the Core team, they might want to check the Contribution Guide and the GitFlow to understand how LocalCoin-Core team handles the repository files and branches.  The Core team current project, issues, and releases plans are located in the LocalCoin Core repository under the Issues and the Projects tabs.m. 
 
 .. contents:: Table of Contents
    :local:
@@ -15,30 +15,30 @@ If developers who are interested in contributing to the Core team, they might wa
 
 
 
-BitShares Members
+LocalCoin Members
 ===================
 
-If you have a BitShares account, you are a BTS Holder, and you have a voting power to make decisions in the BitShares Community. (Read more: :ref:`BitShares Accounts <bts-accounts>` )
+If you have a LocalCoin account, you are a LLC Holder, and you have a voting power to make decisions in the LocalCoin Community. (Read more: :ref:`LocalCoin Accounts <llc-accounts>` )
 
 
 
-.. image:: ../../_static/structures/btsholders-v1.png
-        :alt: BitShares Architecture
+.. image:: ../../_static/structures/llcholders-v1.png
+        :alt: LocalCoin Architecture
         :width: 700px
         :align: center
 
 ----------------
 
-BitShares Architecture 
+LocalCoin Architecture 
 ==========================
 
 GitHub Repositories and Entities
 ------------------------------------
 
-This is an overview of BitShares Architecture image. The purpose of this image is to bring the main elements together and share what types of resources you might find in the BitShares Github repositories. 
+This is an overview of LocalCoin Architecture image. The purpose of this image is to bring the main elements together and share what types of resources you might find in the LocalCoin Github repositories. 
 
-.. image:: ../../_static/structures/bitshares-architecture-v3notop.png
-        :alt: BitShares Architecture
+.. image:: ../../_static/structures/localcoin-architecture-v3notop.png
+        :alt: LocalCoin Architecture
         :width: 650px
         :align: center
 
@@ -47,7 +47,7 @@ This is an overview of BitShares Architecture image. The purpose of this image i
 Key Design Concepts and the Features
 =========================================
 
-The below image is an overview of BitShares Architecture. The purpose of this image is to bring the main elements together and share what types of resources you might find in the BitShares Github repositories. 
+The below image is an overview of LocalCoin Architecture. The purpose of this image is to bring the main elements together and share what types of resources you might find in the LocalCoin Github repositories. 
 
 Key points and fundamentals for the design:
 ---------------------------------------------
@@ -60,18 +60,18 @@ Key points and fundamentals for the design:
 - Avoid synchronization primitives (locks, atomic operations)
 - Minimize unnecessary computation in the business logic processor.
     
-BitShares is built to aim high-performance blockchain and has been done to remove all calculations that are not part of the critical, order-dependent, evaluation from the core business logic, and to design a protocol the facilitates these kinds of optimizations.
+LocalCoin is built to aim high-performance blockchain and has been done to remove all calculations that are not part of the critical, order-dependent, evaluation from the core business logic, and to design a protocol the facilitates these kinds of optimizations.
 
 
-BitShares Available Features
+LocalCoin Available Features
 --------------------------------
 
-BitShares can be made to function as a software, a network, a ledger, a bank, an exchange, and a currency all at once. (e.g., It can fulfill the role of a bank by maintaining a distributed ledger that tracks debt collateralized by other assets. You can find out that BitShares offers numerous features that are not available on other popular blockchain platforms.
+LocalCoin can be made to function as a software, a network, a ledger, a bank, an exchange, and a currency all at once. (e.g., It can fulfill the role of a bank by maintaining a distributed ledger that tracks debt collateralized by other assets. You can find out that LocalCoin offers numerous features that are not available on other popular blockchain platforms.
 
 * **SmartCoins** are fungible, divisible and free from any restrictions. A SmartCoin is a cryptocurrency whose value is pegged to that of another asset, such as the US Dollar or gold. SmartCoins implement the concept of a collateralized loan and offer it on the blockchain.
-* **Decentralized Exchange** - BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. 
+* **Decentralized Exchange** - LocalCoin provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. 
 
-  - Secure: All of the reserves are kept as BTS held on the blockchain, and they cannot be stolen, because there are no private keys that can be compromised to steal the reserves.
+  - Secure: All of the reserves are kept as LLC held on the blockchain, and they cannot be stolen, because there are no private keys that can be compromised to steal the reserves.
    
 * Trading / Financial Services 
 * Transferable Named Account (human-friendly account name)
@@ -96,10 +96,10 @@ BitShares can be made to function as a software, a network, a ledger, a bank, an
   - *Use Cases* (Event tickets, Reward points, privatized SmartCoins, Predictions Market, more).
   - How to profit (i.e.,Fee pools)
 	 
-* BitAsset - bitUSD, bitEUR, bitCNY, and others.       
+* BitAsset - USD, EUR, CNY, and others.       
 * **Delegated Proof of State Consensus (DPOS)** 
   
-  - Under DPOS, BTS Holder has influence.
+  - Under DPOS, LLC Holder has influence.
   - A robust and flexible consensus protocol.  
   
 * Block Production by Elected witnesses
@@ -111,22 +111,22 @@ BitShares can be made to function as a software, a network, a ledger, a bank, an
 Transactions and Performance
 ===============================
 
-Bitshares Block Explorer
+Localcoin Block Explorer
 -------------------------------
 
-BitShares Explorer shows BitShares Blockchain information. You can observe BitShares Blockchain *Health* Status (head_block_num, head_block_age, chain_id, etc.), how transactions processing, assets volume, and members.
+LocalCoin Explorer shows LocalCoin Blockchain information. You can observe LocalCoin Blockchain *Health* Status (head_block_num, head_block_age, chain_id, etc.), how transactions processing, assets volume, and members.
 
 If you would like to see more detailed information, the Open Explorer offers other information tabs (i.e., Operations, Proxies, Markets, SmartCoins, UIAs, and Holders) to view.
 
 - `Cryptofresh  <https://www.cryptofresh.com/>`_
 - `Open Explorer <http://open-explorer.io/>`_
-- `bts.ai <https://bts.ai/>`_
+- `llc.ai <https://llc.ai/>`_
 
 
 Blockchain Activity
 ---------------------
 
-Blockchain Activity Matrix shows different tokens (assets) *Activity*, *Value*, and *Index*. It's interesting to check the CUI index is Capacity Utilization Index (a rate of blockchain daily activity to total blockchain capacity) to see how much numbers BitShares has.
+Blockchain Activity Matrix shows different tokens (assets) *Activity*, *Value*, and *Index*. It's interesting to check the CUI index is Capacity Utilization Index (a rate of blockchain daily activity to total blockchain capacity) to see how much numbers LocalCoin has.
 
 - `Block'tivity <http://blocktivity.info/>`_
   

@@ -1,8 +1,8 @@
 
-.. _bitshares-api:
+.. _localcoin-api:
 
 ***********************
-BitShares API index
+LocalCoin API index
 ***********************
 
 .. toctree::

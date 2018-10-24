@@ -20,7 +20,7 @@ Specifically, the architecture of the Ethereum blockchain as executing Turing-co
 - Scalability: Every node must execute every contract.
 - Flexibility: Giving resources to a particular piece of code means that code cannot be upgraded or bugfixed; the new version will be a different piece of code with no access to the old version's resources.
 
-Project Black Lizard involves a substantial rewrite of the BitShares blockchain database and transactions.
+Project Black Lizard involves a substantial rewrite of the LocalCoin blockchain database and transactions.
 
 From the business side, Project Black Lizard has two goals:
 
@@ -33,7 +33,7 @@ What is an app?
 
 A Black Lizard app is any DAC, other than Black Lizard itself, which is hosted on the Black Lizard blockchain.
 
-Entities on the Black Lizard blockchain that do not belong to any app are platform level entities. For example, the core asset (Black Lizard equivalent of BTS), BitAssets and UIA's unassociated with an app are considered platform assets.
+Entities on the Black Lizard blockchain that do not belong to any app are platform level entities. For example, the core asset (Black Lizard equivalent of LLC), BitAssets and UIA's unassociated with an app are considered platform assets.
 
 What are the hard problems?
 ----------------------------------------------------
@@ -167,7 +167,7 @@ An app has app delegates and app equity shares. App equity shares are a UIA whic
 
 If `app_equity_can_vote_for_delegates` flag is set in the app record, app equity shares can vote for app delegates. If `app_equity_max_inflation` is set to a number greater than zero, app delegates can earn equity by signing off on app state. The `app_num_delegates` field tells how many delegates the app has -- an app can have a single delegate.
 
-App delegates collectively have authority over the semantics of the app. In particular, platform assets (i.e. the core asset, BitAssets or UIA's) sent to the app ID are redistributed among users of the app according to the consensus of the app delegates. Thus you can have an app for e.g. a prediction market which takes BitUSD from some users and redistributes to other users based on arbitrary things.
+App delegates collectively have authority over the semantics of the app. In particular, platform assets (i.e. the core asset, BitAssets or UIA's) sent to the app ID are redistributed among users of the app according to the consensus of the app delegates. Thus you can have an app for e.g. a prediction market which takes USD from some users and redistributes to other users based on arbitrary things.
 
 Any app delegate can initiate a transfer from the app's operational funds. Such a transfer is included in the signed state as well. This is the only way for funds to move out of an app's operational balance.
 
@@ -177,7 +177,7 @@ The app state is a signed state which a majority of app delegates have approved.
 
 There is a separate `pay_app_fee` operation. The `pay_app_fee` operation has similar semantics as a transfer to the app account. except it remains active even if the block has been vetoed by the app in question. For apps where fully evaluating a transaction is very expensive, `pay_app_fee` allows app delegates to be assured the transaction publisher will reimburse them for the evaluation costs even if they veto the transaction (by definition, app delegates don't know a transaction won't be vetoed until they evaluate it).
 
-In other words, once BitUSD or core shares are released from the app account's balance, it becomes fungible with all other BitUSD. If a majority of app delegates later decide that the BitUSD shouldn't have been distributed after all, there's no way for the app to get the BitUSD back -- if the platform allowed them to do so, we could end up unwinding many unrelated transactions the BitUSD participated in, causing loss of funds to innocent third parties! The only way to be sure the majority of app delegates will never decide in the future to veto it, is to wait until a majority have passed on their opportunity to veto.
+In other words, once USD or core shares are released from the app account's balance, it becomes fungible with all other USD. If a majority of app delegates later decide that the USD shouldn't have been distributed after all, there's no way for the app to get the USD back -- if the platform allowed them to do so, we could end up unwinding many unrelated transactions the USD participated in, causing loss of funds to innocent third parties! The only way to be sure the majority of app delegates will never decide in the future to veto it, is to wait until a majority have passed on their opportunity to veto.
 
 Notes:
 
@@ -205,7 +205,7 @@ Distribution of app income
 
 App delegates should regularly send operational funds designated as profits to the app's equity UIA address. The platform will then distribute these proportionally to the equity holders. Profits may come from fees or other sources depending on the app's business model.
 
-The question is how to efficiently distribute the equity -- which is effectively the same problem as distributing yield. (I.e., yield could be viewed as the DAC sending BitUSD-denominated fees to the BitUSD asset's address for proportional distribution to BitUSD holders.)
+The question is how to efficiently distribute the equity -- which is effectively the same problem as distributing yield. (I.e., yield could be viewed as the DAC sending USD-denominated fees to the USD asset's address for proportional distribution to USD holders.)
 
 The simplest way is to iterate through all equity asset balances and increment them appropriately. The problem with this approach is it places all the resource load for evaluation in a single block. The solution is lazy evaluation. For each balance, as well as the balance amount and asset ID, we should track when the balance last changed. If the balance has been affected by a dividend since it last moved, it is marked as dirty.
 

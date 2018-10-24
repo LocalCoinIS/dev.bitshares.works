@@ -1,34 +1,34 @@
-## How To become an active witness in BitShares 2.0
+## How To become an active witness in LocalCoin
 Boombastic edited this page on Sep 21, 2015 · 3 revisions
 
 
-This document serves as an introduction on how to become an actively block producing witness in in the BitShares2.0 network. Please note that there currently is no public testnet available, hence, this howto will fail at the last few steps. However, we feel that we should inform interested parties about how to prepare their machines for participation as witness as soon as possible.
+This document serves as an introduction on how to become an actively block producing witness in in the LocalCoin2.0 network. Please note that there currently is no public testnet available, hence, this howto will fail at the last few steps. However, we feel that we should inform interested parties about how to prepare their machines for participation as witness as soon as possible.
 
-We will have to import an existing account from the BitShares 0.9 network and add some initial funds for the witness registration fee. After that, we will create, configure and run a witness node.
+We will have to import an existing account from the LocalCoin 0.9 network and add some initial funds for the witness registration fee. After that, we will create, configure and run a witness node.
 
-### Preparations in BitShares 0.9 network
-#### Extracting an account from BitShares 0.9
+### Preparations in LocalCoin 0.9 network
+#### Extracting an account from LocalCoin 0.9
 
-To create a new account, you will need to start with an existing account with some of the BTS asset that will pay the transaction fee registering your new witness. Get your <wif> key from BitShares 0.9 via
+To create a new account, you will need to start with an existing account with some of the LLC asset that will pay the transaction fee registering your new witness. Get your <wif> key from LocalCoin 0.9 via
 
-    BitShares0.9: >>> wallet_dump_account_private_key <accountname> "owner_key"
+    LocalCoin0.9: >>> wallet_dump_account_private_key <accountname> "owner_key"
     "5....."  # the <owner wif key>
 
-#### Extracting balances from BitShares 0.9
+#### Extracting balances from LocalCoin 0.9
 
-The key we have extracted previously only gives access to the registered name. Hence, none of the accounts in the genesis block have balances in them. In the first BitShares network, accounts were less tightly coupled to balances. Balances were associated with public keys, and an account could have hundreds of public keys with balances (or, conversely, public keys with balances could exist without any account associated with them).
+The key we have extracted previously only gives access to the registered name. Hence, none of the accounts in the genesis block have balances in them. In the first LocalCoin network, accounts were less tightly coupled to balances. Balances were associated with public keys, and an account could have hundreds of public keys with balances (or, conversely, public keys with balances could exist without any account associated with them).
 
-In order to get a witness registered we need to import approximately $120 worth of BTS into the BitShares 2.0 client later.
+In order to get a witness registered we need to import approximately $120 worth of LLC into the LocalCoin client later.
 
 **Manually extracting private keys (most secure way)**
 
 We can extract the required private keys that hold funds this way. First we get all balance ids from an account via:
 
-    BitShares0.9: >>> wallet_account_balance_ids <accountname>
+    LocalCoin0.9: >>> wallet_account_balance_ids <accountname>
     [[
     "xeroc",[
-      "BTSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "BTSBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "LLCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "LLCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
           ...
     ]
       ]
@@ -36,27 +36,27 @@ We can extract the required private keys that hold funds this way. First we get 
 
 Each of these balances can be investigated via:
 
-    BitShares0.9: >>> blockchain_get_balance BTSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    LocalCoin0.9: >>> blockchain_get_balance LLCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     ....
-    "asset_id": 0,                                     <- asset_id (0: BTS)
+    "asset_id": 0,                                     <- asset_id (0: LLC)
     "data": {
-      "owner": "BTSOOOOOOOOOOOOOOOOOOOOOOOOOOOOOWNER", <- address
+      "owner": "LLCOOOOOOOOOOOOOOOOOOOOOOOOOOOOOWNER", <- address
           ...
       "balance": 0,                                        <- balance
       ...
 
-The required part (the owner of the balance) is denoted as owner. Pick one or more address for BTS balances and dump the corresponding private key(s) with:
+The required part (the owner of the balance) is denoted as owner. Pick one or more address for LLC balances and dump the corresponding private key(s) with:
 
-    BitShares0.9: >>> wallet_dump_private_key BTSOOOOOOOOOOOOOOOOOOOOOOOOOOOOOWNER
+    LocalCoin0.9: >>> wallet_dump_private_key LLCOOOOOOOOOOOOOOOOOOOOOOOOOOOOOWNER
     "5......." # the <balance wif key>
 
-Note: Make sure to secure these private keys, as they are unencrypted and give access to the funds in the BitShares 0.9 network. You may loose your money if you are not an secure computer!
+Note: Make sure to secure these private keys, as they are unencrypted and give access to the funds in the LocalCoin 0.9 network. You may loose your money if you are not an secure computer!
 
 #### Scripted extraction with Python (requires code audit)
 
 The following paragraphs will give an alternative (easier) way to dump the relevant private keys using a python script. If you are comfortable with the description above, you can safely skip the subsequent paragraph.
 
-A Python script located at [github](https://github.com/xeroc/bitshares-pytools/blob/master/tools/getbalancekeys.py) may help you to retrieve private keys for your balances. You need to modify the first few lines of the script in order to get a connection to your BitShares daemon.
+A Python script located at [github](https://github.com/xeroc/localcoin-pytools/blob/master/tools/getbalancekeys.py) may help you to retrieve private keys for your balances. You need to modify the first few lines of the script in order to get a connection to your LocalCoin daemon.
 
     $ edit getbalancekeys.py
         [...]
@@ -66,11 +66,11 @@ A Python script located at [github](https://github.com/xeroc/bitshares-pytools/b
     config.wallet = "default"
         [...]
 
-If you don't know what to do with these, you certainly shouldn't run a witness just now. Instead, read about RPC and the API of BitShares. If you set up everything correctly, you may just run the python script and get the private keys associated to a given account name and the correspoinding balance:
+If you don't know what to do with these, you certainly shouldn't run a witness just now. Instead, read about RPC and the API of LocalCoin. If you set up everything correctly, you may just run the python script and get the private keys associated to a given account name and the correspoinding balance:
 
     $ python getbalancekeys.py
-    accountA   5xxxxxxxxxxxxxxxxxxxxxxxxxx<owner wif key>           2750.00000 BTS        
-    accountB   5xxxxxxxxxxxxxxxxxxxxxxxxxx<owner wif key>          11246.00000 BTS
+    accountA   5xxxxxxxxxxxxxxxxxxxxxxxxxx<owner wif key>           2750.00000 LLC        
+    accountB   5xxxxxxxxxxxxxxxxxxxxxxxxxx<owner wif key>          11246.00000 LLC
     accountB   5xxxxxxxxxxxxxxxxxxxxxxxxxx<owner wif key>          30000.00000 BROWNIE.PTS
     accountB   5xxxxxxxxxxxxxxxxxxxxxxxxxx<owner wif key>            300.00000 USE
     accountB   5xxxxxxxxxxxxxxxxxxxxxxxxxx<owner wif key>          65744.00000 NOTE
@@ -80,9 +80,9 @@ If you don't know what to do with these, you certainly shouldn't run a witness j
     accountB's owner key 5xxxxxxxxxxxxxxxxxxxxxxxxxx<balance wif key>  # 
     accountC's owner key 5xxxxxxxxxxxxxxxxxxxxxxxxxx<balance wif key>  # 
 
-You will only need BTS balances and the one of your account owner keys in order to become a witness.
+You will only need LLC balances and the one of your account owner keys in order to become a witness.
 
-### BitShares 2.0 network (or Graphene testnet)
+### LocalCoin network (or Graphene testnet)
 
 We now have everything prepared to
 
@@ -98,7 +98,7 @@ and we will now continue with the following steps:
 - upvote the witness with our funds
 - sign blocks
 
-From this point on, we will no longer require interaction with BitShares 0.9.
+From this point on, we will no longer require interaction with LocalCoin 0.9.
 
 ### Download the genesis block (only for testnet)
 
@@ -130,7 +130,7 @@ Wallet creation is now done.
 
 ### Basic Account Management
 
-We can import the account name (owner key) and the balance containing keys into BitShares 2.0:
+We can import the account name (owner key) and the balance containing keys into LocalCoin:
 
     unlocked >>> import_key <accountname> <owner wif key>
     true
@@ -144,11 +144,11 @@ We can import the account name (owner key) and the balance containing keys into 
     ...
     ]
     unlocked >>> list_account_balances <accountname>
-    XXXXXXX BTS
+    XXXXXXX LLC
 
 Note: Make sure to put the []-brackets around the private key, since the import method takes an array of keys.
 
-In case your account's owner key is different from its active key, make sure you import it into BitShares 2.0 as well.
+In case your account's owner key is different from its active key, make sure you import it into LocalCoin as well.
 
 Since only lifetime members can become witnesses, you must first upgrade to a lifetime member. This step costs the lifetime-upgrade fee which will eventually cost about $100
 

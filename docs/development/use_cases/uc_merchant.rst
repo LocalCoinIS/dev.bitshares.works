@@ -6,8 +6,8 @@ Merchants
 *****************
 
 **Merchants** make use of the currency-denomintated assets of a Graphene network
-(e.g. BitShares). Similar to traditional payment solutions they let their
-customers pay using bitUSD, bitEUR, or any other *stable* blockchain asset.
+(e.g. LocalCoin). Similar to traditional payment solutions they let their
+customers pay using USD, EUR, or any other *stable* blockchain asset.
 
 .. contents:: Table of Contents
    :local:
@@ -153,7 +153,7 @@ to the user.
        "to" : "merchant_account_name",
        "to_label" : "Merchant Name",
        "memo" : "Invoice #1234",
-       "currency": "BTS",
+       "currency": "LLC",
        "line_items" : [
             { "label" : "Something to Buy", "quantity": 1, "price" : "1000.00 SYMBOL" },
             { "label" : "10 things to Buy", "quantity": 10, "price" : "1000.00 SYMBOL" },
@@ -224,8 +224,8 @@ Example Python script
     from binascii import hexlify, unhexlify
 
     invoice = {
-        "to": "bitshareseurope",
-        "to_label": "BitShares Europre",
+        "to": "localcoineurope",
+        "to_label": "LocalCoin Europre",
         "currency": "EUR",
         "memo": "Invoice #1234",
         "line_items": [
@@ -233,12 +233,12 @@ Example Python script
             {"label": "10 things to Buy", "quantity": 10, "price": "1.00"}
         ],
         "note": "Payment for reading awesome documentation",
-        "callback": "https://bitshares.eu/complete"
+        "callback": "https://localcoin.eu/complete"
     }
 
     compressed = lzma.compress(bytes(json.dumps(invoice), 'utf-8'), format=lzma.FORMAT_ALONE)
     b58 = base58encode(hexlify(compressed).decode('utf-8'))
-    url = "https://bitshares.openledger.info/#/invoice/%s" % b58
+    url = "https://localcoin.openledger.info/#/invoice/%s" % b58
 
     print(url)
 

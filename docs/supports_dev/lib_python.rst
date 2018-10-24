@@ -5,12 +5,12 @@
 Python Support  
 ********************************
 
-This section collects Python BitShares support information
+This section collects Python LocalCoin support information
 
 
-* `Python Library for BitShares: GitHub <https://github.com/bitshares/python-bitshares#python-library-for-bitshares>`_
-  - Fully featured client-side library for the BitShares Blockchain - written entirely in python. 
-* `Python-Bitshares 0.1 Documentation <http://docs.pybitshares.com/>`_ - http://pybitshares.com/
+* `Python Library for LocalCoin: GitHub <https://github.com/localcoin/python-localcoin#python-library-for-localcoin>`_
+  - Fully featured client-side library for the LocalCoin Blockchain - written entirely in python. 
+* `Python-Localcoin 0.1 Documentation <http://docs.pylocalcoin.com/>`_ - http://pylocalcoin.com/
 
 
 

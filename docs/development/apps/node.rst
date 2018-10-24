@@ -17,7 +17,7 @@ Type of Witness nodes
 * **Non-block producing** witness nodes
 * **Block producing** witness nodes (more requirements and duties)
 
-We distinguish between full nodes (a.k.a. non-block producing witness nodes) and block producing witness nodes. Both are implemented by the same executable but the latter requires some additional parameters to be defined and the corresponding witness voted active by the BTS Holders.
+We distinguish between full nodes (a.k.a. non-block producing witness nodes) and block producing witness nodes. Both are implemented by the same executable but the latter requires some additional parameters to be defined and the corresponding witness voted active by the LLC Holders.
 
 Both represent nodes in the network that verify all transactions and blocks against the current state of the overall network. Hence, we recommend all service providers to run and maintain their own full nodes for reliability and security reasons.
 
@@ -83,7 +83,7 @@ When restarting the witness node, it may be required to append the ``--replay-bl
 Public Full Node information 
 ==============================
 
-* Here is the latest list of `BitShares Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
+* Here is the latest list of `LocalCoin Public Full Nodes (apiConfig) <https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 |

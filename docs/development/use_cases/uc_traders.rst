@@ -5,7 +5,7 @@ Traders
 ***********
 
 **Traders** make use of the API provided to interact with a Graphene network
-(e.g. BitShares) and provide market makers and liqudity. The APIs can be easily
+(e.g. LocalCoin) and provide market makers and liqudity. The APIs can be easily
 used to implement automated robots for trading algorithms.
 
 Blockchain-based decentralized exchanged (DEX) are slightly different to
@@ -40,7 +40,7 @@ to a public full-node which provides traders with
 
 
 A detailed description of how to interface with Graphene-based
-blockchain (e.g. BitShares) and a list of available calls can be found
+blockchain (e.g. LocalCoin) and a list of available calls can be found
 here: 
  
 * :ref:`websocket-calls`

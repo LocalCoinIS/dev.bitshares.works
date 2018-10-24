@@ -1677,7 +1677,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="config_8hpp_1a8c0af75f3a0235a3bc25e19c73fa1f48" prot="public" static="no">
         <name>GRAPHENE_SYMBOL</name>
-        <initializer>&quot;BTS&quot;</initializer>
+        <initializer>&quot;LLC&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1688,7 +1688,7 @@
       </memberdef>
       <memberdef kind="define" id="config_8hpp_1a3b5980d1a4071e8a4aac69cb6710eb2f" prot="public" static="no">
         <name>GRAPHENE_ADDRESS_PREFIX</name>
-        <initializer>&quot;BTS&quot;</initializer>
+        <initializer>&quot;LLC&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -2326,7 +2326,7 @@
       </memberdef>
       <memberdef kind="define" id="config_8hpp_1a682504a298ffb5a1c352c7505d05bbda" prot="public" static="no">
         <name>GRAPHENE_CURRENT_DB_VERSION</name>
-        <initializer>&quot;BTS2.17&quot;</initializer>
+        <initializer>&quot;LLC2.17&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

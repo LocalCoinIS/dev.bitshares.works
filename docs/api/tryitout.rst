@@ -2,20 +2,20 @@
 .. _bis-explorer-api-tryitout:
 
 ***********************************
-BitShares Explorer API - Try it out!
+LocalCoin Explorer API - Try it out!
 ***********************************
 
 
-The below links take you to BitShares API calls list page. They are ES Wrappers (i.e., Wrapper to expose **Elasticsearch** Bitshares node data to clients). On the page, you can select a call and set value(s) and try it out!
+The below links take you to LocalCoin API calls list page. They are ES Wrappers (i.e., Wrapper to expose **Elasticsearch** Localcoin node data to clients). On the page, you can select a call and set value(s) and try it out!
 
 
-* BitShares Explorer API uses to query the **MAINNET** 
+* LocalCoin Explorer API uses to query the **MAINNET** 
 
   - http://185.208.208.184:5000/apidocs/  
 
 
  
-* BitShares Explorer Testnet API uses to query the **TESTNET** 
+* LocalCoin Explorer Testnet API uses to query the **TESTNET** 
 
   - http://148.251.10.231:5000/apidocs/ 
   
@@ -29,7 +29,7 @@ The below links take you to BitShares API calls list page. They are ES Wrappers 
 3. Click [Try it Out!]
 
 .. image:: ../../_static/structures/call-tryitout-1.png
-        :alt: BitShares API Call
+        :alt: LocalCoin API Call
         :width: 650px
         :align: center
 
@@ -43,7 +43,7 @@ The below links take you to BitShares API calls list page. They are ES Wrappers 
   
 
 .. image:: ../../_static/structures/call-tryitout-2.png
-        :alt: BitShares API Call
+        :alt: LocalCoin API Call
         :width: 650px
         :align: center
 

@@ -16,4 +16,4 @@ At present, the light wallet simply uses the chain ID specified by its backing f
 ***
 
 (ref)
-- https://github.com/bitshares/bitshares-core/wiki/chain-locked-tx
+- https://github.com/localcoin/localcoin-core/wiki/chain-locked-tx

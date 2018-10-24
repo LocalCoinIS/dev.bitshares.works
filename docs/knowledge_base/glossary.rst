@@ -12,9 +12,9 @@ Glossary
 ---------------
 
  
-BitShares Blockchain
+LocalCoin Blockchain
 ----------------------
-- BitShares
+- LocalCoin
 
 
 
@@ -24,7 +24,7 @@ Blockchain
 
 
 
-BTS Holder
+LLC Holder
 ----------------------
 - shareholder / stakeholders
 
@@ -49,11 +49,11 @@ Docker
 
 ElasticSearch Plugin
 ----------------------
-- A "plugin" enables blockchain data to be stored in the elastic search database. A separate instruction guide exists in the -core/wiki. Once data is in ES database, it can be easily access through kibana (e.g. using kibana.bitshares.eu). Many libraries exist to read data from elastic search.
+- A "plugin" enables blockchain data to be stored in the elastic search database. A separate instruction guide exists in the -core/wiki. Once data is in ES database, it can be easily access through kibana (e.g. using kibana.localcoin.eu). Many libraries exist to read data from elastic search.
 
-Native Core Token BTS
+Native Core Token LLC
 ----------------------
-- BTS
+- LLC
 
 
 Nodes (full node)
@@ -87,7 +87,7 @@ Units
 
 unit test
 ----------------------
-- In BitShares-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
+- In LocalCoin-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
 
 
 

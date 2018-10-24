@@ -17,7 +17,7 @@
     :maxdepth: 2
 
     development/installation
-    bts_guide/accounts/bts_account
+    llc_guide/accounts/llc_account
     development/integration
     development/interaction
     development/testnets
@@ -44,8 +44,8 @@
     :maxdepth: 2
     :caption: Guides
 
-    bts_guide/tutorials/index
-    bts_guide/index_faq
+    llc_guide/tutorials/index
+    llc_guide/index_faq
     knowledge_base/glossary
     knowledge_base/index_kb
 
@@ -56,7 +56,7 @@
     :caption: References
 
     references/info_comunities
-    references/info_bts_events
+    references/info_llc_events
     references/tech_articles
     references/githubrepo
 

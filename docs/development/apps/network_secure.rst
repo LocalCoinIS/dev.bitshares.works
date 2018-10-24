@@ -16,7 +16,7 @@ Set up
 ----------------
 
 .. image:: ../../../../_static/structures/secure-setup.png
-        :alt: BitShares Architecture
+        :alt: LocalCoin Architecture
         :width: 650px
         :align: center
 		
@@ -47,7 +47,7 @@ Hence we will work with the following IPs and open the corresponding RPC ports
 Trusted Full Node
 ------------------------
 
-The trusted full node is your entry point to the BitShares P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
+The trusted full node is your entry point to the LocalCoin P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
 
 ::
 

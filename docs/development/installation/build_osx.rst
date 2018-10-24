@@ -12,7 +12,7 @@ Building on OS X
 ----------------
 
 
-BitShares OS X Build Instructions
+LocalCoin OS X Build Instructions
 ==================================
 
 1. Install XCode and its command line tools
@@ -43,19 +43,19 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
 
     brew install google-perftools
 
-7. Clone the Bitshares repository::
+7. Clone the Localcoin repository::
 
-    git clone https://github.com/bitshares/bitshares-core.git
-    cd bitshares-core
+    git clone https://github.com/localcoin/localcoin-core.git
+    cd localcoin-core
 
-8. Build BitShares::
+8. Build LocalCoin::
 
     git submodule update --init --recursive
     cmake .
     make
 
 	
-.. Notes:: As mentioned elsewhere, Bitshares depends on the third-party libraries "Boost" and "OpenSSL". These libraries need to be in certain version ranges. At the moment, Boost needs to be **between 1.57 and 1.65**. OpenSSL needs to be in the **1.0.x range**.
+.. Notes:: As mentioned elsewhere, Localcoin depends on the third-party libraries "Boost" and "OpenSSL". These libraries need to be in certain version ranges. At the moment, Boost needs to be **between 1.57 and 1.65**. OpenSSL needs to be in the **1.0.x range**.
 
 
 ------------

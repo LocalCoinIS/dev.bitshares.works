@@ -5,7 +5,7 @@
 Evaluators
 *******************************************
 
-This section shows what types of evaluators BitShare-Core offers.
+This section shows what types of evaluators LocalCoin-Core offers.
 
 File directory: (..\libraries/chain/include/graphene/chain/xxx.hpp)
 
@@ -568,7 +568,7 @@ generic_evaluator
       void prepare_fee(account_id_type account_id, asset fee);
 
       /**
-       * Convert the fee into BTS through the exchange pool.
+       * Convert the fee into LLC through the exchange pool.
        *
        * Reads core_fee_paid field for how much CORE is deducted from the exchange pool,
        * and fee_from_account for how much USD is added to the pool.

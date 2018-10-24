@@ -14,15 +14,15 @@
 
 #### Issue
 
-proposal_delete_operation doesn't recursively check the authorities in case when multi-sig authority involved. See https://bitsharestalk.org/index.php/topic,20861.msg271080.html#msg271080, it's a try to delete an incorrect committee proposal, but failed due to this reason:
+proposal_delete_operation doesn't recursively check the authorities in case when multi-sig authority involved. See https://localcointalk.org/index.php/topic,20861.msg271080.html#msg271080, it's a try to delete an incorrect committee proposal, but failed due to this reason:
 10 assert_exception: Assert Exception required_approvals->find(o.fee_paying_account) != required_approvals->end(): Provided authority is not authoritative for this proposal. {"provided":"1.2.12376","required":["1.2.0"]}
 This operation allows the early veto of a proposed transaction. It may be used by any account which is a required authority on the proposed transaction, when that account's holder feels the proposal is ill-advised and he decides he will never approve of it and wishes to put an end to all discussion of the issue.
 Imo it's better to set a threshold equals to (total_weight - approve_threshold) for proposal_delete_operation, so the proposal will only be deleted if enough authorities agree to delete the proposal.
 
 #### Findings/Result
 
-- The operation will delete the proposal from the database. text is here: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
-- and actual delete is at: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
+- The operation will delete the proposal from the database. text is here: https://github.com/localcoin/localcoin-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
+- and actual delete is at: https://github.com/localcoin/localcoin-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
 
 *** 
 
@@ -55,7 +55,7 @@ Actually it should be `proposal_update_operation` (and if to add an account auth
 
 #### Issue
 
-In [this line](https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L295), we throw an exception with (proposal) but we might have deleted proposal in a [previous line](https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L274).
+In [this line](https://github.com/localcoin/localcoin-core/blob/master/libraries/chain/db_block.cpp#L295), we throw an exception with (proposal) but we might have deleted proposal in a [previous line](https://github.com/localcoin/localcoin-core/blob/master/libraries/chain/db_block.cpp#L274).
 
 #### Findings/Result
 

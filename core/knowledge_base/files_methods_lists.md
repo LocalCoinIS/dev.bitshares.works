@@ -1,20 +1,20 @@
 
-## BitShares Architecture Maps
-- [GitHub Repositories and Entities (pdf)](../knowledge_base/shared_files/BitShares_Architecture-V3.pdf)
-- [CLI Wallet Clients and Nodes (pdf)](../knowledge_base/shared_files/BitShares_Architecture-Cli-v2.pdf)
+## LocalCoin Architecture Maps
+- [GitHub Repositories and Entities (pdf)](../knowledge_base/shared_files/LocalCoin_Architecture-V3.pdf)
+- [CLI Wallet Clients and Nodes (pdf)](../knowledge_base/shared_files/LocalCoin_Architecture-Cli-v2.pdf)
 
 ## Structures
-- [Block Structure](../knowledge_base/shared_files/structures/BitShares-Block-Structurev1.pdf)
+- [Block Structure](../knowledge_base/shared_files/structures/LocalCoin-Block-Structurev1.pdf)
 
 *****
 
-## BitShares-Core Libraries All Folders and Files Lists
+## LocalCoin-Core Libraries All Folders and Files Lists
 
-- [BitShares-Core Libraries All Folders and Files Lists](../knowledge_base/shared_files/BitShares-Core-Libraries-List20180725.pdf)
+- [LocalCoin-Core Libraries All Folders and Files Lists](../knowledge_base/shared_files/LocalCoin-Core-Libraries-List20180725.pdf)
 
 | dir | folders |  |  |
 |---|---|---|---|
-| bitshares-core/libraries/  | app, chain, db, deterministic_openssl_rand, egenesis, net, plugin, utilities, and wallet  |  |
+| localcoin-core/libraries/  | app, chain, db, deterministic_openssl_rand, egenesis, net, plugin, utilities, and wallet  |  |
 
 
 ## Code Libraries Files and Methods Lists

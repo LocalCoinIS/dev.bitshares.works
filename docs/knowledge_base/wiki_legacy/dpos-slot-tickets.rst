@@ -6,12 +6,12 @@ DPOS Slot Tickets
 Status
 ---------
 
-This is my (@theoreticalbts) getting some ideas down on paper regarding DPOS. It's not really up-to-date with my latest thinking. So anyone reading this shouldn't take it as a serious proposal -- it's more me thinking out loud.
+This is my (@theoreticalllc) getting some ideas down on paper regarding DPOS. It's not really up-to-date with my latest thinking. So anyone reading this shouldn't take it as a serious proposal -- it's more me thinking out loud.
 
 DPOS slot tickets
 ------------------------
 
-Now that we are re-visiting the DPOS algorithm for Graphene, I (@theoreticalbts) would like to propose a modification to decentralize with dynamic delegates. The core of this proposal is an algorithm which results in a delegate having a chance to produce a block proportional to their support (the amount of stake voting for them).
+Now that we are re-visiting the DPOS algorithm for Graphene, I (@theoreticalllc) would like to propose a modification to decentralize with dynamic delegates. The core of this proposal is an algorithm which results in a delegate having a chance to produce a block proportional to their support (the amount of stake voting for them).
 
     Delegates can have planned downtime without any protocol modifications
     No fixed number of delegates, fully decentralized
@@ -94,7 +94,7 @@ Some numerical experimentation shows that the following choice of `f`, which I w
 ***
 
 (ref)
-- https://github.com/bitshares/bitshares-core/wiki/dpos-slot-tickets
+- https://github.com/localcoin/localcoin-core/wiki/dpos-slot-tickets
 
 (Vikram Rajkumar edited this page on Jun 9, 2015 · 1 revision )
 
