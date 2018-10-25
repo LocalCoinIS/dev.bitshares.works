@@ -60,7 +60,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'LOcalCoin Developers Portal'
+project = u'LocalCoin Developers Portal'
 copyright = u'2018 LocalCoin Blockchain Foundation'
 
 # The version info for the project you're documenting, acts as replacement for
