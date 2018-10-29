@@ -32,7 +32,7 @@ The Graphene toolkit comprises several tools that allow interaction with the blo
   
 * Guide (LocalCoin UI wiki) 
  
-  - `How an Exchange can integrate their services to the LocalCoin UI Wallet - Gateway Integration Requirements <https://github.com/localcoin/localcoin-ui/wiki/Gateway-Integration-Requirements>`_ : from LocalCoin UI wiki	
+  - `How an Exchange can integrate their services to the LocalCoin UI Wallet - Gateway Integration Requirements <https://github.com/localcoinis/localcoin-ui/wiki/Gateway-Integration-Requirements>`_ : from LocalCoin UI wiki	
 
 |
 

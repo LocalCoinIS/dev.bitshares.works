@@ -141,7 +141,7 @@ The LocalCoin blockchain users are requires to register each account with a uniq
 +-------------+---------------------------------------------------------+ 
 
    
-- A programmatic description of all fields can be found in the `sources <https://github.com/localcoin/localcoin-core/blob/master/libraries/chain/protocol/types.cpp>`_
+- A programmatic description of all fields can be found in the `sources <https://github.com/localcoinis/localcoin-core/blob/master/libraries/chain/protocol/types.cpp>`_
 
 --------------
    

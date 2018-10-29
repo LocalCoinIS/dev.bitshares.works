@@ -83,7 +83,7 @@ When restarting the witness node, it may be required to append the ``--replay-bl
 Public Full Node information 
 ==============================
 
-* Here is the latest list of `LocalCoin Public Full Nodes (apiConfig) <https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
+* Here is the latest list of `LocalCoin Public Full Nodes (apiConfig) <https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 |

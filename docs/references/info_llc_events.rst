@@ -12,7 +12,7 @@ BitFest Amsterdam 2018
 ====================================
 (Saturday 22nd September 2018)
 
-:Peter Conrad:  `LocalCoin Core & Network Performance <../_static/presen_docs/BitFest_LLC_Performance.pdf>`_ (rel: `Performance Test Demonstration <https://github.com/localcoin/localcoin-core/tree/develop/tests/performance>`_ )
+:Peter Conrad:  `LocalCoin Core & Network Performance <../_static/presen_docs/BitFest_LLC_Performance.pdf>`_ (rel: `Performance Test Demonstration <https://github.com/localcoinis/localcoin-core/tree/develop/tests/performance>`_ )
 :Alfredo Garcia:  `The Business of LocalCoin Plugins <../_static/presen_docs/BitFest_Business_Plugins.pdf>`_
 :John M. Jones:  `Trustless Asset Swaps: LocalCoin and HTLC <http://www.jmjatlanta.com/index.php/2018/09/27/localcoin-and-hashed-time-lock-contracts-htlc/>`_
 :Michel Santos: `Life and Times of a LocalCoin Operation <../_static/presen_docs/Life_and_Times_of_a_LocalCoin_Operation.pdf>`_

@@ -45,7 +45,7 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
 
 7. Clone the Localcoin repository::
 
-    git clone https://github.com/localcoin/localcoin-core.git
+    git clone https://github.com/localcoinis/localcoin-core.git
     cd localcoin-core
 
 8. Build LocalCoin::

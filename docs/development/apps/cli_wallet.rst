@@ -26,7 +26,7 @@ Steps
   - LocalCoin offers you to install LocalCoin-Core into different platforms; Ubuntu (x64), OSx, and Windows.  Please refer :ref:`installation-guide`.
 
 - 1b) Use the :ref:`CLI-Wallet tools for Windows (x64)`
-  - This option you do not need to install LocalCoin Core. To obtain the tool, go to a `LocalCoin release page <https://github.com/localcoin/localcoin-core/releases>`_ and download the LocalCoin-Core-\*-x64-cli-tools.zip.
+  - This option you do not need to install LocalCoin Core. To obtain the tool, go to a `LocalCoin release page <https://github.com/localcoinis/localcoin-core/releases>`_ and download the LocalCoin-Core-\*-x64-cli-tools.zip.
 
 
 To reduce compilation time, you can tell the compile infrastructure to only compile the witness node by running.::

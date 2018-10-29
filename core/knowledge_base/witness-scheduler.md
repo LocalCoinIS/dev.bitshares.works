@@ -72,7 +72,7 @@ If every block schedules a witness, our adversary with m malicious witnesses get
 ***
 
 (ref)
-- https://github.com/localcoin/localcoin-core/wiki/witness-scheduler
+- https://github.com/localcoinis/localcoin-core/wiki/witness-scheduler
 
 (Vikram Rajkumar edited this page on Jun 10, 2015 · 1 revision )
 

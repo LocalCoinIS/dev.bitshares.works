@@ -18,7 +18,7 @@ Environmental preparation
 Setup Visual Studio 2015 with Update 1
 ----------------------------------------
 
-*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/localcoin/localcoin-core/issues/389>`_
+*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/localcoinis/localcoin-core/issues/389>`_
 
 * **Download Visual Studio 2015 Update 1**
 
@@ -181,7 +181,7 @@ LocalCoin-Core
  Find and run `Git Bash` from the Start menu. In the open command line interface, execute the following command::
 
     cd /c/llc
-    git clone https://github.com/localcoin/localcoin-core
+    git clone https://github.com/localcoinis/localcoin-core
     cd localcoin-core
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
@@ -189,7 +189,7 @@ LocalCoin-Core
  **Note:**
 
  * Please modify the specific directory according to the actual situation
- * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of localcoin-core. If you need to compile other versions, modify accordingly. Find [LocalCoin Core latest release](https://github.com/localcoin/localcoin-core/releases).
+ * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of localcoin-core. If you need to compile other versions, modify accordingly. Find [LocalCoin Core latest release](https://github.com/localcoinis/localcoin-core/releases).
 
  **At the end of this, your base directory should look like this**::
 
@@ -290,7 +290,7 @@ Note: This is a translation of the document contributed by Abit More. The origin
 
 Also, referenced the below
 
-- https://github.com/localcoin/localcoin-core/wiki/BUILD_WIN32
+- https://github.com/localcoinis/localcoin-core/wiki/BUILD_WIN32
 
 
 

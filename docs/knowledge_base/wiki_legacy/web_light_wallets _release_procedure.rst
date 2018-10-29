@@ -29,7 +29,7 @@ Light wallets
 ------------------
 
 - (one time) Install [NSIS](http://nsis.sourceforge.net/Main_Page)
-- `git clone https://github.com/localcoin/localcoin-2-ui` branch `localcoin`
+- `git clone https://github.com/localcoinis/localcoin-2-ui` branch `localcoin`
 - Add upstream repo `git remote add cnx https://github.com/cryptonomex/graphene-ui`
 - Fetch upstream `git fetch cnx`
 - Merge upstream/master into localcoin branch `git merge cnx/master`
@@ -45,13 +45,13 @@ Light wallets
 - Run installer and test the app
 - Go to localcoin-2 repo
 - Update gui_version, commit, tag and push - this will create a new tag
-- Open https://github.com/localcoin/localcoin-2/releases, create new release under tag created in previous step
+- Open https://github.com/localcoinis/localcoin-2/releases, create new release under tag created in previous step
 - Specify release notes, upload dmg/deb/exe wallets created earlie
 
 Localcoin.org wallet and downloads page
 ----------------------------------------------
 
-- Go to localcoin.gihub.io repo (`git clone https://github.com/localcoin/localcoin.github.io`)
+- Go to localcoin.gihub.io repo (`git clone https://github.com/localcoinis/localcoin.github.io`)
 - Copy `localcoin-2-ui/web/dist/*` to `wallet/`
 - Edit `_includes/download.html` and update download links and gui release date
 - Commit and push

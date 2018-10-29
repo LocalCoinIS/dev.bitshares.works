@@ -30,7 +30,7 @@ The LocalCoin uses the DPOS consensus mechanism to vote for the block forge by t
    
 .. Note:: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
 
-  - `LocalCoin-UI Release <https://github.com/localcoin/localcoin-ui/releases>`_
+  - `LocalCoin-UI Release <https://github.com/localcoinis/localcoin-ui/releases>`_
   - LocalCoin UI wallet:  https://wallet.localcoin.org
   - `Create an Account Guide <http://how.localcoin.works/en/latest/user_guide/create_account.html>`_
 
@@ -125,7 +125,7 @@ To start-off the LocalCoin system, you need to run these programs: normal node `
 
 **3.2 Windows**
 
-The compiled Windows executable is available for download on Github, at https://github.com/localcoin/localcoin-core/releases/latest ,
+The compiled Windows executable is available for download on Github, at https://github.com/localcoinis/localcoin-core/releases/latest ,
 
 The file is `LocalCoin-Core-2.0.xxxxxx-x64-cli-tools.zip` and it can be unzipped. It contains three exe files and two dll files. Here is the :ref:`installation guide: CLI-Wallet on Windows (x64) <cli-tool>`
 
@@ -139,7 +139,7 @@ If you are using a Linux system, you need to compile several of these programs y
 	sudo apt-get update
 	sudo apt-get install autoconf cmake git libboost-all-dev libssl-dev doxygen g++ libcurl4-openssl-dev
 
-	git clone https://github.com/localcoin/localcoin-core.git
+	git clone https://github.com/localcoinis/localcoin-core.git
 	cd localcoin-core
 	git checkout <LATEST_RELEASE_TAG>
 	git submodule update --init --recursive

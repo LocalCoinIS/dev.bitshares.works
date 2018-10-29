@@ -5,7 +5,7 @@
 ***
 
 
-Actually according to chain logic, MPA can be backed by UIA, except that the MPA is owned by `committee-account` , related code is [here](https://github.com/localcoin/localcoin-core/blob/2.0.180425/libraries/chain/asset_evaluator.cpp#L94-L110).
+Actually according to chain logic, MPA can be backed by UIA, except that the MPA is owned by `committee-account` , related code is [here](https://github.com/localcoinis/localcoin-core/blob/2.0.180425/libraries/chain/asset_evaluator.cpp#L94-L110).
 
 
 UIA = User Issued Asset

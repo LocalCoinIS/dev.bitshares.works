@@ -150,6 +150,6 @@ Alice shorted, the price feed moved against her, she was de-leveraged when Bob e
 
 ***
 (ref)
-- https://github.com/localcoin/localcoin-core/wiki/resolvable-bitassets
+- https://github.com/localcoinis/localcoin-core/wiki/resolvable-bitassets
 
 (Vikram Rajkumar edited this page on Jun 9, 2015 · 1 revision)

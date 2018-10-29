@@ -48,8 +48,8 @@ I don't know anything about the range stuff nor the blind_factor stuff.
 - Documentation of new market API #582
 - es_objects plugin #500
 - Add API to query for recent order histories of one account in one market #503
-- https://github.com/localcoin/localcoin-core/issues/171
-- Improve performance of `get_ticker` API #509 https://github.com/localcoin/localcoin-core/issues/509
+- https://github.com/localcoinis/localcoin-core/issues/171
+- Improve performance of `get_ticker` API #509 https://github.com/localcoinis/localcoin-core/issues/509
 - get_top_markets api #512
 - add get_top_markets api call #560
 - add get_top_markets #737

@@ -12,7 +12,7 @@ Code Coverage Testing
    
 -------
 
-* `LocalCoin-Core Test folder on GitHub <https://github.com/localcoin/localcoin-core/tree/master/tests>`_
+* `LocalCoin-Core Test folder on GitHub <https://github.com/localcoinis/localcoin-core/tree/master/tests>`_
 
 
 Code Coverage Testing Information

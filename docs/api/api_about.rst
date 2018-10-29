@@ -30,7 +30,7 @@ In contrast to many existing ecosystems, there is no centralized service that le
 Public Full Node information 
 -----------------------------
 
-* Here is the latest list of `LocalCoin Public Full Nodes (apiConfig) <https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
+* Here is the latest list of `LocalCoin Public Full Nodes (apiConfig) <https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 -----------------

@@ -22,7 +22,7 @@ How to Set up Public Open Testnet
 
 1.1 LocalCoin-Core Testnet branch:: 
 
-    git clone https://github.com/localcoin/localcoin-core.git localcoin-core-testnet
+    git clone https://github.com/localcoinis/localcoin-core.git localcoin-core-testnet
     cd localcoin-core-testnet/
     git checkout testnet
 
@@ -32,13 +32,13 @@ How to Set up Public Open Testnet
 **Blockchain Parameters**
 
 The blockchain parameters can be modified in the
-`libraries/chain/include/graphene/chain/config.hpp <https://github.com/localcoin/localcoin-core/blob/master/libraries/chain/include/graphene/chain/config.hpp>`_ file::
+`libraries/chain/include/graphene/chain/config.hpp <https://github.com/localcoinis/localcoin-core/blob/master/libraries/chain/include/graphene/chain/config.hpp>`_ file::
 
     vim libraries/chain/include/graphene/chain/config.hpp
 
 **Default Seed Node List**
 
-We can add a default list of seed nodes that the witness is supposed to try to connect to in `libraries/app/application.cpp <https://github.com/localcoin/localcoin-core/blob/master/libraries/app/application.cpp>`_ and will add the IP/Address and port of the machine we are going to setup later already::
+We can add a default list of seed nodes that the witness is supposed to try to connect to in `libraries/app/application.cpp <https://github.com/localcoinis/localcoin-core/blob/master/libraries/app/application.cpp>`_ and will add the IP/Address and port of the machine we are going to setup later already::
 
     testnet.localcoin.eu:11010
 
@@ -349,7 +349,7 @@ Since we need to provide a way for people to enter the network/blockchain, we ne
 
 Afterwards, we download the localcoin-ui repository from Cryptonomex and install the Node dependencies::
 
-    git clone https://github.com/localcoin/localcoin-ui
+    git clone https://github.com/localcoinis/localcoin-ui
     cd localcoin-ui/
 
     for I in dl web; do cd $I; npm install; cd ..; done

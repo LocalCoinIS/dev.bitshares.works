@@ -103,6 +103,6 @@ In this case alice returned some of her remaining blind balances back to her pub
 ***
 
 (ref)
-- https://github.com/localcoin/localcoin-core/wiki/StealthTransfers
+- https://github.com/localcoinis/localcoin-core/wiki/StealthTransfers
 
 (Daniel Larimer edited this page on Oct 19, 2015 · 2 revisions)

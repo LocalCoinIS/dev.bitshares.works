@@ -22,7 +22,7 @@ Ubuntu 16.04 LTS (64-bit)
 
 2. Build LocalCoin Core::
 
-    git clone https://github.com/localcoin/localcoin-core.git
+    git clone https://github.com/localcoinis/localcoin-core.git
     cd localcoin-core
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
@@ -66,7 +66,7 @@ Download the Boost tarball for Boost 1.57.0. (*Ubuntu 14.04 ships old version of
 ::
 
     cd ..
-    git clone https://github.com/localcoin/localcoin-core.git
+    git clone https://github.com/localcoinis/localcoin-core.git
     cd localcoin-core
     git submodule update --init --recursive
     cmake -DBOOST_ROOT="$BOOST_ROOT" -DCMAKE_BUILD_TYPE=Release .

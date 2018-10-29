@@ -89,7 +89,7 @@ If you want it to be open for your machine only, replace 0.0.0.0 by localhost.
 Use the Public API node 
 ============================
 
-- Here is the latest list of [Public Full Node](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information
+- Here is the latest list of [Public Full Node](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information
 
 **Create a Wallet (4a)**: 
 

@@ -27,7 +27,7 @@ Accounts
 API
 ============
 
-* `How an Exchange can integrate their services to the LocalCoin UI Wallet - Gateway Integration Requirements <https://github.com/localcoin/localcoin-ui/wiki/Gateway-Integration-Requirements>`_ : from LocalCoin UI wiki
+* `How an Exchange can integrate their services to the LocalCoin UI Wallet - Gateway Integration Requirements <https://github.com/localcoinis/localcoin-ui/wiki/Gateway-Integration-Requirements>`_ : from LocalCoin UI wiki
 * :ref:`How can I enable RPC Logging? <rpc-logging>`
 * :ref:`How to script Websockets by Python <websocket-script-support>`
 
@@ -73,13 +73,13 @@ Monitoring
 
 Performance
 ===========================
-* `How to run the Performance Test <https://github.com/localcoin/localcoin-core/tree/develop/tests/performance>`_
+* `How to run the Performance Test <https://github.com/localcoinis/localcoin-core/tree/develop/tests/performance>`_
 
 Plugin
 ===================
 * :ref:`ElasticSearch Plugin: How to store account history data into an elasticsearch database <elastic-search-plugin>`
 * :ref:`Memory Reduction for Nodes: Help to reduce RAM usage significantly by using witness_node executable options <memory-nodes>`
-* `Plugin Template - (create a demo API hello) <https://github.com/localcoin/localcoin-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
+* `Plugin Template - (create a demo API hello) <https://github.com/localcoinis/localcoin-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
 
 
 
@@ -117,7 +117,7 @@ Wallet / CLI
 * :ref:`How to setup Network and Wallet Configuration <network-setups>`
 * :ref:`How to transferring Funds by using the CLI-Wallet <transfering-funds-cli-wallet>`
 * :ref:`How to import a GUI-Wallet Account into CLI-Wallet <howto-import-gui-wallet-account-cli>`
-* `Where to find LocalCoin Public Full Nodes <https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
+* `Where to find LocalCoin Public Full Nodes <https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 .. _witness-node-guide-tutorials:

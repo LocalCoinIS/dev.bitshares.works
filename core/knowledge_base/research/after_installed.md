@@ -64,7 +64,7 @@ Above plugins limit the operations per account 1000 to save RAM. For this operat
 
 So far, we talked about the Nodes which connect to the network directory and checked the parameters in  the config.ini to customize your connection. This pattern requires IP address to set the endpoint. 
 
-If you do not have own node to run, you can use the public API server (public full node) to connect the LocalCoin blockchain. Here is a latest list of [Public Full Node](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information.
+If you do not have own node to run, you can use the public API server (public full node) to connect the LocalCoin blockchain. Here is a latest list of [Public Full Node](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information.
 
 
 ## Network Configuration
@@ -109,7 +109,7 @@ The Nodes are connected to the network and verify all transactions and block pro
 
 The cli_wallet creates a local [`wallet.json`](/core/wallet/cli_wallet.md#overview) file that contains the encrypted private keys.  The key is required to access the funds and add new data to the blockchain with a signature from a private key. 
 
-Connecting the cli_wallet requires a running full node (not necessarily locally) and connect to it. You might have own node to use. If you do not have it, you can select one of [LocalCoin Public Full Nodes](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67), or nodes that run by _businesses_ or _individuals_.
+Connecting the cli_wallet requires a running full node (not necessarily locally) and connect to it. You might have own node to use. If you do not have it, you can select one of [LocalCoin Public Full Nodes](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67), or nodes that run by _businesses_ or _individuals_.
 
 
 
@@ -200,7 +200,7 @@ You can choose between [Websocket RPC](/core/api/websocket_calls_notifications.m
 
 We show you how you can use the Public API Node in your `cli_wallet` command line. 
 
-- You can find a latest list of [Public Full Node](https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information. 
+- You can find a latest list of [Public Full Node](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information. 
 
 **Example:**  We use the public API node of OpenLedger `wss://localcoin.openledger.info/ws` and connect via secured websocket connection:
 
@@ -349,7 +349,7 @@ Lifetime Members pay an upgrade fee and earn 80% cash back on every fee they pay
 
 #### genesis.json
 										 
-If you are interested to use LocalCoin Testnets later, you will learn about a "genesis.json" file which you can set up the initial state of the network. You will create "my-genesis.json" file to customize to match your needs. (i.e.,[Genesis Block](https://github.com/localcoin/localcoin-core/blob/testnet/genesis.json) - for Testnet).
+If you are interested to use LocalCoin Testnets later, you will learn about a "genesis.json" file which you can set up the initial state of the network. You will create "my-genesis.json" file to customize to match your needs. (i.e.,[Genesis Block](https://github.com/localcoinis/localcoin-core/blob/testnet/genesis.json) - for Testnet).
 
 Here is more information about How to setup LocalCoin [Private Testnet](/core/testnets/private_testnet.md#3-creating-a-genesis-file-for-a-private-testnet) and LocalCoin [Public Testnet](/core/testnets/public_testnet.md#2-genesis-configuration). 
 

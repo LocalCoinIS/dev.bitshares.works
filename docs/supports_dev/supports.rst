@@ -13,7 +13,7 @@ This section purpose is to collect and provide useful information for the LocalC
 
 Python - LocalCoin
 ===============================
-- `Python Library for LocalCoin: GitHub <https://github.com/localcoin/python-localcoin#python-library-for-localcoin>`_
+- `Python Library for LocalCoin: GitHub <https://github.com/localcoinis/python-localcoin#python-library-for-localcoin>`_
 
   - Fully featured client-side library for the LocalCoin Blockchain - written entirely in python. 
 
@@ -38,7 +38,7 @@ Libraries
 ======================
 
 - `LocalCoin-fc: Doxygen Documentation <http://open-explorer.io/doxygen/fc/>`_
-- `LocalCoin-fc: GitHub <https://github.com/localcoin/localcoin-fc#fc>`_
+- `LocalCoin-fc: GitHub <https://github.com/localcoinis/localcoin-fc#fc>`_
 
   - FC stands for fast-compiling c++ library and provides a set of utility libraries useful for the development of asynchronous libraries. 
 
@@ -50,15 +50,15 @@ SDKs
 Tools
 ========================
 
-- `Docker Container <https://github.com/localcoin/localcoin-core/blob/master/README-docker.md>`_
+- `Docker Container <https://github.com/localcoinis/localcoin-core/blob/master/README-docker.md>`_
 
   -  Built-in Dockerfile to support docker containers. This README serves as documentation.
   
-- `localcoinjs <https://github.com/localcoin/localcoinjs#localcoinjs-localcoinjs>`_
+- `localcoinjs <https://github.com/localcoinis/localcoinjs#localcoinjs-localcoinjs>`_
 
   - JavaScript tools for LocalCoin Encryption and Serialization
   
-- `localcoinjs-ws <https://github.com/localcoin/localcoinjs-ws#localcoin-websocket-interface-localcoinjs-ws>`_
+- `localcoinjs-ws <https://github.com/localcoinis/localcoinjs-ws#localcoin-websocket-interface-localcoinjs-ws>`_
 
   - Javascript websocket interface for Localcoin 
   
@@ -78,7 +78,7 @@ Tools
 
 Plugins
 ===========================
-- `Discussion: "Create plugin script" (#1302) <https://github.com/localcoin/localcoin-core/pull/1302>`_
+- `Discussion: "Create plugin script" (#1302) <https://github.com/localcoinis/localcoin-core/pull/1302>`_
 - :ref:`elastic-search-plugin`
 
   - How to store account history data into an elasticsearch database.
@@ -87,7 +87,7 @@ Plugins
 
   - Help to reduce RAM usage significantly by using witness_node executable options.
 
-- `Plugin Template - (create a demo API hello) <https://github.com/localcoin/localcoin-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
+- `Plugin Template - (create a demo API hello) <https://github.com/localcoinis/localcoin-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
   
 
   

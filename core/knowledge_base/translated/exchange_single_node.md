@@ -33,9 +33,9 @@ The LocalCoin uses the DPOS consensus mechanism to vote for the block forge by t
    
    > Note: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
  
-   - [LocalCoin-UI Release](https://github.com/localcoin/localcoin-ui/releases)
+   - [LocalCoin-UI Release](https://github.com/localcoinis/localcoin-ui/releases)
    - LocalCoin UI wallet https://wallet.localcoin.org
-   - [Create an Account Guide](https://github.com/localcoin/how.localcoin.works/blob/master/bbf/user_guide/create_account.md#localcoin-account-and-wallet)
+   - [Create an Account Guide](https://github.com/localcoinis/how.localcoin.works/blob/master/bbf/user_guide/create_account.md#localcoin-account-and-wallet)
    
    (If it is the official webpage wallet or light wallet 171102 or above, the default is the account mode (Cloud Wallet) when registering for the first time, you can click "Advanced" to enter the wallet mode (Local Wallet) ).
    
@@ -124,7 +124,7 @@ Install 64-bit Ubuntu 16.04 LTS (it will not work on 32-bit Ubuntu), or 64-bit U
 
 #### 3.2 Windows
 
-The compiled Windows executable is available for download on Github, at https://github.com/localcoin/localcoin-core/releases/latest ,
+The compiled Windows executable is available for download on Github, at https://github.com/localcoinis/localcoin-core/releases/latest ,
 
 The file is `LocalCoin-Core-2.0.xxxxxx-x64-cli-tools.zip` and it can be unzipped. It contains three exe files and two dll files. Here is the [installation guide](../installation/windows_cli_tool.md#cli-wallet-on-windows-x64)
 
@@ -136,7 +136,7 @@ If you are using a Linux system, you need to compile several of these programs y
 	sudo apt-get update
 	sudo apt-get install autoconf cmake git libboost-all-dev libssl-dev doxygen g++ libcurl4-openssl-dev
 
-	git clone https://github.com/localcoin/localcoin-core.git
+	git clone https://github.com/localcoinis/localcoin-core.git
 	cd localcoin-core
 	git checkout <LATEST_RELEASE_TAG>
 	git submodule update --init --recursive
@@ -406,7 +406,7 @@ Since no active authority key was imported, the cli_wallet responsible for handl
 
 #### 6.3 Obtaining the Active Authority Key of the Withdrawal Account from the Light Wallet
 
-Reference: [User Guide - Permissions](https://github.com/localcoin/how.localcoin.works/blob/master/bbf/user_guide/permissions.md#public-key-and-private-key)
+Reference: [User Guide - Permissions](https://github.com/localcoinis/how.localcoin.works/blob/master/bbf/user_guide/permissions.md#public-key-and-private-key)
 
 #### 6.4 Import the withdrawal account's active authorization key into cli_wallet responsible for withdrawal
 

@@ -19,7 +19,7 @@ This document purpose: To explain LocalCoin UI wallet Client and wallet types an
 ## LocalCoin Client
 - LocalCoin wallet has two client types. 
   - **Light Client** : Download and install LocalCoin wallet to your computer. **This does not mean that you will have a Local wallet.**
-    - [LocalCoin-UI – Latest Release](https://github.com/localcoin/localcoin-ui/releases)
+    - [LocalCoin-UI – Latest Release](https://github.com/localcoinis/localcoin-ui/releases)
   - **Web Client** : Access the network and open the wallet in the browsers.
     - wallet.localcoin.org https://wallet.localcoin.org
   
@@ -57,7 +57,7 @@ This document purpose: To explain LocalCoin UI wallet Client and wallet types an
   - Not necessary. Because the Could wallet always do it for extra security. Also lets you login without exposing your owner key, you can login using only the active key.
 - **Can I change a Cloud wallet password?** 
   - Yes. 
-  - Go to [How to change a password if using a Cloud Wallet](https://github.com/localcoin/localcoin-ui/wiki/Cloud-Wallet-Login-and-changing-password) : from LocalCoin UI wiki
+  - Go to [How to change a password if using a Cloud Wallet](https://github.com/localcoinis/localcoin-ui/wiki/Cloud-Wallet-Login-and-changing-password) : from LocalCoin UI wiki
 - **Can I change a Local wallet password?** 
   - Yes.
   - Go to [**Settings**] - [**Password**] - Change your password. Use this page. 

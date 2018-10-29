@@ -12,7 +12,7 @@ Database
 
 config.hpp
 -----------------
-The blockchain parameters can be modified in the `libraries/chain/include/graphene/chain/config.hpp <https://github.com/localcoin/localcoin-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_ file:
+The blockchain parameters can be modified in the `libraries/chain/include/graphene/chain/config.hpp <https://github.com/localcoinis/localcoin-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_ file:
 
 .. code-block:: cpp 
 

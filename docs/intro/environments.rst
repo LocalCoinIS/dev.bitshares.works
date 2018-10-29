@@ -47,8 +47,8 @@ LocalCoin Core: Projects Guide
 Project Guide
 ------------------
 
-- `Contribution Guide [DRAFT] <https://github.com/localcoin/localcoin-core/wiki/Contribution-Guide>`_
-- `Contribution Guide Project <https://github.com/localcoin/localcoin-core/projects/6>`_
+- `Contribution Guide [DRAFT] <https://github.com/localcoinis/localcoin-core/wiki/Contribution-Guide>`_
+- `Contribution Guide Project <https://github.com/localcoinis/localcoin-core/projects/6>`_
 
 LocalCoin-Core (Team) 
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -140,8 +140,8 @@ For a release,
 8. The "release" branch is merged into "master", and a version tag is created on "master".
 9. The "release" branch is merged back into "develop" and "hardfork".
 10. The "release" branch is merged into "testnet". This will produce a merge conflict for the hardfork dates, which must be resolved without changing the testnet hardfork date.
-11. Update ``Doxyfile`` with the last version tag. Update online code documentation by using updated ``Doxyfile`` as config file in the master branch. Send pull request to https://github.com/localcoin/localcoin.github.io with new content in html format.
-12. Update `download page of localcoin.org site <https://github.com/localcoin/localcoin.github.io/blob/master/_includes/download.html>`_
+11. Update ``Doxyfile`` with the last version tag. Update online code documentation by using updated ``Doxyfile`` as config file in the master branch. Send pull request to https://github.com/localcoinis/localcoin.github.io with new content in html format.
+12. Update `download page of localcoin.org site <https://github.com/localcoinis/localcoin.github.io/blob/master/_includes/download.html>`_
 
 **Note:** Solving conflicts by github(web) will merge branches in unintended directions. Avoid solving this way, merge and resolve conflicts manually through the git command line. Conflicts generally occur when merging release to testnet.
 

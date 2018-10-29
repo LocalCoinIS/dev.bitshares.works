@@ -13,7 +13,7 @@ Compile LocalCoin-Core with Visual Studio 2015
 1. Install Visual Studio 2015 with Update 1
 
 Note:
-* There is a problem compiling with VS 2015 Update 3; https://github.com/localcoin/localcoin-core/issues/389
+* There is a problem compiling with VS 2015 Update 3; https://github.com/localcoinis/localcoin-core/issues/389
 * I have not tried other versions
 
 
@@ -144,7 +144,7 @@ Https://git-scm.com/download/win
 Find and run Git Bash from the Start menu. In the open command line interface, execute the following command:
 
 Cd /c/llc
-Git clone https://github.com/localcoin/localcoin-core
+Git clone https://github.com/localcoinis/localcoin-core
 Cd localcoin-core
 Git checkout 2.0.170710
 Git submodule update --init --recursive
@@ -213,7 +213,7 @@ After the compilation is complete, an executable file is generated:
    It can also be solved by static linking or by installing redistributable. This article does not elaborate.
 
 * If you use cli_wallet.exe to connect to an API server that uses wss, you need to specify the PEM file that contains the server root certificate.
-   Refer to https://github.com/localcoin/localcoin-core/issues/314 ,
+   Refer to https://github.com/localcoinis/localcoin-core/issues/314 ,
    For example, download https://curl.haxx.se/ca/cacert.pem and save it as c:\llc\cacert.pem , then execute:
 
    Set SSL_CERT_FILE=c:/llc/cacert.pem

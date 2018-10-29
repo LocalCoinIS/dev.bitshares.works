@@ -352,7 +352,7 @@ exit bash (terminal) and reconnect
 Download LocalCoin gui
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- https://github.com/localcoin/localcoin-ui/releases
+- https://github.com/localcoinis/localcoin-ui/releases
 
 Setup light wallet
 ~~~~~~~~~~~~~~~~~~~

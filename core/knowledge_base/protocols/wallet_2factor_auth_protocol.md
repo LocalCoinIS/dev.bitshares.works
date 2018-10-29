@@ -48,7 +48,7 @@ reates an account with `secondfactor.org`
 ***
 
 (ref)
-https://github.com/localcoin/localcoin-core/wiki/Wallet-2-Factor-Authentication-Protocol
+https://github.com/localcoinis/localcoin-core/wiki/Wallet-2-Factor-Authentication-Protocol
 
 
 

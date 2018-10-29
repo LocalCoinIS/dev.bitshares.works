@@ -19,7 +19,7 @@ General
 * :ref:`dev-faq14`
 * :ref:`dev-faq19`
 * :ref:`What parameters in a configuration file in a data directory? <llc-config-ini-eg>` - (rel:*config.ini*)
-* `Is there a Dockerfile support? <https://github.com/localcoin/localcoin-core/blob/master/README-docker.md>`_
+* `Is there a Dockerfile support? <https://github.com/localcoinis/localcoin-core/blob/master/README-docker.md>`_
 
 **Protocol**
 
@@ -57,9 +57,9 @@ System Components
 * configuration examples and support files
 
   - :ref:`config.ini <llc-config-ini-eg>` (Node Configuration File )
-  - `apiConfig.js <https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js>`_ (LocalCoin Public Node information)
+  - `apiConfig.js <https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js>`_ (LocalCoin Public Node information)
   - :ref:`api-access.json <api-access-json>` (API Access restriction)
-  - `saltpass.py <https://github.com/localcoin/localcoin-core/blob/master/programs/witness_node/saltpass.py>`_ (obtain hash and salt values from a password)
+  - `saltpass.py <https://github.com/localcoinis/localcoin-core/blob/master/programs/witness_node/saltpass.py>`_ (obtain hash and salt values from a password)
   
 Accounts
 -------------------------------------------------------
@@ -98,8 +98,8 @@ APIs
 * :ref:`api-core-faq-4`
 * :ref:`api-core-faq-5`
 * :ref:`api-core-faq-6`
-* `Where can I find a simple Python script saltpass.py to obtain hash and salt values from a password? <https://github.com/localcoin/localcoin-core/blob/master/programs/witness_node/saltpass.py>`_ - (rel: *saltpass.py*)
-* `Where Can I find LocalCoin Public Full Node information? (apiconfig) <https://github.com/localcoin/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
+* `Where can I find a simple Python script saltpass.py to obtain hash and salt values from a password? <https://github.com/localcoinis/localcoin-core/blob/master/programs/witness_node/saltpass.py>`_ - (rel: *saltpass.py*)
+* `Where Can I find LocalCoin Public Full Node information? (apiconfig) <https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 **LocalCoin Explorer API**

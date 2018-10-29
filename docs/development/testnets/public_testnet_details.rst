@@ -47,7 +47,7 @@ To see more options: Go to :ref:`Installation Guide <installation-guide>`.
 
 *In order to run a full node, get the sources (branch testnet) and compile*::
 
-	 git clone https://github.com/localcoin/localcoin-core.git localcoin-core-testnet
+	 git clone https://github.com/localcoinis/localcoin-core.git localcoin-core-testnet
 	 cd localcoin-core-testnet    
 	 git checkout testnet
 	 cmake
@@ -69,7 +69,7 @@ Other References
 
 - **Seed node**: `testnet.localcoin.eu:11010`
 - Chain-id: `39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447`
-- `Genesis Block - for Testnet <https://github.com/localcoin/localcoin-core/blob/testnet/genesis.json>`_
+- `Genesis Block - for Testnet <https://github.com/localcoinis/localcoin-core/blob/testnet/genesis.json>`_
 
 
 |

@@ -1975,7 +1975,7 @@ config
 .. code-block:: cpp
 
 	#include <graphene/chain/config.hpp>
-  - `config.hpp <https://github.com/localcoin/localcoin-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_
+  - `config.hpp <https://github.com/localcoinis/localcoin-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_
 
 
 ext 

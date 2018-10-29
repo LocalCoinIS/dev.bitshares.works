@@ -5,7 +5,7 @@
 
 ### BSIP
 - [LocalCoin Improvement Proposal(BSIP)](../knowledge_base/bsip_funding.md#businesses-developers-and-business-developers)
-- [BSIP Repository](https://github.com/localcoin/bsips)
+- [BSIP Repository](https://github.com/localcoinis/bsips)
 
 
 ### Accounts

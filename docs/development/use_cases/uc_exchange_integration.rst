@@ -69,7 +69,7 @@ The trusted full node is your entry point to the LocalCoin P2P network. It will 
 
 .. Note:: Until the genesis block is integrated into the binary/souces, you may additionally need to download the genesis block from github and add the parameter ``--genesis-json <genesis.json>``.
 
-.. Note:: Unless the seed nodes are encoded into the binary, you may need to add a known seed node with ``-s xxx.xxx.xxx.xxx:yyy`` in order to initially connect to the P2P network. (See `Release Page <https://github.com/localcoin/localcoin-core/releases>`_)
+.. Note:: Unless the seed nodes are encoded into the binary, you may need to add a known seed node with ``-s xxx.xxx.xxx.xxx:yyy`` in order to initially connect to the P2P network. (See `Release Page <https://github.com/localcoinis/localcoin-core/releases>`_)
 
 > **Note:** To start a node with reduced RAM please see :ref:`Memory reduction for nodes <memory-nodes>`.
 

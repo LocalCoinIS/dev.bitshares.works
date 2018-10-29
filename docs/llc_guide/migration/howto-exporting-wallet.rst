@@ -26,7 +26,7 @@ upgrade you need to:
 * uninstall your previous version of the LocalCoin client
 * install the new version
 
-.. _localcoin webpage: https://github.com/localcoin/localcoin-0.x/releases
+.. _localcoin webpage: https://github.com/localcoinis/localcoin-0.x/releases
 
 Synchronize your Wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

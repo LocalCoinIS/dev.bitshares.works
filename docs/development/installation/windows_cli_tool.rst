@@ -19,7 +19,7 @@ How to install LocalCoin Core
 CLI-Wallet on Windows (x64)
 -------------------------------------------
 
-1. Download the LocalCoin-Core-*-x64-cli-tools.zip file from https://github.com/localcoin/localcoin-core/releases
+1. Download the LocalCoin-Core-*-x64-cli-tools.zip file from https://github.com/localcoinis/localcoin-core/releases
 2. Unzip the file to your workstation. (e.g., d:\LocalCoin\)
 3. Download the **cacer.pem** file from Mozilla: https://curl.haxx.se/docs/caextract.html
 4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\LocalCoin\)
