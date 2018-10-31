@@ -25,7 +25,7 @@ following these steps.
 * A DNS Alias (CNAME) is required to point to your server ip address. 
 * See `dyn.com <http://dyn.com>`__ for DNS Alias setup. 
 * You may have to wait a few days for the DNS to work through the internet. 
-* Please change `altcap.io <http://altcap.io>`__ to your DNS alias in the examples below.
+* Please change `yourdomain.com <http://yourdomain.com>`__ to your DNS alias in the examples below.
 
 
 Create a New User
@@ -49,7 +49,7 @@ Install Nginx web server
 ::
 
     # ssh into your new user localcoin
-    ssh localcoin@altcap.io
+    ssh localcoin@yourdomain.com
     sudo apt-get install nginx
     # check version
     nginx -v
@@ -60,7 +60,7 @@ Install Nginx web server
 
 This will start Nginx default web server. Check it by typing the ip
 address of your server in a web browser or your alias
-`altcap.io <http://altcap.io>`__
+`yourdomain.com <http://yourdomain.com>`__
 
 Configure Nginx
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -74,8 +74,8 @@ Create your web folder
 
 ::
 
-    sudo mkdir -p /var/www/altcap.io/public_html
-    sudo chown -R localcoin:localcoin var/www/altcap.io/public_html
+    sudo mkdir -p /var/www/yourdomain.com/public_html
+    sudo chown -R localcoin:localcoin var/www/yourdomain.com/public_html
     sudo chmod 755 /var/www
 
 Configure Nginx
@@ -83,21 +83,21 @@ Configure Nginx
 
 ::
 
-    # edit default setup and save as altcap.io
+    # edit default setup and save as yourdomain.com
     sudo nano /etc/nginx/sites-available/default
 
 Point to your new virtual host
 
 ::
 
-    ###### altcap.io ######
+    ###### yourdomain.com ######
     server {
         listen 80;
-        server_name altcap.io;
+        server_name yourdomain.com;
         #rewrite ^ https://$server_name$request_uri? permanent;
-        #rewrite ^ https://altcap.io$uri permanent;
+        #rewrite ^ https://yourdomain.com$uri permanent;
         #
-        root /var/www/altcap.io/public_html;
+        root /var/www/yourdomain.com/public_html;
         # Add index.php to the list if you are using PHP
         index index.html index.htm;
         #
@@ -108,21 +108,21 @@ Point to your new virtual host
         }
     }
 
-    CTRL+O to save as altcap.io (^O Write Out)
+    CTRL+O to save as yourdomain.com (^O Write Out)
 
 Update Virtual Host File
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-    sudo cp altcap.io /etc/nginx/sites-available/altcap.io
+    sudo cp yourdomain.com /etc/nginx/sites-available/yourdomain.com
 
 Activate sim link and disable default web server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-    sudo ln -s /etc/nginx/sites-available/altcap.io /etc/nginx/sites-enabled/altcap.io
+    sudo ln -s /etc/nginx/sites-available/yourdomain.com /etc/nginx/sites-enabled/yourdomain.com
     sudo rm /etc/nginx/sites-enabled/default
 
 Link local folder to www root and add a simple index.html
@@ -130,7 +130,7 @@ Link local folder to www root and add a simple index.html
 
 ::
 
-    ln -s /var/www/altcap.io/public_html ~/public_html
+    ln -s /var/www/yourdomain.com/public_html ~/public_html
     nano ~/public_html/index.html
 
 Add some text to index.html
@@ -139,10 +139,10 @@ Add some text to index.html
 
     <html>
       <head>
-        <title>altcap.io</title>
+        <title>yourdomain.com</title>
       </head>
       <body>
-        <h1>altcap.io - Virtual Host</h1>
+        <h1>yourdomain.com - Virtual Host</h1>
       </body>
     </html>
 
@@ -168,7 +168,7 @@ Obtain your SSL certificate
 
 ::
 
-    sudo letsencrypt certonly --webroot -w /var/www/altcap.io/public_html -d altcap.io
+    sudo letsencrypt certonly --webroot -w /var/www/yourdomain.com/public_html -d yourdomain.com
 
 Follow the instructions and add an email address
 
@@ -177,7 +177,7 @@ Check your certificate
 
 ::
 
-    sudo ls -l /etc/letsencrypt/live/altcap.io
+    sudo ls -l /etc/letsencrypt/live/yourdomain.com
     # and check it will update
     sudo letsencrypt renew --dry-run --agree-tos
     sudo letsencrypt renew
@@ -212,29 +212,29 @@ Generate Strong Diffie-Hellman Group cert
 Add SSL to Nginx settings
 ----------------------------------
 
-Make a copy of altcap.io just in case.
+Make a copy of yourdomain.com just in case.
 
 ::
 
-    cp altcap.io alcap.io.no.ssl
+    cp yourdomain.com alcap.io.no.ssl
 
-Edit altcap.io
+Edit yourdomain.com
 ^^^^^^^^^^^^^^^^^^^
 
 ::
 
-    nano altcap.io
+    nano yourdomain.com
 
 ::
 
-    ###### altcap.io ######
+    ###### yourdomain.com ######
     server {
         listen 80;
-        server_name altcap.io;
+        server_name yourdomain.com;
         #rewrite ^ https://$server_name$request_uri? permanent;
-        rewrite ^ https://altcap.io$uri permanent;
+        rewrite ^ https://yourdomain.com$uri permanent;
         #
-        root /var/www/altcap.io/public_html;
+        root /var/www/yourdomain.com/public_html;
         # Add index.php to the list if you are using PHP
         index index.html index.htm;
         #
@@ -246,7 +246,7 @@ Edit altcap.io
     }
 
 
-    ###### altcap.io websockets
+    ###### yourdomain.com websockets
 
 
     upstream websockets {
@@ -254,18 +254,18 @@ Edit altcap.io
     }
 
 
-    ###### altcap.io ssl
+    ###### yourdomain.com ssl
     server {
         listen 443 ssl;
         #
-        server_name altcap.io;
+        server_name yourdomain.com;
         #
-        root /var/www/altcap.io/public_html;
+        root /var/www/yourdomain.com/public_html;
         # Add index.php to the list if you are using PHP
         index index.html index.htm;
         #
-        ssl_certificate /etc/letsencrypt/live/altcap.io/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/altcap.io/privkey.pem;
+        ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
         #
         ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         ssl_prefer_server_ciphers on;
@@ -304,7 +304,7 @@ Edit altcap.io
             proxy_set_header Connection "upgrade";
         }
     }
-    ###### altcap.io ######
+    ###### yourdomain.com ######
 
     CTRL+X to save (^X Exit)
 
@@ -312,11 +312,11 @@ You have now setup an SSL secured web server with a WebSocket connected
 to your local LocalCoin witness\_node (listening on port 8090 - see
 `this
 post <https://steemit.com/localcoin/@ihashfury/run-your-own-decentralised-exchange>`__
-for more information) ###Update altcap.io www virtual host
+for more information) ###Update yourdomain.com www virtual host
 
 ::
 
-    sudo cp altcap.io /etc/nginx/sites-available/altcap.io
+    sudo cp yourdomain.com /etc/nginx/sites-available/yourdomain.com
 
 Restart Nginx
 ^^^^^^^^^^^^^^
@@ -345,7 +345,7 @@ exit bash (terminal) and reconnect
 
 ::
 
-    ssh localcoin@altcap.io
+    ssh localcoin@yourdomain.com
     nvm install v5
     nvm use v5
 
@@ -379,9 +379,9 @@ You can also check how secure your new web server is compared to your bank. Add 
 
 ::
 
-    https://www.ssllabs.com/ssltest/analyze.html?d=altcap.io
+    https://www.ssllabs.com/ssltest/analyze.html?d=yourdomain.com
 
-Now change altcap.io to your local bank's domain name in the link and post the results below. 
+Now change yourdomain.com to your local bank's domain name in the link and post the results below. 
 		
 |
 
