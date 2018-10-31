@@ -309,7 +309,7 @@ Edit yourdomain.com
     CTRL+X to save (^X Exit)
 
 You have now setup an SSL secured web server with a WebSocket connected
-to your local LocalCoin witness\_node (listening on port 8090 - see
+to your LocalCoin witness\_node (listening on port 8090 - see
 `this
 post <https://steemit.com/localcoin/@ihashfury/run-your-own-decentralised-exchange>`__
 for more information) ###Update yourdomain.com www virtual host
@@ -330,11 +330,11 @@ Open 8090 port to the outside world by adding the settings below into your v-hos
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection "upgrade";
 
-If should look like this:
+If should look like this
 
 ::
 
-server {
+    server {
         server_name moscow.localcoin.is;
 
         location / {
@@ -358,16 +358,16 @@ server {
     ssl_certificate_key /etc/letsencrypt/live/moscow.localcoin.is/privkey.pem;
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
-}
-server {
+    }
+    server {
     if ($host = moscow.localcoin.is) {
         return 301 https://$host$request_uri;
-    }
+        }
         listen 80;
         listen [::]:80;
         server_name moscow.localcoin.is;
     return 404;
-}
+    }
 
 Restart Nginx
 ^^^^^^^^^^^^^^
