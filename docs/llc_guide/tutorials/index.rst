@@ -145,12 +145,6 @@ Worker Guide
 
 
 
-Migration (from LocalCoin1.0)
-==================================
-
-* :ref:`Explore Your Wallet <howto-exporting-wallet>`
-* :ref:`Improve Your Wallet <howto-importing-wallet>`
-* :ref:`migration-remarks`
 
 
 

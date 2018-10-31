@@ -3,14 +3,14 @@
 
 Distributed Access to the LocalCoin Decentralized  Exchange (DEX)
 =================================================================
-   
+
 I hope to encourage and promote more access points and backup WebSocket (wss) gateways for LocalCoin. This is the logical progression from `Run your own decentralized
 exchange <https://steemit.com/localcoin/@ihashfury/run-your-own-decentralised-exchange>`__
 post.
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 LocalCoin node setup
@@ -20,11 +20,11 @@ LocalCoin node setup
 
 Once you have a full node setup, you can allow LocalCoin shareholders
 secure access to your server to trade and check their accounts by
-following these steps. 
+following these steps.
 
-* A DNS Alias (CNAME) is required to point to your server ip address. 
-* See `dyn.com <http://dyn.com>`__ for DNS Alias setup. 
-* You may have to wait a few days for the DNS to work through the internet. 
+* A DNS Alias (CNAME) is required to point to your server ip address.
+* See `dyn.com <http://dyn.com>`__ for DNS Alias setup.
+* You may have to wait a few days for the DNS to work through the internet.
 * Please change `yourdomain.com <http://yourdomain.com>`__ to your DNS alias in the examples below.
 
 
@@ -318,12 +318,65 @@ for more information) ###Update yourdomain.com www virtual host
 
     sudo cp yourdomain.com /etc/nginx/sites-available/yourdomain.com
 
+8090 port opening
+^^^^^^^^^^^^^^^^^
+
+Open 8090 port to the outside world by adding the settings below into your v-host proxy configuration file(Example: 'etc/nginx/sites-avaliable/default'):
+
+::
+
+    proxy_pass http://localhost:8090;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+
+If should look like this:
+
+::
+
+server {
+        server_name moscow.localcoin.is;
+
+        location / {
+          add_header 'Access-Control-Allow-Origin' '*';
+          add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+          add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+          add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
+
+            proxy_pass http://localhost:8090;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+        }
+
+        root /var/www/moscow.localcoin.is/;
+        index index.html;
+
+    listen [::]:443 ssl ipv6only=on;
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/moscow.localcoin.is/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/moscow.localcoin.is/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+}
+server {
+    if ($host = moscow.localcoin.is) {
+        return 301 https://$host$request_uri;
+    }
+        listen 80;
+        listen [::]:80;
+        server_name moscow.localcoin.is;
+    return 404;
+}
+
 Restart Nginx
 ^^^^^^^^^^^^^^
 
 ::
 
+    sudo nginx -t
     sudo service nginx restart
+
 
 Now you have setup an SSL web server. More information on SSL setup can
 be found here. `DigitalOcean letsencrypt
@@ -381,8 +434,8 @@ You can also check how secure your new web server is compared to your bank. Add 
 
     https://www.ssllabs.com/ssltest/analyze.html?d=yourdomain.com
 
-Now change yourdomain.com to your local bank's domain name in the link and post the results below. 
-		
+Now change yourdomain.com to your local bank's domain name in the link and post the results below.
+
 |
 
 --------------------
