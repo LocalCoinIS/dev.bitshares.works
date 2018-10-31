@@ -321,7 +321,7 @@ for more information) ###Update yourdomain.com www virtual host
 8090 port opening
 ^^^^^^^^^^^^^^^^^
 
-Open 8090 port to the outside world by adding the settings below into your v-host proxy configuration file(Example: 'etc/nginx/sites-avaliable/default'):
+Open 8090 port to the outside world by adding the settings below into your v-host proxy configuration file (Example: 'etc/nginx/sites-avaliable/default'):
 
 ::
 
@@ -352,15 +352,15 @@ If should look like this
         root /var/www/moscow.localcoin.is/;
         index index.html;
 
-    listen [::]:443 ssl ipv6only=on;
-    listen 443 ssl;
-    ssl_certificate /etc/letsencrypt/live/moscow.localcoin.is/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/moscow.localcoin.is/privkey.pem;
-    include /etc/letsencrypt/options-ssl-nginx.conf;
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
-    }
+        listen [::]:443 ssl ipv6only=on;
+        listen 443 ssl;
+        ssl_certificate /etc/letsencrypt/live/moscow.localcoin.is/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/moscow.localcoin.is/privkey.pem;
+        include /etc/letsencrypt/options-ssl-nginx.conf;
+        ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+        }
     server {
-    if ($host = moscow.localcoin.is) {
+      if ($host = moscow.localcoin.is) {
         return 301 https://$host$request_uri;
         }
         listen 80;
