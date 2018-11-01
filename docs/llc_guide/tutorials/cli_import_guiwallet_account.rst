@@ -32,7 +32,7 @@ Your wallet private keys have extremely important roles. By importing your priva
 
     ./programs/cli_wallet/cli_wallet --server-rpc-endpoint ws://localhost:8090
     Or 
-    ./programs/cli_wallet//cli-wallet -s wss://localcoin.openledger.info/ws
+    ./programs/cli_wallet//cli-wallet -s wss://moscow.localcoin.is
 
 You should get a prompt::
 

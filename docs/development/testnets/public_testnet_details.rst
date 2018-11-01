@@ -16,9 +16,9 @@ The LocalCoin Open Public Testnet has been deployed and is fully functional for 
 Use a UI Wallet on Public Testnet
 =======================================
 
-- Go to a Web Wallet - Public testnet: (http://testnet.localcoin.eu/) 
+- Go to a Web Wallet - Public testnet: (http://testnet.localcoin.is/) 
 - If you need to create an account, set the testnet faucet address
-   - Faucet: (https://faucet.testnet.localcoin.eu/)
+   - Faucet: (https://faucet.testnet.localcoin.is/)
    - Go to [Setting] menu - [Faucet] and set the above Faucet address 
 - Create an account
    - For a CLOUD Wallet: Use a [CREATE ACCOUNT] button
@@ -67,7 +67,7 @@ Other References
 
 - `Testnet - Python Scripts <https://github.com/LocalCoinEurope/testnet-pythonscripts>`_
 
-- **Seed node**: `testnet.localcoin.eu:11010`
+- **Seed node**: `testnet.localcoin.is:11010`
 - Chain-id: `39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447`
 - `Genesis Block - for Testnet <https://github.com/localcoinis/localcoin-core/blob/testnet/genesis.json>`_
 

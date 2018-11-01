@@ -38,7 +38,7 @@ The idea behind the login protocol is to allow another party to verify that you 
 In this example, we assume
 
  - https://merchant.org is the service that will be logged into and
- - https://wallet.org is the wallet provider that will be assisting the user with their login.
+ - https://wallet.org is the wallet provider that will be assisting the user with their login, , `https://wallet.localcoin.is`  for example.
 
 A Merchant Provides a login button (on an application page) for a user.
 
@@ -128,7 +128,7 @@ Wallet Merchant Protocol
 In this example, we assume
 
  - https://merchant.org is the service that host the server,
- - https://wallet.org is the wallet provider that host the server, `https://localcoin.is` for example
+ - https://wallet.org is the wallet provider that host the server, `https://wallet.localcoin.is`  for example
 
 Privacy Concerns
 -----------------------------
@@ -233,12 +233,12 @@ Example Python script
             {"label": "10 things to Buy", "quantity": 10, "price": "1.00"}
         ],
         "note": "Payment for reading awesome documentation",
-        "callback": "https://localcoin.eu/complete"
+        "callback": "https://localcoin.is/complete"
     }
 
     compressed = lzma.compress(bytes(json.dumps(invoice), 'utf-8'), format=lzma.FORMAT_ALONE)
     b58 = base58encode(hexlify(compressed).decode('utf-8'))
-    url = "https://localcoin.openledger.info/#/invoice/%s" % b58
+    url = "https://wallet.localcoin.is/#/invoice/%s" % b58
 
     print(url)
 

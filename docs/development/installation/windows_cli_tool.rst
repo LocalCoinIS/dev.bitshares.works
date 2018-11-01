@@ -26,7 +26,7 @@ CLI-Wallet on Windows (x64)
 5. Open a Windows command prompt (cmd.exe)
 6. Navigate to your install directory. (e.g. d:\LocalCoin\)
 7. Set an environment variable by typing: `set SSL_CERT_FILE=d:/LocalCoin/cacert.pem`
-8. Start the wallet: `cli_wallet -s wss://{ANY VALID AUTHORITY}/ws`. For example, `cli_wallet -s wss://localcoin.openledger.info/ws`
+8. Start the wallet: `cli_wallet -s wss://{ANY VALID AUTHORITY}/ws`. For example, `cli_wallet -s wss://moscow.localcoin.is`
 
 
 -------
@@ -39,7 +39,7 @@ Start the CLI-Wallet (in Windows command prompt)
 
 ::
 
-    >cli_wallet -s wss://localcoin.openledger.info/ws
+    >cli_wallet -s wss://moscow.localcoin.is
 
 If you open the cli-wallet successfully, you will see similar messages and receive ``new >>>`` prompt. Set a password and unlock the cli-wallte.::
 
@@ -49,7 +49,7 @@ If you open the cli-wallet successfully, you will see similar messages and recei
     2029119ms th_a       main.cpp:140                  main                 ] nathan_pub_key: LLC6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
     2029121ms th_a       main.cpp:141                  main                 ] key_to_wif( nathan_private_key ): 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
     Starting a new wallet with chain ID 4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8 (from egenesis)
-    2029128ms th_a       main.cpp:188                  main                 ] wdata.ws_server:   wss://localcoin.openledger.info/ws
+    2029128ms th_a       main.cpp:188                  main                 ] wdata.ws_server:   wss://moscow.localcoin.is
     2029807ms th_a       main.cpp:193                  main                 ] wdata.ws_user:  wdata.ws_password:
     Please use the set_password method to initialize a new wallet before continuing
     new >>> 

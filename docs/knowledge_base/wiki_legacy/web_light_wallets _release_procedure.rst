@@ -23,13 +23,13 @@ Open Ledger wallet release:
 - Clone `https://github.com/cryptonomex/faucet` and checkout ol branch and install gems with bundle command
 - In faucet dir run `mina wallet` - this will deploy to 'ol' server (specified in `.ssh/config`)
 - Alternatively, copy the dist folder directly to the server: scp dist/* localcoin.openledger.info:/www/current/public/wallet/
-- Open [https://localcoin.openledger.info](https://localcoin.openledger.info/) and make sure there are no errors and version matches release tag
+- Open [https://wallet.localcoin.is](https://wallet.localcoin.is/) and make sure there are no errors and version matches release tag
 
 Light wallets
 ------------------
 
 - (one time) Install [NSIS](http://nsis.sourceforge.net/Main_Page)
-- `git clone https://github.com/localcoinis/localcoin-2-ui` branch `localcoin`
+- `git clone https://github.com/localcoinis/localcoin-ui-ui` branch `localcoin`
 - Add upstream repo `git remote add cnx https://github.com/cryptonomex/graphene-ui`
 - Fetch upstream `git fetch cnx`
 - Merge upstream/master into localcoin branch `git merge cnx/master`
@@ -43,16 +43,16 @@ Light wallets
 - It will create dmg/deb/exe file in `releases/`
 - Make sure created file name matches tag/version
 - Run installer and test the app
-- Go to localcoin-2 repo
+- Go to localcoin-uirepo
 - Update gui_version, commit, tag and push - this will create a new tag
-- Open https://github.com/localcoinis/localcoin-2/releases, create new release under tag created in previous step
+- Open https://github.com/localcoinis/localcoin-ui/releases, create new release under tag created in previous step
 - Specify release notes, upload dmg/deb/exe wallets created earlie
 
 Localcoin.org wallet and downloads page
 ----------------------------------------------
 
 - Go to localcoin.gihub.io repo (`git clone https://github.com/localcoinis/localcoin.github.io`)
-- Copy `localcoin-2-ui/web/dist/*` to `wallet/`
+- Copy `localcoin-ui/web/dist/*` to `wallet/`
 - Edit `_includes/download.html` and update download links and gui release date
 - Commit and push
 

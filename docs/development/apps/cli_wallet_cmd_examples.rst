@@ -97,7 +97,7 @@ This pattern uses the Public API node of *OpenLedger* and connect via secured we
 
 ::
 
-    ./programs/cli_wallet/cli_wallet -s wss://localcoin.openledger.info/ws
+    ./programs/cli_wallet/cli_wallet -s wss://moscow.localcoin.is
 
 **Create a Wallet (4b)**:
 
@@ -107,7 +107,7 @@ You can choose between Websocket RPC or RPC-HTTP requests. You can also set both
 
 ::
 
-    ./programs/cli_wallet/cli_wallet -s wss://localcoin.openledger.info/ws 
+    ./programs/cli_wallet/cli_wallet -s wss://moscow.localcoin.is 
                                      -H 127.0.0.1:8092 
                                      -r 127.0.0.1:8093                                                                        
 

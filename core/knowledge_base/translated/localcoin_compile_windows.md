@@ -217,4 +217,4 @@ After the compilation is complete, an executable file is generated:
    For example, download https://curl.haxx.se/ca/cacert.pem and save it as c:\llc\cacert.pem , then execute:
 
    Set SSL_CERT_FILE=c:/llc/cacert.pem
-   Cli_wallet -s wss://localcoin.openledger.info/ws
+   Cli_wallet -s wss://moscow.localcoin.is

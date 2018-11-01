@@ -49,7 +49,7 @@ Docker
 
 ElasticSearch Plugin
 ----------------------
-- A "plugin" enables blockchain data to be stored in the elastic search database. A separate instruction guide exists in the -core/wiki. Once data is in ES database, it can be easily access through kibana (e.g. using kibana.localcoin.eu). Many libraries exist to read data from elastic search.
+- A "plugin" enables blockchain data to be stored in the elastic search database. A separate instruction guide exists in the -core/wiki. Once data is in ES database, it can be easily access through kibana (e.g. using kibana.localcoin.is). Many libraries exist to read data from elastic search.
 
 Native Core Token LLC
 ----------------------

@@ -40,7 +40,7 @@ The blockchain parameters can be modified in the
 
 We can add a default list of seed nodes that the witness is supposed to try to connect to in `libraries/app/application.cpp <https://github.com/localcoinis/localcoin-core/blob/master/libraries/app/application.cpp>`_ and will add the IP/Address and port of the machine we are going to setup later already::
 
-    testnet.localcoin.eu:11010
+    testnet.localcoin.is:11010
 
 The full change set can be seen in the corresponding `git commit <https://github.com/LocalCoinEurope/graphene-testnet/commit/94f0a95be6f80cb5a7926ba6cc920dd795eb3a19>`_
 

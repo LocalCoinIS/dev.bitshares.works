@@ -202,9 +202,9 @@ We show you how you can use the Public API Node in your `cli_wallet` command lin
 
 - You can find a latest list of [Public Full Node](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information. 
 
-**Example:**  We use the public API node of OpenLedger `wss://localcoin.openledger.info/ws` and connect via secured websocket connection:
+**Example:**  We use the public API node of OpenLedger `wss://moscow.localcoin.is` and connect via secured websocket connection:
 
-	./programs/cli_wallet/cli_wallet -s wss://localcoin.openledger.info/ws
+	./programs/cli_wallet/cli_wallet -s wss://moscow.localcoin.is
 
 
 This will open the cli-wallet and unless you already have a local wallet, it will ask you to provide a password for your local wallet. Once a wallet has been created (default wallet file is a wallet.json), you will receive,
