@@ -8,7 +8,7 @@
 In this example, we assume
 
 - `https://merchant.org`  is the service that host the server,
-- `https://wallet.org`  is the wallet provider that host the server, `https://wallet.localcoin.is`  for example.
+- `https://wallet.org`  is the wallet provider that host the server, `https://wallet.localcoin.is` for example.
 
 ## Privacy Concerns
 
