@@ -1,20 +1,20 @@
-# Merchant 
+# Merchant
 
 ## Wallet Privacy  Protocol
 #### How maintain user and merchant privacy from the wallet provider which should never have direct access to the invoice data.
 
 ***
 
-In this example, we assume 
+In this example, we assume
 
 - `https://merchant.org`  is the service that host the server,
-- `https://wallet.org`  is the wallet provider that host the server
+- `https://wallet.org`  is the wallet provider that host the server, `https://localcoin.is` for example
 
 ## Privacy Concerns
-     
+
 The goal of this protocol is to maintain user and merchant privacy from the wallet provider which should never have direct access to the invoice data.
 
-To securely pass data from `https://merchant.org` to the javascript wallet hosted at `https://wallet.org`, the data will have to be passed after the `#`. 
+To securely pass data from `https://merchant.org` to the javascript wallet hosted at `https://wallet.org`, the data will have to be passed after the `#`.
 Assuming the wallet provider is not serving up pages designed to compromise your privacy, only your web browser will have access to the invoice data.
 
 
@@ -43,13 +43,13 @@ By itself this data is 579 characters which after URL encoding is 916 characters
 
 ### Step 2 - Compress the JSON Object
 
-Using [LZMA-JS](https://github.com/nmrugg/LZMA-JS/) library to compress the JSON into a binary array. This will be the most compact form of the data. 
+Using [LZMA-JS](https://github.com/nmrugg/LZMA-JS/) library to compress the JSON into a binary array. This will be the most compact form of the data.
 
 (e.g.) After running the compression the example JSON was reduced to 281 bytes from 579 bytes.
 
 ### Step 3 - Convert to Base58
 
-Using the [bs58](http://cryptocoinjs.com/modules/misc/bs58/) library encode the compressed data in base58. Base58 is URL friendly and size efficient. 
+Using the [bs58](http://cryptocoinjs.com/modules/misc/bs58/) library encode the compressed data in base58. Base58 is URL friendly and size efficient.
 
 (e.g.) After converting to base58 the string will be 385 characters which can easily be passed in a URL and easily support much larger invoices.
 

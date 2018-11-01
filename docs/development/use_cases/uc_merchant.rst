@@ -11,8 +11,8 @@ customers pay using USD, EUR, or any other *stable* blockchain asset.
 
 .. contents:: Table of Contents
    :local:
-   
-   
+
+
 We here illustrate the steps necessary to securely operate as merchant.
 Merchants take funds from customers on the blockchain and deliver a good. Hence,
 a merchant should monitor the blockchain and be notified on incoming
@@ -23,8 +23,8 @@ For exchanges we recommend to also read :ref:`what-is-different` and
 :ref:`often-used-calls`.
 
 -----
-   
-   
+
+
 Protocols/API
 
 
@@ -81,9 +81,9 @@ After the account is identified enough keys to authorize a account must particip
 
  - The wallet generates a ``WALLET_ONETIMEKEY`` and derives a ``shared secret``
 with the ``SERVER_PUBLIC_KEY`` provided by the ``https://merchant.org`` via
-``${args}``. 
-- This `shared secret` is a provably "random" 512 bits of data that is only known to the wallet at this point in time. 
-- The wallet then gathers signatures on the ``shared secret`` from enough keys to authorize the account. 
+``${args}``.
+- This `shared secret` is a provably "random" 512 bits of data that is only known to the wallet at this point in time.
+- The wallet then gathers signatures on the ``shared secret`` from enough keys to authorize the account.
 - In the simple case this will be a single signature, but in more complex cases multi-factor authentication may be required.
 
 After gathering all of the signatures the wallet redirects the user to ``https://merchant.org/login_callback?a=${result}`` where ``result`` is an encoded JSON object containing the following information:
@@ -128,8 +128,8 @@ Wallet Merchant Protocol
 In this example, we assume
 
  - https://merchant.org is the service that host the server,
- - https://wallet.org is the wallet provider that host the server
- 
+ - https://wallet.org is the wallet provider that host the server, `https://localcoin.is` for example
+
 Privacy Concerns
 -----------------------------
 
@@ -242,8 +242,7 @@ Example Python script
 
     print(url)
 
-   
+
 
 
 |
-
