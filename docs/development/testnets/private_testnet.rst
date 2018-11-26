@@ -116,7 +116,7 @@ Open the ``[Testnet-Home]/data/my-blockprod/config.ini`` file and set the follow
 
 .. code-block:: json
 
-    rpc-endpoint = 127.0.0.1:8090
+    rpc-endpoint = 0.0.0.0:8090
     genesis-json = my-genesis.json
     enable-stale-production = true
 

@@ -16,7 +16,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 ::
 
 	# Endpoint for P2P node to listen on
-	#p2p-endpoint = 0.0.0.0:11010 
+	p2p-endpoint = 0.0.0.0:11010 
 
 	# P2P nodes to connect to on startup (may specify multiple times)
 	# seed-node = 
@@ -28,7 +28,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# checkpoint = 
 
 	# Endpoint for websocket RPC to listen on
-	#rpc-endpoint = 127.0.0.1:8090
+	#rpc-endpoint = 0.0.0.0:8090
 
 	# Endpoint for TLS websocket RPC to listen on
 	# rpc-tls-endpoint = 

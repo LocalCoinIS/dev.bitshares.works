@@ -15,7 +15,7 @@ This page is a collection of command lines to connect Node, Wallet, and Witness.
 
 **Note:** The *CLI client* is unable to run on its own (i.e. without being connected to the witness node). Successfully to run the CLI client...
 
-- make sure you have uncommented this entry `rpc-endpoint = 127.0.0.1:8090` in the `witness_node_data_dir/config.ini` file.
+- make sure you have uncommented this entry `rpc-endpoint = 0.0.0.0:8090` in the `witness_node_data_dir/config.ini` file.
 - before you start the CLI client, you need to start the witness node (and wait a while till it’s up and running).
 
 **Note:** After you start running the CLI client, you can issue any command available to the cli-wallet (Wallet API) or construct your own transaction manually.

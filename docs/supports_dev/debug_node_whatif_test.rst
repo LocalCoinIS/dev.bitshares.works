@@ -29,7 +29,7 @@ Obtain a copy of the blockchain in `block_db` directory: $ programs/witness_node
 Set up a new datadir with the following :ref: ``config.ini`` settings::
 
     # setup API endpoint
-    rpc-endpoint = 127.0.0.1:8090
+    rpc-endpoint = 0.0.0.0:8090
     # setting this to empty effectively disables the p2p network
     seed-nodes = []
     # set apiaccess.json so we can set up

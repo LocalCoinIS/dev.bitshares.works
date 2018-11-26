@@ -26,7 +26,7 @@ run the CLI client you need to do this:
 
 * make sure you have this entry uncommented in the
   `witness_node_data_dir/config.ini` file  
-  `rpc-endpoint = 127.0.0.1:8090`
+  `rpc-endpoint = 0.0.0.0:8090`
 * before you start the CLI client, you need to start the witness node
   (and wait a while till it's up and running)
   

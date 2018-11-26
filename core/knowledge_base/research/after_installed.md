@@ -13,18 +13,18 @@
 
 You installed LocalCoin Core successfully!
 
-After you installed LocalCoin Core, you have `witness_node.exe` and `cli_wallet.exe` to run.  Both executables pass various parameters and set a configuration file (i.e., `config,ini` , `wallet.json`). 
+After you installed LocalCoin Core, you have `witness_node.exe` and `cli_wallet.exe` to run.  Both executables pass various parameters and set a configuration file (i.e., `config,ini` , `wallet.json`).
 
 We will talk about each operation to understand the LocalCoin Core Overview operations.
 
 ***
 
 ## Nodes
-First, we need to connect to the network to interact to the LocalCoin Blockchain. The Nodes have the role. The nodes in the network both verify all transactions and blocks against the current state of the overall network (i.e., broadcast messages across a network). 
+First, we need to connect to the network to interact to the LocalCoin Blockchain. The Nodes have the role. The nodes in the network both verify all transactions and blocks against the current state of the overall network (i.e., broadcast messages across a network).
 
 #### [Types of nodes](/core/nodes_full_witness/full_nodes.md#full-nodes-witness-nodes)
 
-First, you might've noticed, we use `witness node` and `full node` terms almost exchangeable.  But there are some differences.  We distinguish the Nodes between full nodes (a.k.a. **non-block producing** witness nodes) and **block producing** witness nodes. 
+First, you might've noticed, we use `witness node` and `full node` terms almost exchangeable.  But there are some differences.  We distinguish the Nodes between full nodes (a.k.a. **non-block producing** witness nodes) and **block producing** witness nodes.
 
 Both are implemented by the same executable, but the additional parameters can define each node operation differences.  For example, a (block producing) witness node has been provided an authorized block-signing private key, on the other hand, a (non-block producing) full node is not.  But both "interact" with the decentralized network (blockchain). They should maintain their own full nodes secure and reliable.
 
@@ -33,13 +33,13 @@ Both are implemented by the same executable, but the additional parameters can d
 
 #### [Running a LocalCoin API node](/core/nodes_full_witness/running-api-node.md#running-a-localcoin-api-node)
 
-In your terminal, you can execute the witness_node (see the below command), the command will launch the witness node and automatically create a data directory including a [config.file](/core/nodes_full_witness/full_nodes.md#configuration). And the operation starts downloading the data to fully synchronize the blockchain if you start without any parameters. 
+In your terminal, you can execute the witness_node (see the below command), the command will launch the witness node and automatically create a data directory including a [config.file](/core/nodes_full_witness/full_nodes.md#configuration). And the operation starts downloading the data to fully synchronize the blockchain if you start without any parameters.
 
       ./programs/witness_node/witness_node
 
-You might see downloading the data (i.e., a history of the blockchain data ) on your screen. It will take several hours to sync.  You might want to prepare a better  hardware before you run this process if you would like to receive the data. 
+You might see downloading the data (i.e., a history of the blockchain data ) on your screen. It will take several hours to sync.  You might want to prepare a better  hardware before you run this process if you would like to receive the data.
 
-If you want to avoid downloading the history of the LocalCoin blockchain data, you can set some plugins - [Memory Reduction for Nodes](/forge/plugins/nodes_memory_reduction.md#memory-reduction-for-nodes). 
+If you want to avoid downloading the history of the LocalCoin blockchain data, you can set some plugins - [Memory Reduction for Nodes](/forge/plugins/nodes_memory_reduction.md#memory-reduction-for-nodes).
 
 #### API node, config.ini, and plugins
 
@@ -47,22 +47,22 @@ The witness_node takes parameters (see a [config.file](/core/nodes_full_witness/
 
 For example, you can add `--rpc-endpoint` parameter and  a value to run basic API Node. The below command starts a node to listen for api calls at port 8090 (localhost). The `--rpc-endpoint` value can be changed to another IP address or local network.
 
-	./programs/witness_node/witness_node --rpc-endpoint 127.0.0.1:8090
+	./programs/witness_node/witness_node --rpc-endpoint 0.0.0.0:8090
 
 
-Next example shows how to set plugins to reduce the synchronizing data size and how to specify a data directory (e.g., data/my-blockprod) by using a parameter `--data-dir`. 
-		
-	./programs/witness_node/witness_node --data-dir data/my-blockprod 
-	                                     --rpc-endpoint "127.0.0.1:8 
+Next example shows how to set plugins to reduce the synchronizing data size and how to specify a data directory (e.g., data/my-blockprod) by using a parameter `--data-dir`.
+
+	./programs/witness_node/witness_node --data-dir data/my-blockprod
+	                                     --rpc-endpoint "127.0.0.1:8
 					     --max-ops-per-account 1000         
 					     --partial-operations true
-					     
-					    
+
+
 Above plugins limit the operations per account 1000 to save RAM. For this operation, a full node needs  more than 80 gigs of RAM to run.
 
 #### public full node
 
-So far, we talked about the Nodes which connect to the network directory and checked the parameters in  the config.ini to customize your connection. This pattern requires IP address to set the endpoint. 
+So far, we talked about the Nodes which connect to the network directory and checked the parameters in  the config.ini to customize your connection. This pattern requires IP address to set the endpoint.
 
 If you do not have own node to run, you can use the public API server (public full node) to connect the LocalCoin blockchain. Here is a latest list of [Public Full Node](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information.
 
@@ -88,26 +88,26 @@ The delayed full node is used for the Secure Network setup.  The delayed full no
 
 
 Any LocalCoin application (gateway, explorer, wallet, trading program, etc) interacts with the decentralized network (blockchain) are connecting to one or many API Nodes. If you plan to run a business on top of LocalCoin, you will probably want one or several API nodes of your property.  Also, if you are planning to create an exchange, that should only interface with the delayed full node for the security reasons.
- 
+
 If you plan to run a business on top of LocalCoin, you will probably want one or several API nodes of your property.  Also, if you are planning to create an exchange, that should only interface with the delayed full node for the security reasons.
 
 
- 
-****
-
 
 ****
 
 
+****
 
-Next, we will talk about wallet (cli-wallet). The Nodes are connected to the network and handle the transactions and block produces. The [wallet](/core/wallet/wallet_network.md#components) is used to initiate transfer and connects to the trusted full node. 
+
+
+Next, we will talk about wallet (cli-wallet). The Nodes are connected to the network and handle the transactions and block produces. The [wallet](/core/wallet/wallet_network.md#components) is used to initiate transfer and connects to the trusted full node.
 
 
 ## Wallet
 
 The Nodes are connected to the network and verify all transactions and block produces. The cli_wallet is used to initiate transfer and connects to the trusted full node..
 
-The cli_wallet creates a local [`wallet.json`](/core/wallet/cli_wallet.md#overview) file that contains the encrypted private keys.  The key is required to access the funds and add new data to the blockchain with a signature from a private key. 
+The cli_wallet creates a local [`wallet.json`](/core/wallet/cli_wallet.md#overview) file that contains the encrypted private keys.  The key is required to access the funds and add new data to the blockchain with a signature from a private key.
 
 Connecting the cli_wallet requires a running full node (not necessarily locally) and connect to it. You might have own node to use. If you do not have it, you can select one of [LocalCoin Public Full Nodes](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67), or nodes that run by _businesses_ or _individuals_.
 
@@ -130,13 +130,13 @@ Connecting the cli_wallet requires a running full node (not necessarily locally)
       }
 
 
-### Connecting a Wallet 
+### Connecting a Wallet
 
-In the previous section, we talked about General and High Security Network configurations about the Nodes.  Our next examples show how we can connect and open a cli_wallet by using the Node after the wetness_node connected. 
+In the previous section, we talked about General and High Security Network configurations about the Nodes.  Our next examples show how we can connect and open a cli_wallet by using the Node after the wetness_node connected.
 
 **Example 1 - [General Network Setup](https://github.com/cedar-book/core.dev/blob/master/core/wallet/wallet_network.md#general-network-and-wallet-configuration) <Trusted Full Node>**
 
-Let's look at this examples, first we start the witness_node with `--rpc-endpoint`. Next we use the `--rpc-endpoint` as a `--server-rpc-endpoint` in the cli_wallet command line and open up a RPC-JSON-HTTP port to be able to interface with API request. 
+Let's look at this examples, first we start the witness_node with `--rpc-endpoint`. Next we use the `--rpc-endpoint` as a `--server-rpc-endpoint` in the cli_wallet command line and open up a RPC-JSON-HTTP port to be able to interface with API request.
 
 **witness_node**
 
@@ -148,7 +148,7 @@ Let's look at this examples, first we start the witness_node with `--rpc-endpoin
                                      --rpc-http-endpoint="192.168.0.102:8092"
 
 
-If you open the cli-wallet successfully, you will receive `new >>>` prompt to set a password. The below are example output. Use a `set_password` to set a password. And after set the password, use a `unlock` command to unlock the wallet. 
+If you open the cli-wallet successfully, you will receive `new >>>` prompt to set a password. The below are example output. Use a `set_password` to set a password. And after set the password, use a `unlock` command to unlock the wallet.
 
 After unlock the cli-wallet, you can issue any command available to the cli-wallet ([Wallet APIs](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html)) or [construct your own transaction manually](/core/tutorials/trn_construct_transaction.md#how-to-construct-any-transaction---manually).
 
@@ -157,8 +157,8 @@ After unlock the cli-wallet, you can issue any command available to the cli-wall
 	new >>> set_password supersecret123
 	set_password supersecret123
 	null
-	locked >>> 
-										 
+	locked >>>
+
 	locked >>> unlock "supersecret123"
 	unlock "supersecret123"
 	null
@@ -185,22 +185,22 @@ Let's close look at the next examples, first we start the witness_node with `--r
 
 
 ###  [Websocket RPC / HTTP RPC](/core/wallet/cli_wallet.md#case-1-connecting-a-cli-wallet---the-public-api-server-node)
-The cli-wallet can open a RPC port so that you can interface your application with it. You have the choices of websocket RPC via the `-r` parameter, and HTTP RPC via the `-H` parameter. 
+The cli-wallet can open a RPC port so that you can interface your application with it. You have the choices of websocket RPC via the `-r` parameter, and HTTP RPC via the `-H` parameter.
 
 You can choose between [Websocket RPC](/core/api/websocket_calls_notifications.md#websocket-calls-notifications) or [RPC-HTTP](/core/api/rpc.md#remote-procedure-calls) requests, and also can set both ports together (below example).
 
-	./programs/cli_wallet/cli_wallet --wallet-file my-wallet.json 
-                               -s ws://127.0.0.1:11011 
-                               -H 127.0.0.1:8090 
-                               -r 127.0.0.1:8099	
+	./programs/cli_wallet/cli_wallet --wallet-file my-wallet.json
+                               -s ws://127.0.0.1:11011
+                               -H 127.0.0.1:8090
+                               -r 127.0.0.1:8099
 
-> **Note:** For security reasons, the wallet should only listen to localhost or the local network and should NEVER be exposed to the internet.	
+> **Note:** For security reasons, the wallet should only listen to localhost or the local network and should NEVER be exposed to the internet.
 
 ### [Use a Public API Node](/core/wallet/cli_wallet.md#case-2-connecting-a-cli-wallet---a-node-ip-address)
 
-We show you how you can use the Public API Node in your `cli_wallet` command line. 
+We show you how you can use the Public API Node in your `cli_wallet` command line.
 
-- You can find a latest list of [Public Full Node](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information. 
+- You can find a latest list of [Public Full Node](https://github.com/localcoinis/localcoin-ui/blob/staging/app/api/apiConfig.js#L67) information.
 
 **Example:**  We use the public API node of OpenLedger `wss://moscow.localcoin.is` and connect via secured websocket connection:
 
@@ -217,13 +217,13 @@ We mentioned before, you can set a password and unlock the wallet. After unlocke
 
 The Wallet APIs include Wallet Calls, Account Calls, Transaction Calls, Asset Calls, Governance, Privacy Mode, Blockchain Inspection, and Transaction Builder. After unlocked the wallet, you can gain access to the wallet by importing keys, registering an account, and transferring  funds. [Here](/core/wallet/cli_wallet.md#gaining-access-to-blockchain) is some example  steps to gain the access and about an [Account Registration](/core/accounts/account_registration.md#account-registration).
 
-**Note:** To register an account, the registrar needs to be a **lifetime member (LTM)**. You can upgrade the account to Lifetime member (LTM) status. 
+**Note:** To register an account, the registrar needs to be a **lifetime member (LTM)**. You can upgrade the account to Lifetime member (LTM) status.
 
 ***
 
 ## API
 
-Now, let's look into [LocalCoin APIs](/core/api/apis-about.md#apis-categories). APIs are separated into two categories; Blockchain API and Wallet API. 
+Now, let's look into [LocalCoin APIs](/core/api/apis-about.md#apis-categories). APIs are separated into two categories; Blockchain API and Wallet API.
 
 - **[Blockchain API](https://localcoin.org/doxygen/namespacegraphene_1_1app.html):** It's used to query blockchain data (account, assets, trading history, etc).
 - **[Wallet API](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html):** It has your private keys loaded and is required when interacting with the blockchain with new transactions.
@@ -250,7 +250,7 @@ For sensitive businesses that want to ensure that deposits are irreversible, we 
 
 ### [Objects and IDs](/core/api/object_ids.md#objects-and-ids)
 
-We will use the Objects and IDs when we search the LocalCoin Blockchain. 
+We will use the Objects and IDs when we search the LocalCoin Blockchain.
 
 LocalCoin has a different model to represent the blockchain(space), its transactions(type) and accounts(unique ids). On the LocalCoin blockchains there are **no addresses**, but objects identified by a **unique id, an type and a space**.
 
@@ -333,14 +333,14 @@ Lifetime Members pay an upgrade fee and earn 80% cash back on every fee they pay
 
 
 ****
-			
+
 (work in progress...)
 
 ***
 ***
-	
 
-**** 
+
+****
 
 ## Testnets
 
@@ -348,13 +348,13 @@ Lifetime Members pay an upgrade fee and earn 80% cash back on every fee they pay
 
 
 #### genesis.json
-										 
+
 If you are interested to use LocalCoin Testnets later, you will learn about a "genesis.json" file which you can set up the initial state of the network. You will create "my-genesis.json" file to customize to match your needs. (i.e.,[Genesis Block](https://github.com/localcoinis/localcoin-core/blob/testnet/genesis.json) - for Testnet).
 
-Here is more information about How to setup LocalCoin [Private Testnet](/core/testnets/private_testnet.md#3-creating-a-genesis-file-for-a-private-testnet) and LocalCoin [Public Testnet](/core/testnets/public_testnet.md#2-genesis-configuration). 
+Here is more information about How to setup LocalCoin [Private Testnet](/core/testnets/private_testnet.md#3-creating-a-genesis-file-for-a-private-testnet) and LocalCoin [Public Testnet](/core/testnets/public_testnet.md#2-genesis-configuration).
 
 
-So far, we are learning about the **node** which connect to the network directory and take the parameters. LocalCoin has two levels of network setups (trusted full node and delayed full node) for businesses. If you do not have own node to run, you can use the public api server (public full node). 
+So far, we are learning about the **node** which connect to the network directory and take the parameters. LocalCoin has two levels of network setups (trusted full node and delayed full node) for businesses. If you do not have own node to run, you can use the public api server (public full node).
 
 ***
 *****
