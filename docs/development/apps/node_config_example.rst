@@ -16,40 +16,41 @@ As a default, most parameters have been commented. You have to uncomment to set 
 ::
 
 	# Endpoint for P2P node to listen on
-	p2p-endpoint = 0.0.0.0:11010 
+	p2p-endpoint = 0.0.0.0:11010
 
 	# P2P nodes to connect to on startup (may specify multiple times)
-	# seed-node = 
+	seed-node = moscow.localcoin.is:11010
+	seed-node = localcoin.airdroptelegramknights.io:11010
 
 	# JSON array of P2P nodes to connect to on startup
-	# seed-nodes = 
+	seed-nodes = ["moscow.localcoin.is:11010","localcoin.airdroptelegramknights.io:11010"]
 
 	# Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
-	# checkpoint = 
+	# checkpoint =
 
 	# Endpoint for websocket RPC to listen on
 	#rpc-endpoint = 0.0.0.0:8090
 
 	# Endpoint for TLS websocket RPC to listen on
-	# rpc-tls-endpoint = 
+	# rpc-tls-endpoint =
 
 	# The TLS certificate file for this server
-	# server-pem = 
+	# server-pem =
 
 	# Password for this certificate
-	# server-pem-password = 
+	# server-pem-password =
 
 	# File to read Genesis State from
-	# genesis-json = 
+	# genesis-json =
 
 	# Block signing key to use for init witnesses, overrides genesis file
-	# dbg-init-key = 
+	# dbg-init-key =
 
 	# JSON file specifying API permissions
-	# api-access = 
+	# api-access =
 
 	# Space-separated list of plugins to activate
-	# plugins = 
+	# plugins =
 
 	# Enable block production, even if the chain is stale.
 	enable-stale-production = false
@@ -67,7 +68,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	debug-private-key = ["LLC6MRyAjQq8...........GDW5CV","5KQwrPbwdL..............yXtP79zkvFD3"]
 
 	# Account ID to track history for (may specify multiple times)
-	# track-account = 
+	# track-account =
 
 	# Keep only those operations in memory that are related to account history tracking
 	partial-operations = 1
@@ -76,19 +77,19 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	max-ops-per-account = 1000
 
 	# Elastic Search database node url
-	# elasticsearch-node-url = 
+	# elasticsearch-node-url =
 
 	# Number of bulk documents to index on replay(5000)
-	# elasticsearch-bulk-replay = 
+	# elasticsearch-bulk-replay =
 
 	# Number of bulk documents to index on a syncronied chain(10)
-	# elasticsearch-bulk-sync = 
+	# elasticsearch-bulk-sync =
 
 	# Log bulk events to database
-	# elasticsearch-logs = 
+	# elasticsearch-logs =
 
 	# Use visitor to index additional data(slows down the replay)
-	# elasticsearch-visitor = 
+	# elasticsearch-visitor =
 
 	# Track market history by grouping orders into buckets of equal size measured in seconds specified as a JSON array of numbers
 	bucket-size = [60,300,900,1800,3600,14400,86400]
@@ -103,48 +104,48 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	max-order-his-seconds-per-market = 259200
 
 	# RPC endpoint of a trusted validating node (required)
-	# trusted-node = 
+	# trusted-node =
 
 	# Block number after which to do a snapshot
-	# snapshot-at-block = 
+	# snapshot-at-block =
 
 	# Block time (ISO format) after which to do a snapshot
-	# snapshot-at-time = 
+	# snapshot-at-time =
 
 	# Pathname of JSON file where to store the snapshot
-	# snapshot-to = 
+	# snapshot-to =
 
 	# Elasticsearch node url
-	# es-objects-elasticsearch-url = 
+	# es-objects-elasticsearch-url =
 
 	# Log bulk events to database
-	# es-objects-logs = 
+	# es-objects-logs =
 
 	# Number of bulk documents to index on replay(5000)
-	# es-objects-bulk-replay = 
+	# es-objects-bulk-replay =
 
 	# Number of bulk documents to index on a syncronied chain(10)
-	# es-objects-bulk-sync = 
+	# es-objects-bulk-sync =
 
 	# Store proposal objects
-	# es-objects-proposals = 
+	# es-objects-proposals =
 
 	# Store account objects
-	# es-objects-accounts = 
+	# es-objects-accounts =
 
 	# Store asset objects
-	# es-objects-assets = 
+	# es-objects-assets =
 
 	# Store balances objects
-	# es-objects-balances = 
+	# es-objects-balances =
 
 	# Store limit order objects
-	# es-objects-limit-orders = 
+	# es-objects-limit-orders =
 
 	# Store feed data
-	# es-objects-asset-bitasset = 
+	# es-objects-asset-bitasset =
 
-	# Group orders by percentage increase on price. Specify a JSON array of numbers here, each number is a group, number 1 means 0.01%. 
+	# Group orders by percentage increase on price. Specify a JSON array of numbers here, each number is a group, number 1 means 0.01%.
 	tracked-groups = [10,100]
 
 	[log.console_appender.stderr]
@@ -167,8 +168,6 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	appenders=p2p
 
 
-	
-	
-.. Note:: Folders and files are considered to be relative to the working directory (i.e. the directory from which the executables are launched from)
 
-	
+
+.. Note:: Folders and files are considered to be relative to the working directory (i.e. the directory from which the executables are launched from)
