@@ -36,10 +36,10 @@ How to become an Active Node
 Steps
 ------------
 
-1. Run the Witness/Full Node on the Network
+1. Run the Active Node on the Network
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- We first run the witness node *without block production* and connect it to the P2P network with the following command::
+ We first run the node and connect it to the P2P network with the following command::
 
     $ programs/witness_node/witness_node --genesis-json genesis.json -s moscow.localcoin.is:11010 --rpc-endpoint 0.0.0.0:8090
 
@@ -48,7 +48,7 @@ Steps
 2. Create a CLI Wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- We now open up the cli_wallet. The following command connects to our plain Witness (Fill) node::
+ We now open up the cli_wallet. The following command connects to our plain Active Node::
 
     $ programs/cli_wallet/cli_wallet -s ws://0.0.0.0:8090
 
