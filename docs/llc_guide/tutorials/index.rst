@@ -142,7 +142,7 @@ Witness (Full) Node Guide
 Active (Master) Node Guide
 ====================
 
-* :ref:`Activenode generating rewards <activenode-generating-rewards>`
+* :ref:`Activenode generating rewards <howto-become-active-node>`
 * :ref:`Activenode requirements <activenode-requirements>`
 * :ref:`Active Node Duties <active-node-duties>`
 * :ref:`How to become an Active Node <how-to-become-an-active-node>`
