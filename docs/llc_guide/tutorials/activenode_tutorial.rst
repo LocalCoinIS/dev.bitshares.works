@@ -14,7 +14,7 @@ Activenode generating rewards
 ===========================
 
 
-Requirements
+Activenode requirements
 ----------------
 
 - A registered account in the corresponding network
