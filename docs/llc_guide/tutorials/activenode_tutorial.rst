@@ -14,22 +14,24 @@ Activenode generating rewards
 ===========================
 Each activenode gets paid with 0.065 LLC per block divided by total online Activenodes running the network.
 
-``Example``:: Let say the current total amount of activenodes is 1000 online nodes
+``Example``::
+>>>
+Let say the current total amount of activenodes is 1000 online nodes.
 So each activenode receives 0.065/1000*24hours*60seconds*30blocks=2.808 LLC per day
 
 Activenode requirements
 ----------------
 
 - A registered account in the corresponding network
-- Some funds in the account to pay for the registration fee and to stay active node
-(511 LLC)
+- Minimum balance is 511 LLC to pay for the registration fee and to stay active node to recieve the reward
 - Executable binary
 - Lifetime Member (LTM) status
 
 Active Node Duties
 ------------------------
 
-- Maintaining a public seednode
+- Maintaining a public seed-node
+- Maintaining the CommonCloud
 
 ---------------------------
 
