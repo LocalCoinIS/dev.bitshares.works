@@ -148,7 +148,6 @@ Active (Master) Node Guide
 * :ref:`How to become an Active Node <how-to-become-an-active-node>`
 
 
-
 Worker Guide
 =======================
 
