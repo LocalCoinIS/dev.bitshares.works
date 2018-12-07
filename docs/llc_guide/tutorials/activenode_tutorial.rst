@@ -14,13 +14,10 @@ Activenode generating rewards
 ===========================
 Activenode account gets 0.065 LLC per block divided by total online Activenodes running the network
 
-Example:
+``Example``::
 
-```
 total amount Activenodes is 1000
 each Activenode gets 0.065/1000*24*60*30=2.808 LLC per day
-```
-
 
 Activenode requirements
 ----------------
@@ -34,7 +31,7 @@ Activenode requirements
 Active Node Duties
 ------------------------
 
-- Maintain a public seednode
+- Maintaining a public seednode
 
 ---------------------------
 
