@@ -136,6 +136,24 @@ Witness (Full) Node Guide
 * :ref:`How to backup a server <witness-backup-server>`
 * :ref:`How witness Price Feeds work <witness-price-feeds>`
 
+
+.. _active-node-guide-tutorials:
+
+Active (Master) Node Guide
+====================
+
+* :ref:`How to connect to your own Full Node (GUI) <howto-connect-own-full-node-gui>`
+* :ref:`How to change the Signing Key of your Witness <change-witness-key>`
+* :ref:`What is System Requirements <system-requirements-node>`  (updated: 2018-07-02)
+* :ref:`How to Run and Use a Full Node <how-to-run-full-node2>`
+* :ref:`How to Become an Active Witness <howto-become-active-witness>`
+* :ref:`How to run Node in the background by using GNU screen <manage-gun-screen>`
+* :ref:`How to run a LocalCoin API Node <run-api-node-guide>`
+* :ref:`How to verify block production <veryfy_block_production>`
+* :ref:`How to backup a server <witness-backup-server>`
+* :ref:`How witness Price Feeds work <witness-price-feeds>`
+
+
 Worker Guide
 =======================
 
