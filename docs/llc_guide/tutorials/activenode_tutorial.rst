@@ -12,12 +12,12 @@ Become an Active Node
 
 Activenode generating rewards
 ===========================
-Activenode account gets 0.065 LLC per block divided by total online Activenodes running the network
+Each activenode gets paid with 0.065 LLC per block divided by total online Activenodes running the network.
 
 ``Example``::
 
-total amount Activenodes is 1000
-each Activenode gets 0.065/1000*24*60*30=2.808 LLC per day
+Let say the current total amount of activenodes is 1000 online nodes
+So each activenode receives 0.065/1000*24hours*60seconds*30blocks=2.808 LLC per day
 
 Activenode requirements
 ----------------
