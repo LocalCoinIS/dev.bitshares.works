@@ -233,7 +233,7 @@ Example Python script
             {"label": "10 things to Buy", "quantity": 10, "price": "1.00"}
         ],
         "note": "Payment for reading awesome documentation",
-        "callback": "https://localcoin.is/complete"
+        "callback": "https://wallet.localcoin.is/complete"
     }
 
     compressed = lzma.compress(bytes(json.dumps(invoice), 'utf-8'), format=lzma.FORMAT_ALONE)
