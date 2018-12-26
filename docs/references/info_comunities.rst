@@ -23,7 +23,7 @@ Communities
 .. _Telagram - LocalCoinDEX: https://t.me/LocalCoinDEX
 .. _Telagram - LocalCoinEXCHANGES: https://t.me/LocalCoinEXCHANGES
 .. _Telagram - LocalCoin Traders: https://t.me/LocalCoin_Traders
-.. _Discord - LocalCoin: https://discord.gg/vkVzbfj
+.. _Discord - LocalCoin: https://discord.gg/vzxSzYN
 .. _BitSares on Steemit: https://steemit.com/trending/localcoin
 .. _Twitter: https://twitter.com/localcoin
 .. _Reddit: https://www.reddit.com/r/LocalCoin/
@@ -34,7 +34,7 @@ Beyond Bitcoin - Localcoin
 ----------------------------
 
 
-- `LocalCoin Discord Hangouts <https://discord.gg/vkVzbfj>`_
+- `LocalCoin Discord Hangouts <https://discord.gg/vzxSzYN>`_
   - `LocalCoin Hangout: Discord Tips <https://steemit.com/localcoin/@ash/localcoin-hangout-discord-tips>`_
 
 --------------------------
