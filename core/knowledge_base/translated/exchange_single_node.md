@@ -35,7 +35,7 @@ The LocalCoin uses the DPOS consensus mechanism to vote for the block forge by t
  
    - [LocalCoin-UI Release](https://github.com/localcoinis/localcoin-ui/releases)
    - LocalCoin UI wallet https://wallet.localcoin.org
-   - [Create an Account Guide](https://github.com/localcoinis/how.localcoin.works/blob/master/bbf/user_guide/create_account.md#localcoin-account-and-wallet)
+   - [Create an Account Guide](https://github.com/localcoinis/how.localcoin.is/blob/master/bbf/user_guide/create_account.md#localcoin-account-and-wallet)
    
    (If it is the official webpage wallet or light wallet 171102 or above, the default is the account mode (Cloud Wallet) when registering for the first time, you can click "Advanced" to enter the wallet mode (Local Wallet) ).
    
@@ -406,7 +406,7 @@ Since no active authority key was imported, the cli_wallet responsible for handl
 
 #### 6.3 Obtaining the Active Authority Key of the Withdrawal Account from the Light Wallet
 
-Reference: [User Guide - Permissions](https://github.com/localcoinis/how.localcoin.works/blob/master/bbf/user_guide/permissions.md#public-key-and-private-key)
+Reference: [User Guide - Permissions](https://github.com/localcoinis/how.localcoin.is/blob/master/bbf/user_guide/permissions.md#public-key-and-private-key)
 
 #### 6.4 Import the withdrawal account's active authorization key into cli_wallet responsible for withdrawal
 

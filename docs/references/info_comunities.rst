@@ -50,11 +50,11 @@ LocalCoin Blockchain
 LocalCoin Blockchain Foundation
 =======================================
 
-- `Localcoin Foundation <http://www.localcoin.foundation/>`_
-- `Localcoin Foundation : Worker <http://www.localcoin.foundation/worker>`_
-- `Localcoin Foundation : Accounting <http://www.localcoin.foundation/accounting>`_
-- `Localcoin Foundation : Public Mailing Lists <http://lists.localcoin.foundation/listinfo>`_
-- `Localcoin Foundation : Spokesperson <http://www.localcoin.foundation/spokesperson>`_
+- `Localcoin Foundation <http://www.localcoin.is/>`_
+- `Localcoin Foundation : Worker <http://www.localcoin.is/worker>`_
+- `Localcoin Foundation : Accounting <http://www.localcoin.is/accounting>`_
+- `Localcoin Foundation : Public Mailing Lists <http://lists.localcoin.is/listinfo>`_
+- `Localcoin Foundation : Spokesperson <http://www.localcoin.is/spokesperson>`_
 
 LocalCoin UI Wallet
 ====================

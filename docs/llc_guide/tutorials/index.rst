@@ -34,7 +34,7 @@ API
 
 Assets
 ===========
-* `Read LocalCoin Assets Tokens (*opens User Guide) <http://how.localcoin.works/en/latest/llc_holders/tokens.html>`_
+* `Read LocalCoin Assets Tokens (*opens User Guide) <http://how.localcoin.is/en/latest/llc_holders/tokens.html>`_
 * :ref:`How can I create a new UIA by using GUI? <creating-new-uia-gui>`
 * :ref:`How can I create a UIA manually (CLI)? <uia-create-manual>`
 * :ref:`How can I create a MPA manually (CLI)? <mpa-create-manual>`

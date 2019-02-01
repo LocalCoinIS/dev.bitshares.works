@@ -2,11 +2,11 @@
 
 Welcome to the documentation portal for the LocalCoin Blockchain. The content on this page is managed by the LocalCoin community and is constantly improved.
 
-[LocalCoin Developers Documentation Portal website](http://dev.localcoin.works/en/master/)
+[LocalCoin Developers Documentation Portal website](http://dev.localcoin.is/en/master/)
 
 ----------------
 
-[LocalCoin Documentation website](http://how.localcoin.works/en/master/)
+[LocalCoin Documentation website](http://how.localcoin.is/en/master/)
 
 ### Releases
 - [LocalCoin-Core Release](https://github.com/localcoinis/localcoin-core/releases)
@@ -16,7 +16,7 @@ Welcome to the documentation portal for the LocalCoin Blockchain. The content on
 
 ### Contributing 
 
-- [How to Contribute to LocalCoin Documentation Project](https://github.com/localcoinis/dev.localcoin.works/blob/master/CONTRIBUTING.md)
+- [How to Contribute to LocalCoin Documentation Project](https://github.com/localcoinis/dev.localcoin.is/blob/master/CONTRIBUTING.md)
 
 
 ***

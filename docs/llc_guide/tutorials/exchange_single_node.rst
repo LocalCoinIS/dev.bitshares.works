@@ -32,7 +32,7 @@ The LocalCoin uses the DPOS consensus mechanism to vote for the block forge by t
 
   - `LocalCoin-UI Release <https://github.com/localcoinis/localcoin-ui/releases>`_
   - LocalCoin UI wallet:  https://wallet.localcoin.org
-  - `Create an Account Guide <http://how.localcoin.works/en/latest/user_guide/create_account.html>`_
+  - `Create an Account Guide <http://how.localcoin.is/en/latest/user_guide/create_account.html>`_
 
    
 - Not all accounts can be registered for free. Generally, a flat or numeric account can be registered for free, such as my-exchange, or myexchange2017.   

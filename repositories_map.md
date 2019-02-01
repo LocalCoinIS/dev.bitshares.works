@@ -1,4 +1,4 @@
-### how.localcoin.works & dev.localcoin.works 
+### how.localcoin.is & dev.localcoin.is 
 
 To be filled.
 

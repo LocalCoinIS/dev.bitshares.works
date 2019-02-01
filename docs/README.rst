@@ -7,7 +7,7 @@ LocalCoin Developer Portal
         :alt: Graphene Welcome
         :width: 80px
         :align: center
-		
+
 ----------
 
 .. centered:: **Welcome to the LocalCoin Developers Portal**
@@ -19,11 +19,10 @@ The purpose of this site is to provide in-depth documentation about the LocalCoi
 
 
 
-- `LocalCoin Whitepaper <http://www.localcoin.foundation/papers/LocalCoinBlockchain.pdf>`_
-- `LocalCoin Blockchain Foundation Announcements <http://www.localcoin.foundation/>`_
+- `LocalCoin Whitepaper <https://localcoin.is/downloads/LocalCoinBlockchain.pdf>`_
+- `LocalCoin Blockchain Foundation Announcements <http://www.localcoin.isd/>`_
 - `LocalCoin Bug Bounty Program <https://hackthedex.io/>`_
-- `LocalCoin Documentation - Users Guide <http://how.localcoin.works/en/latest/>`_
+- `LocalCoin Documentation - Users Guide <http://how.localcoin.is/en/latest/>`_
 
 
 ----------
-
