@@ -102,6 +102,6 @@ At this point the user has successfully made a payment and the merchant has veri
 ***
 
 (ref)
-- http://docs.localcoin.org/integration/merchants/merchant-protocol.html
+- http://docs.LocalCoin.is/integration/merchants/merchant-protocol.html
 
 ***

@@ -58,7 +58,7 @@ LocalCoin Blockchain Foundation
 
 LocalCoin UI Wallet
 ====================
-- `LocalCoin UI wallet <https://wallet.localcoin.org>`_
+- `LocalCoin UI wallet <https://wallet.LocalCoin.is>`_
 
 
 Localcoin Block Exploer

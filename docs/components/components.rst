@@ -7,7 +7,7 @@ System Components Elements
 
 -----------------------------------
 
-- `The Blockchain Worker System <https://localcoin.org/doxygen/group__workers.html>`_ (*open a doxygen documentation)
+- `The Blockchain Worker System <https://LocalCoin.is/doxygen/group__workers.html>`_ (*open a doxygen documentation)
 
 
 **Structures and Descriptions**

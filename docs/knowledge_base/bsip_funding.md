@@ -31,7 +31,7 @@ Other tasks, such as basic GUI development, etc. can mostly be dealt with indepe
 ***
 
 (ref)
-- http://docs.localcoin.org/localcoin/developers/bsips.html
-- http://docs.localcoin.org/developers/funding.html
+- http://docs.LocalCoin.is/localcoin/developers/bsips.html
+- http://docs.LocalCoin.is/developers/funding.html
 
 

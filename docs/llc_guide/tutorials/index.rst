@@ -153,7 +153,7 @@ Worker Guide
 
 * :ref:`How to Create a Worker <worker-create>`
 * :ref:`How to find claim Worker Pay <worker-budget>`
-* `How the Blockchain Worker System work? <https://localcoin.org/doxygen/group__workers.html>`_ (*open a doxygen documentation)
+* `How the Blockchain Worker System work? <https://LocalCoin.is/doxygen/group__workers.html>`_ (*open a doxygen documentation)
 
 
 

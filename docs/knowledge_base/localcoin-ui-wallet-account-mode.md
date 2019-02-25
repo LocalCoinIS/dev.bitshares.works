@@ -21,7 +21,7 @@ This document purpose: To explain LocalCoin UI wallet Client and wallet types an
   - **Light Client** : Download and install LocalCoin wallet to your computer. **This does not mean that you will have a Local wallet.**
     - [LocalCoin-UI – Latest Release](https://github.com/localcoinis/localcoin-ui/releases)
   - **Web Client** : Access the network and open the wallet in the browsers.
-    - wallet.localcoin.org https://wallet.localcoin.org
+    - wallet.LocalCoin.is https://wallet.LocalCoin.is
   
 ## LocalCoin Wallet Types and Login   
 

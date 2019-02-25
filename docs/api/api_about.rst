@@ -4,7 +4,7 @@
 API Guide
 ========================
 
-LocalCoin APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. LocalCoin-Core API references locate in the `Doxygen documentation. <https://localcoin.org/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section. 
+LocalCoin APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. LocalCoin-Core API references locate in the `Doxygen documentation. <https://LocalCoin.is/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section. 
 
 .. contents:: Table of Contents
    :local:

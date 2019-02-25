@@ -86,6 +86,6 @@ The `verify_account_authority` call will return `true` if the provided keys have
 ***
 
 (ref)
-- http://docs.localcoin.org/integration/merchants/login-protocol.html
+- http://docs.LocalCoin.is/integration/merchants/login-protocol.html
 
 ***

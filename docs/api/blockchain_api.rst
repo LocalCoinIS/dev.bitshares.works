@@ -22,8 +22,8 @@ passphrase. More detailed description about this can be found on the
 
 
 LocalCoin-Core API References - Doxygen Documentation *\<Quick links\>*
-   - `LocalCoin-Core Doxygen (Main)  <https://localcoin.org/doxygen/index.html>`_
-   - `Class Hierarchy order <https://localcoin.org/doxygen/hierarchy.html>`_
+   - `LocalCoin-Core Doxygen (Main)  <https://LocalCoin.is/doxygen/index.html>`_
+   - `Class Hierarchy order <https://LocalCoin.is/doxygen/hierarchy.html>`_
 
 
 ----------

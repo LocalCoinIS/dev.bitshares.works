@@ -90,7 +90,7 @@ and pay them one hours worth of pay in order or # votes.
 References:
 ~~~~~~~~~~~~~~~~
 
-- `The Blockchain Worker System <https://localcoin.org/doxygen/group__workers.html>`_ (*open a doxygen documentation)
+- `The Blockchain Worker System <https://LocalCoin.is/doxygen/group__workers.html>`_ (*open a doxygen documentation)
 
 
 |

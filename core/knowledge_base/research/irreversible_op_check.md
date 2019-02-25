@@ -60,11 +60,11 @@ If the most recent `block_num` is smaller than the `last_irreversible_block_num`
 
 
 (ref)
-- [graphene::chain::operation_history_object Class Reference](https://localcoin.org/doxygen/classgraphene_1_1chain_1_1operation__history__object.html)
+- [graphene::chain::operation_history_object Class Reference](https://LocalCoin.is/doxygen/classgraphene_1_1chain_1_1operation__history__object.html)
 
-- [graphene::chain::dynamic_global_property_object Class Reference](https://localcoin.org/doxygen/classgraphene_1_1chain_1_1dynamic__global__property__object.html)
+- [graphene::chain::dynamic_global_property_object Class Reference](https://LocalCoin.is/doxygen/classgraphene_1_1chain_1_1dynamic__global__property__object.html)
 
-- [global_property_object.hpp](https://localcoin.org/doxygen/global__property__object_8hpp_source.html)
+- [global_property_object.hpp](https://LocalCoin.is/doxygen/global__property__object_8hpp_source.html)
 
       FC_REFLECT_DERIVED( graphene::chain::`dynamic_global_property_object`, (graphene::db::object),
       (head_block_number)

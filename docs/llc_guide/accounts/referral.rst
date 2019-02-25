@@ -61,7 +61,7 @@ What to do?
 
 Terms & Conditions
 ----------------------
- Please see the `Referral Program - Terms & Conditions <https://localcoin.org/referral-program-terms-and-conditions/>`_ for more details.
+ Please see the `Referral Program - Terms & Conditions <https://LocalCoin.is/referral-program-terms-and-conditions/>`_ for more details.
 
 
 Claiming Referral Bonus and Cashback

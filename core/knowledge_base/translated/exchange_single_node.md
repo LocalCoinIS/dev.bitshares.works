@@ -34,7 +34,7 @@ The LocalCoin uses the DPOS consensus mechanism to vote for the block forge by t
    > Note: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
  
    - [LocalCoin-UI Release](https://github.com/localcoinis/localcoin-ui/releases)
-   - LocalCoin UI wallet https://wallet.localcoin.org
+   - LocalCoin UI wallet https://wallet.LocalCoin.is
    - [Create an Account Guide](https://github.com/localcoinis/how.localcoin.is/blob/master/bbf/user_guide/create_account.md#localcoin-account-and-wallet)
    
    (If it is the official webpage wallet or light wallet 171102 or above, the default is the account mode (Cloud Wallet) when registering for the first time, you can click "Advanced" to enter the wallet mode (Local Wallet) ).
@@ -747,8 +747,8 @@ Therefore, if a transaction broadcast appears but does not appear in the account
 * Graphic tutorial http://jc.llcabc.org/
   * Self-built node tutorial http://llcabc.org/article-477-1.html
   * Get account private key http://llcabc.org/article-761-1.html
-* English Docking Documents http://docs.localcoin.org/integration/exchanges/step-by-step.html
-* English API Documentation http://docs.localcoin.org/api/index.html	
+* English Docking Documents http://docs.LocalCoin.is/integration/exchanges/step-by-step.html
+* English API Documentation http://docs.LocalCoin.is/api/index.html	
 
 
 ***

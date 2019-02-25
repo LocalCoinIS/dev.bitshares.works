@@ -63,10 +63,10 @@ What is New in LocalCoin
   approval. Hence, everyone can create a privatized bitAsset to track an
   individual value, such as indices, or binary predictions.
 
-.. _dynamic account permissions: https://localcoin.org/technology/dynamic-account-permissions/
-.. _transferable named accounts: https://localcoin.org/technology/transferable-named-accounts/
-.. _referral program: https://localcoin.org/referral-program/
-.. _recurring and scheduled payments: https://localcoin.org/technology/recurring-and-scheduled-payments/
+.. _dynamic account permissions: https://LocalCoin.is/technology/dynamic-account-permissions/
+.. _transferable named accounts: https://LocalCoin.is/technology/transferable-named-accounts/
+.. _referral program: https://LocalCoin.is/referral-program/
+.. _recurring and scheduled payments: https://LocalCoin.is/technology/recurring-and-scheduled-payments/
 
 
 

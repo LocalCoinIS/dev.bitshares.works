@@ -45,7 +45,7 @@
 - Open https://github.com/localcoinis/localcoin-ui/releases, create new release under tag created in previous step
 - Specify release notes, upload dmg/deb/exe wallets created earlie
 
-### Localcoin.org wallet and downloads page
+### LocalCoin.is wallet and downloads page
 
 - Go to localcoin.gihub.io repo (`git clone https://github.com/localcoinis/localcoin.github.io`)
 - Copy `localcoin-ui/web/dist/*` to `wallet/`

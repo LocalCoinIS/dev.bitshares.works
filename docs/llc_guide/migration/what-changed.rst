@@ -57,6 +57,6 @@ What has Changed since LocalCoin 0.9?
   now call block producers (formerly known as *delegates*) witnesses, while the
   additional payed position for workers are called budget items.
 
-.. _industrial performance and scalability: https://localcoin.org/technology/industrial-performance-and-scalability/
-.. _bitAssets 2.0: https://localcoin.org/technology/price-stable-cryptocurrencies/
-.. _a referral program: https://localcoin.org/technology/recurring-and-scheduled-payments/
+.. _industrial performance and scalability: https://LocalCoin.is/technology/industrial-performance-and-scalability/
+.. _bitAssets 2.0: https://LocalCoin.is/technology/price-stable-cryptocurrencies/
+.. _a referral program: https://LocalCoin.is/technology/recurring-and-scheduled-payments/

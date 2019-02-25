@@ -257,9 +257,9 @@ enum `graphene::chain::asset_issuer_permission_flags`
 
 (ref)
 
-- http://docs.localcoin.org/integration/supporting-features.html
-- http://docs.localcoin.org/integration/user-whitelist.html
-- http://docs.localcoin.org/integration/asset-whitelist.html
+- http://docs.LocalCoin.is/integration/supporting-features.html
+- http://docs.LocalCoin.is/integration/user-whitelist.html
+- http://docs.LocalCoin.is/integration/asset-whitelist.html
 - 
 
 

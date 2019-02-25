@@ -18,6 +18,6 @@ Note that each account in the figure can carry a **different weight**. [Read mor
 ***
 
 (ref)
-- http://docs.localcoin.org/localcoin/user/transactions-proposed.html
+- http://docs.LocalCoin.is/localcoin/user/transactions-proposed.html
 
 

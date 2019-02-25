@@ -150,7 +150,7 @@ Let's look at this examples, first we start the witness_node with `--rpc-endpoin
 
 If you open the cli-wallet successfully, you will receive `new >>>` prompt to set a password. The below are example output. Use a `set_password` to set a password. And after set the password, use a `unlock` command to unlock the wallet.
 
-After unlock the cli-wallet, you can issue any command available to the cli-wallet ([Wallet APIs](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html)) or [construct your own transaction manually](/core/tutorials/trn_construct_transaction.md#how-to-construct-any-transaction---manually).
+After unlock the cli-wallet, you can issue any command available to the cli-wallet ([Wallet APIs](https://LocalCoin.is/doxygen/classgraphene_1_1wallet_1_1wallet__api.html)) or [construct your own transaction manually](/core/tutorials/trn_construct_transaction.md#how-to-construct-any-transaction---manually).
 
 > The password is used to encrypt the private keys in the wallet.
 
@@ -211,7 +211,7 @@ This will open the cli-wallet and unless you already have a local wallet, it wil
 
 	>>> new
 
-We mentioned before, you can set a password and unlock the wallet. After unlocked the wallet, you can issue [`Wallet API calls`](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html).
+We mentioned before, you can set a password and unlock the wallet. After unlocked the wallet, you can issue [`Wallet API calls`](https://LocalCoin.is/doxygen/classgraphene_1_1wallet_1_1wallet__api.html).
 
 ### About Wallet API Calls
 
@@ -225,8 +225,8 @@ The Wallet APIs include Wallet Calls, Account Calls, Transaction Calls, Asset Ca
 
 Now, let's look into [LocalCoin APIs](/core/api/apis-about.md#apis-categories). APIs are separated into two categories; Blockchain API and Wallet API.
 
-- **[Blockchain API](https://localcoin.org/doxygen/namespacegraphene_1_1app.html):** It's used to query blockchain data (account, assets, trading history, etc).
-- **[Wallet API](https://localcoin.org/doxygen/classgraphene_1_1wallet_1_1wallet__api.html):** It has your private keys loaded and is required when interacting with the blockchain with new transactions.
+- **[Blockchain API](https://LocalCoin.is/doxygen/namespacegraphene_1_1app.html):** It's used to query blockchain data (account, assets, trading history, etc).
+- **[Wallet API](https://LocalCoin.is/doxygen/classgraphene_1_1wallet_1_1wallet__api.html):** It has your private keys loaded and is required when interacting with the blockchain with new transactions.
 
 The set of available calls depend on whether you connect to the full node (witness_node) or the wallet (cli_wallet). Both support [RPC-JSON](/core/api/rpc.md#remote-procedure-calls). The full node also supports the [websocket protocol](/core/api/websocket_calls_notifications.md#websocket-calls-notifications) with [notifications](/core/api/websocket_calls_notifications.md#database-notifications).  
 
