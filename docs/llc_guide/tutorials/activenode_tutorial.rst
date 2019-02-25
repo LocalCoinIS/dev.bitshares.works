@@ -23,7 +23,7 @@ Activenode requirements
 ----------------
 
 - A registered account in the corresponding network
-- Minimum balance is 511 LLC to pay for the registration fee and to stay active node to recieve the reward
+- Minimum balance is 511 LLC to pay for the registration fee and to stay active node to receive the reward
 - Executable binary
 - Lifetime Member (LTM) status
 
