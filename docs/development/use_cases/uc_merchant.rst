@@ -190,7 +190,7 @@ Step 4: Pass to Wallet
 Once the Base58 data is known, it can be passed to the wallet with the
 following URL:::
 
-    https://wallet.org/#/invoice/BASE58BLOB
+    https://wallet.org/invoice/BASE58BLOB
 
 Step 5: Receive Callback from Wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -238,7 +238,7 @@ Example Python script
 
     compressed = lzma.compress(bytes(json.dumps(invoice), 'utf-8'), format=lzma.FORMAT_ALONE)
     b58 = base58encode(hexlify(compressed).decode('utf-8'))
-    url = "https://wallet.localcoin.is/#/invoice/%s" % b58
+    url = "https://wallet.localcoin.is/invoice/%s" % b58
 
     print(url)
 

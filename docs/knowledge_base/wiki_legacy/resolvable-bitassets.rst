@@ -82,7 +82,7 @@ Example
 
 First, Alice creates a basket of short/long shares. This is considered unbalanced creation since there is no existing market (R1). She uses 7500 LLC to do this. She must declare her intent by 16:00 UTC (R3), upon her declaration the 7500 LLC become locked. At 00:00 UTC the next day, a book price is determined by the average value of the median feed from 18:00 UTC to 00:00 UTC (R4), let us say this value is $0.04 USD / LLC. 1/3 of the pledged collateral goes to the long side, 2/3 goes to the short side. The number of long shares issued will be determined by the price. 2500 LLC at $0.04 USD / LLC has a value of $100, thus 100 long shares are created, and 200 short shares are also created.
 
-To simplify discussion, let's say Alice transfers the long shares to Lisa. (Long holders will have names starting with letters "L" and later, short holders will begin with "A". A list of alphabetical names is available in LocalCoin at https://github.com/LocalCoin/localcoin/blob/3ebe73b463d637d3c0e991d6abd4613b68bed3b6/tests/drltc_tests/tscript/genesis.py#L31 ). We have these books:
+To simplify discussion, let's say Alice transfers the long shares to Lisa. (Long holders will have names starting with letters "L" and later, short holders will begin with "A". A list of alphabetical names is available in LocalCoin at https://github.com/localcoinis/localcoin/blob/3ebe73b463d637d3c0e991d6abd4613b68bed3b6/tests/drltc_tests/tscript/genesis.py#L31 ). We have these books:
 
     -------------------------------------------
     | CR: 7500 / 2500 = 300%                  |
