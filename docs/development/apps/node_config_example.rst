@@ -20,10 +20,12 @@ As a default, most parameters have been commented. You have to uncomment to set 
 
 	# P2P nodes to connect to on startup (may specify multiple times)
 	seed-node = moscow.localcoin.is:11020
-	seed-node = localcoin.airdroptelegramknights.io:11020
+	seed-node = helsinki.localcoin.is:11020
+	seed-node = ru.localcoin.is:11020
+	seed-node = quebec.airdroptelegramknights.io:11020
 
 	# JSON array of P2P nodes to connect to on startup
-	seed-nodes = ["moscow.localcoin.is:11020","localcoin.airdroptelegramknights.io:11020"]
+	# seed-nodes = ["moscow.localcoin.is:11020","quebec.airdroptelegramknights.io:11020"]
 
 	# Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
 	# checkpoint =
