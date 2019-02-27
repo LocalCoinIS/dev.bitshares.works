@@ -133,7 +133,7 @@
       <node id="11012">
         <label>graphene/chain/protocol/asset.hpp</label>
         <link refid="asset_8hpp"/>
-        <childnode refid="11010" relation="include">
+        <childnode refid="11020" relation="include">
         </childnode>
         <childnode refid="10982" relation="include">
         </childnode>
@@ -159,7 +159,7 @@
         <childnode refid="10988" relation="include">
         </childnode>
       </node>
-      <node id="11010">
+      <node id="11020">
         <label>graphene/chain/protocol/config.hpp</label>
         <link refid="protocol_2config_8hpp"/>
         <childnode refid="11004" relation="include">
@@ -310,7 +310,7 @@
         </childnode>
         <childnode refid="11009" relation="include">
         </childnode>
-        <childnode refid="11010" relation="include">
+        <childnode refid="11020" relation="include">
         </childnode>
         <childnode refid="11011" relation="include">
         </childnode>

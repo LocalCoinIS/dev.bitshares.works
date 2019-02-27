@@ -67,7 +67,7 @@ Other References
 
 - `Testnet - Python Scripts <https://github.com/LocalCoinEurope/testnet-pythonscripts>`_
 
-- **Seed node**: `testnet.localcoin.is:11010`
+- **Seed node**: `testnet.localcoin.is:11020`
 - Chain-id: `39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447`
 - `Genesis Block - for Testnet <https://github.com/localcoinis/localcoin-core/blob/testnet/genesis.json>`_
 

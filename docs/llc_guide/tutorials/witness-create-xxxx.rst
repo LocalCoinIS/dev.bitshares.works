@@ -25,7 +25,7 @@ connect it to the P2P network with the following command:
 
 ::
 
-    $ programs/witness_node/witness_node --genesis-json genesis.json -s moscow.localcoin.is:11010 --rpc-endpoint 127.0.0.1:8090
+    $ programs/witness_node/witness_node --genesis-json genesis.json -s moscow.localcoin.is:11020 --rpc-endpoint 127.0.0.1:8090
 
 The argument ``--rpc-endpoint 127.0.0.1:8090`` opens up a RPC port ``8090`` for
 connections from localhost.

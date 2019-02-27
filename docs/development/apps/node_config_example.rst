@@ -16,14 +16,14 @@ As a default, most parameters have been commented. You have to uncomment to set 
 ::
 
 	# Endpoint for P2P node to listen on
-	p2p-endpoint = 0.0.0.0:11010
+	p2p-endpoint = 0.0.0.0:11020
 
 	# P2P nodes to connect to on startup (may specify multiple times)
-	seed-node = moscow.localcoin.is:11010
-	seed-node = localcoin.airdroptelegramknights.io:11010
+	seed-node = moscow.localcoin.is:11020
+	seed-node = localcoin.airdroptelegramknights.io:11020
 
 	# JSON array of P2P nodes to connect to on startup
-	seed-nodes = ["moscow.localcoin.is:11010","localcoin.airdroptelegramknights.io:11010"]
+	seed-nodes = ["moscow.localcoin.is:11020","localcoin.airdroptelegramknights.io:11020"]
 
 	# Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
 	# checkpoint =

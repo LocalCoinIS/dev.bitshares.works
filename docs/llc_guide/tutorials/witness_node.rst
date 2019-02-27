@@ -48,7 +48,7 @@ Steps
 
  We first run the witness node *without block production* and connect it to the P2P network with the following command:: 
 
-    $ programs/witness_node/witness_node --genesis-json genesis.json -s moscow.localcoin.is:11010 --rpc-endpoint 127.0.0.1:8090
+    $ programs/witness_node/witness_node --genesis-json genesis.json -s moscow.localcoin.is:11020 --rpc-endpoint 127.0.0.1:8090
 
  This command opens a RPC port 8090 for *localhost* so that we can later connect the CLI wallet with it. After the network was synced and periodically receives new blocks from other participants, we can go on to the next step.
 

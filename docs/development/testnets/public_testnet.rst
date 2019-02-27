@@ -40,7 +40,7 @@ The blockchain parameters can be modified in the
 
 We can add a default list of seed nodes that the witness is supposed to try to connect to in `libraries/app/application.cpp <https://github.com/localcoinis/localcoin-core/blob/master/libraries/app/application.cpp>`_ and will add the IP/Address and port of the machine we are going to setup later already::
 
-    testnet.localcoin.is:11010
+    testnet.localcoin.is:11020
 
 The full change set can be seen in the corresponding `git commit <https://github.com/LocalCoinEurope/graphene-testnet/commit/94f0a95be6f80cb5a7926ba6cc920dd795eb3a19>`_
 
@@ -160,7 +160,7 @@ All we put into the configuration file is the ids and the keys for the witnesses
 
 This authorizes the ``witness_node`` to produce blocks on behalf of the listed ``witness-id``'s, and specifies the private key needed to sign those blocks.  Normally each witness would be on a different node, but for the purposes of this testnet, we will start out with all witnesses signing blocks on a single node.
 
-.. Note:: The setting ``rpc-endpoint = 0.0.0.0:11011`` will open up the RPC-port ``11011`` to connect a cli-wallet or web wallet to it. With the ``p2p-endpoint = 0.0.0.0:11010`` being accessible from the internet, this node can be used as seed node.
+.. Note:: The setting ``rpc-endpoint = 0.0.0.0:11011`` will open up the RPC-port ``11011`` to connect a cli-wallet or web wallet to it. With the ``p2p-endpoint = 0.0.0.0:11020`` being accessible from the internet, this node can be used as seed node.
 
 3.3 Embed the Genesis block (optional)
 
