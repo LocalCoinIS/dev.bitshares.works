@@ -10,38 +10,32 @@ Communities
 
 * `LocalCoin Community <https://t.me/localcoin_community>`_
 * `Forum - LocalCoinTalk`_
-* `Telagram - LocalCoinDEX`_
-* `Telagram - LocalCoin Traders`_
+* `Telegram - LocalCoin Traders`_
+* `Telegram - LocalCoin English`_
+* `Telegram - LocalCoin Russian`_
+* `Telegram - LocalCoin Chinese`_
+* `Telegram - LocalCoin German`_
+* `Telegram - LocalCoin Portuguese`_
+* `Telegram - LocalCoin Spanish`_
 * `Discord - LocalCoin`_
-* `BitSares on Steemit`_
+* `LocalCoin on Steemit`_
 * `Twitter`_
 * `Reddit`_
-* `LocalCoinTalk.io`_
+* `localcointalk.is`_
 * (*will be added more*)
 
-.. _Forum - LocalCoinTalk: https://localcointalk.org/
-.. _Telagram - LocalCoinDEX: https://t.me/LocalCoinDEX
-.. _Telagram - LocalCoinEXCHANGES: https://t.me/LocalCoinEXCHANGES
-.. _Telagram - LocalCoin Traders: https://t.me/LocalCoin_Traders
+.. _Forum - LocalCoinTalk: https://localcointalk.is/
+.. _Telegram - LocalCoin English: https://t.me/LocalCoinIS
+.. _Telegram - LocalCoin Russian: https://t.me/LocalCoinRU
+.. _Telegram - LocalCoin Chinese: https://t.me/LocalCoinCN
+.. _Telegram - LocalCoin German: https://t.me/LocalCoinDE
+.. _Telegram - LocalCoin Portuguese: https://t.me/LocalCoinPT
+.. _Telegram - LocalCoin Spanish: https://t.me/LocalCoinES
 .. _Discord - LocalCoin: https://discord.gg/vzxSzYN
-.. _BitSares on Steemit: https://steemit.com/trending/localcoin
-.. _Twitter: https://twitter.com/localcoin
-.. _Reddit: https://www.reddit.com/r/LocalCoin/
-.. _LocalCoinTalk.io: https://localcointalk.io/forums
-
-
-Beyond Bitcoin - Localcoin
-----------------------------
-
-
-- `LocalCoin Discord Hangouts <https://discord.gg/vzxSzYN>`_
-  - `LocalCoin Hangout: Discord Tips <https://steemit.com/localcoin/@ash/localcoin-hangout-discord-tips>`_
-
---------------------------
-
-|
-
-
+.. _LocalCoin on Steemit: https://steemit.com/@localcoin
+.. _Twitter: https://twitter.com/localcoinis
+.. _Reddit: https://reddit.com/user/LocalCoinIS
+.. _localcointalk.is: https://localcointalk.is/forums
 
 ************************
 LocalCoin Blockchain

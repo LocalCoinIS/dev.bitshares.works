@@ -4,7 +4,7 @@
 
 The algorithm which determines the order of witnesses is referred to as the witness scheduling algorithm.
 
-This was designed by a community bounty in thread https://localcointalk.org/index.php/topic,15547.0 however, Graphene has an additional requirement which is not taken into account by the solutions in the thread:
+This was designed by a community bounty in thread https://localcointalk.is/index.php/topic,15547.0 however, Graphene has an additional requirement which is not taken into account by the solutions in the thread:
 
 The membership and length of the list of witnesses may change over time.
 

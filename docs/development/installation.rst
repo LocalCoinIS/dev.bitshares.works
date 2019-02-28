@@ -10,7 +10,7 @@ Installation
 
 LocalCoin Core is the LocalCoin blockchain implementation and command-line interface. The web wallet is `LocalCoin UI <https://github.com/localcoinis/localcoin-ui>`_.
 
-Visit `LocalCoin.is <https://LocalCoin.is/>`_ to learn about LocalCoin and join the community at `LocalCoinTalk.org <https://localcointalk.org/>`_.
+Visit `LocalCoin.is <https://LocalCoin.is/>`_ to learn about LocalCoin and join the community at `localcointalk.is <https://localcointalk.is/>`_.
 
 **NOTE:** The official LocalCoin git repository location, default branch, and submodule remotes were recently changed. Existing repositories can be updated with the following steps::
 

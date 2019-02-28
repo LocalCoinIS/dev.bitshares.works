@@ -14,7 +14,7 @@
 
 #### Issue
 
-proposal_delete_operation doesn't recursively check the authorities in case when multi-sig authority involved. See https://localcointalk.org/index.php/topic,20861.msg271080.html#msg271080, it's a try to delete an incorrect committee proposal, but failed due to this reason:
+proposal_delete_operation doesn't recursively check the authorities in case when multi-sig authority involved. See https://localcointalk.is/index.php/topic,20861.msg271080.html#msg271080, it's a try to delete an incorrect committee proposal, but failed due to this reason:
 10 assert_exception: Assert Exception required_approvals->find(o.fee_paying_account) != required_approvals->end(): Provided authority is not authoritative for this proposal. {"provided":"1.2.12376","required":["1.2.0"]}
 This operation allows the early veto of a proposed transaction. It may be used by any account which is a required authority on the proposed transaction, when that account's holder feels the proposal is ill-advised and he decides he will never approve of it and wishes to put an end to all discussion of the issue.
 Imo it's better to set a threshold equals to (total_weight - approve_threshold) for proposal_delete_operation, so the proposal will only be deleted if enough authorities agree to delete the proposal.

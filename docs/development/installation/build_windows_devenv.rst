@@ -46,7 +46,7 @@ Down and Compile
 
 The command above will compile the libcURL and install it to the C:\Program Files\CURL directory.
 
-2. compile the bitsares-core. In the command windows we opened before, run
+2. compile the LocalCoin-core. In the command windows we opened before, run
 
 ::
 
