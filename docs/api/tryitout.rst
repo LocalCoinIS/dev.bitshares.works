@@ -9,16 +9,16 @@ LocalCoin Explorer API - Try it out!
 The below links take you to LocalCoin API calls list page. They are ES Wrappers (i.e., Wrapper to expose **Elasticsearch** Localcoin node data to clients). On the page, you can select a call and set value(s) and try it out!
 
 
-* LocalCoin Explorer API uses to query the **MAINNET** 
+* LocalCoin Explorer API uses to query the **MAINNET**
 
-  - http://185.208.208.184:5000/apidocs/  
+  - http://LLC.is/apidocs/
 
 
- 
-* LocalCoin Explorer Testnet API uses to query the **TESTNET** 
 
-  - http://148.251.10.231:5000/apidocs/ 
-  
+* LocalCoin Explorer Testnet API uses to query the **TESTNET**
+
+  - http://test.LLC.is/apidocs/
+
 
 ------------
 
@@ -40,7 +40,7 @@ The below links take you to LocalCoin API calls list page. They are ES Wrappers 
   - Response Body
   - Response Code
   - Response Headers
-  
+
 
 .. image:: ../../_static/structures/call-tryitout-2.png
         :alt: LocalCoin API Call
@@ -52,8 +52,7 @@ The below links take you to LocalCoin API calls list page. They are ES Wrappers 
 
 This information also locates here - :ref:`explorer-wrappers`
 
-	
-|
 
 |
 
+|

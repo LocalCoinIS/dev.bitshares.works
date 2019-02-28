@@ -12,7 +12,7 @@ Quick Start
 .. toctree::
     :maxdepth: 2
 
-    testnets/public_testnet_details	
+    testnets/public_testnet_details
 
 * :ref:`Code Coverage Testing (wiki) <how-to-testing-llc>`
 
@@ -28,40 +28,40 @@ In this section, we mainly describe how to deploy public or private testnets net
 
     testnets/public_testnet
     testnets/private_testnet
-  
 
------------  
-  
-  
-Other References 
+
+-----------
+
+
+Other References
 ------------------
 
 * :ref:`how-to-setup-python-lib`
 
   - How to Create MPAs/UIAs with Python
-  
+
 
 * :ref:`Set up Faucet <how-to setup-faucet>`
 * :ref:`Set up Nignx <how-to-setup-nignx>`
 
-	
-	
+
+
 -------
 
 Tools
 -----------
 
-This tool allows you to check LocalCoin blockchain detailed health. You can observe the LocalCoin blockchain operations/transactions, maeket volumes, assets, and fees. Also you can search "block", "Account", "Object", "Asset", and Transaction by the ID. 
+This tool allows you to check LocalCoin blockchain detailed health. You can observe the LocalCoin blockchain operations/transactions, maeket volumes, assets, and fees. Also you can search "block", "Account", "Object", "Asset", and Transaction by the ID.
 
 .. Note:: In the Testnet explorer, you may not find many activities. If you want to see the currest activities, pleaser check the Mainnet Explorer.
 
-* **Localcoin Blockchain Explorer for Testnet:** http://localcoin-testnet.xyz/ 
-  
-The below API tools allow you to try LocalCoin APIs. You can set a value and click [Try it out!], then you will get a return. The return include a used Curl path format, Requested URL, and Response Body. Those information are very valuable to learn LocalCoin. 
+* **Localcoin Blockchain Explorer for Testnet:** http://test.llc.is/ 
+
+The below API tools allow you to try LocalCoin APIs. You can set a value and click [Try it out!], then you will get a return. The return include a used Curl path format, Requested URL, and Response Body. Those information are very valuable to learn LocalCoin.
 
 
 * APIs - the Teatnet Explorer uses to query the **Testnet**
-  
+
   - http://148.251.10.231:5000/apidocs/ -> ES Wrapper : Wrapper to expose **Elasticsearch** Localcoin node data to  clients
 
 On this page, we introduced a tool for the Testnet. We have the same tool for :ref:`the Mainnet of LocalCoin blockchain <explorer-wrappers>`.

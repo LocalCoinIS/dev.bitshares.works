@@ -18,18 +18,18 @@ Account
 ========================
 In LocalCoin, you can create an account relatively easily by using the LocalCoin UI wallet. When you create a LocalCoin Account from the UI wallet, it will ask you to provide a unique Account name and a password. Although you should create a strong password, you can create readable and memorable LocalCoin account name. You do not need to write down a long random number as your account name. The LocalCoin account name would be helpful to identify other LocalCoin accounts.
 
-It's important to understand that **only** you know your password, and no one can recover it.  The account information is registered to the blockchain with private/public keys of the account. Only the account creator knows the password and finds out the private keys.  In LocalCoin, there are three types of keys (i.e., active, owner, and memo key) which you can find them in the UI Wallet Permissions page.   
+It's important to understand that **only** you know your password, and no one can recover it.  The account information is registered to the blockchain with private/public keys of the account. Only the account creator knows the password and finds out the private keys.  In LocalCoin, there are three types of keys (i.e., active, owner, and memo key) which you can find them in the UI Wallet Permissions page.
 
 .. image:: ../../_static/structures/ui_create_account_keys.png
         :alt: UI Account create
         :width: 650px
         :align: center
 
-		
+
 LocalCoin UI Wallet
 -----------------------
 
-If you create an account at one of LocalCoin partners, the account name will be available among LocalCoin partners.  So, you will be able to use the LocalCoin account name to communicate (e.g., sending fund) with other LocalCoin account holders like sending an email. The advantage of using account name is you, and other people can identify the account holder. 
+If you create an account at one of LocalCoin partners, the account name will be available among LocalCoin partners.  So, you will be able to use the LocalCoin account name to communicate (e.g., sending fund) with other LocalCoin account holders like sending an email. The advantage of using account name is you, and other people can identify the account holder.
 
 - Create `LocalCoin UI wallet <https://wallet.LocalCoin.is>`_
 
@@ -38,7 +38,7 @@ If you create an account at one of LocalCoin partners, the account name will be 
 Identifier
 -------------
 
-When you create a LocalCoin account, LocalCoin registers the account name to the blockchain and also assigns an incrementing identifier (account id) during the registration. One way to find your account id is to go to a `cryptofresh <https://www.cryptofresh.com/>`_ and search your account name. You will find your account id under your account name. 
+When you create a LocalCoin account, LocalCoin registers the account name to the blockchain and also assigns an incrementing identifier (account id) during the registration. One way to find your account id is to go to a `LLC.is <https://www.LLC.is/>`_ and search your account name. You will find your account id under your account name. 
 
 The identifier comes with many advantages: Besides improved scalability, we have separated the identity from the transaction authorizing signature. In practice, owning an account name is autonomous from being able to spend its funds. Furthermore, both rights (we call them permissions) can split among an arbitrary complex relation of people (we call them authorities) using weights and required thresholds.
 
@@ -54,9 +54,9 @@ Memberships and Groups
 Memberships
 ---------------
 
-If you just created a new LocalCoin account, the account would be a **Basic member** account as a default.  
+If you just created a new LocalCoin account, the account would be a **Basic member** account as a default.
 
-LocalCoin has created a **Lifetime member** (LTM) account to give the option to all LocalCoin holders.  The Lifetime Member get 80% cashback on Fees! If LocalCoin holders desire to profit from reduced fees and additional features, they might want to consider to buy Lifetime Subscription. 
+LocalCoin has created a **Lifetime member** (LTM) account to give the option to all LocalCoin holders.  The Lifetime Member get 80% cashback on Fees! If LocalCoin holders desire to profit from reduced fees and additional features, they might want to consider to buy Lifetime Subscription.
 
 To see your Membership stats on LocalCoin UI wallet, go to your account and open a side dropdown menu and select **Membership stats**.  You will find the current membership *upgrade fee* to become a LTM.
 
@@ -74,13 +74,13 @@ Membership Groups
 |                   | Lifetime membership is associated with a specific one-time fee that is defined by the           |
 |                   | committee. *Lifetime member (LTM) status* can register an account. If you want to do so,        |
 |                   | upgrade the account.                                                                            |
-+-------------------+-------------------------------------------------------------------------------------------------+  
++-------------------+-------------------------------------------------------------------------------------------------+
 | Annual Members    | If a lifetime membership is too much you can still get the same cashback for the next           |
-|                   | year by becoming an annual subscriber for a smaller one-time fee which lasts for only one year. |         
+|                   | year by becoming an annual subscriber for a smaller one-time fee which lasts for only one year. |
 +-------------------+-------------------------------------------------------------------------------------------------+
 
 
-.. Note:: Technically, the fees that you pay stay the same, but a part of the fees is refunded in the form of a vesting balance. Once the fees have vested you can withdraw them. 
+.. Note:: Technically, the fees that you pay stay the same, but a part of the fees is refunded in the form of a vesting balance. Once the fees have vested you can withdraw them.
 
 To see your vesting balances, open the side dropdown menu and select **Vesting balance**.  Vesting balances are recalculated hourly, so you might not yet see them right away.
 
@@ -107,31 +107,25 @@ Fees types
 |   fee  type   |  note                                                                                                    |
 +===============+==========================================================================================================+
 | Pending Fees  | Fees paid are only divided among the network, referrers, and registrars once every maintenance interval. |
-+---------------+----------------------------------------------------------------------------------------------------------+                        
++---------------+----------------------------------------------------------------------------------------------------------+
 | Vesting Fees  | Most fees are made available immediately, but fees over the vesting threshold (such as those paid        |
 |               | to upgrade your membership or register a premium account name) must vest for some period as defined      |
-|               | by the committee.                                                                                        |                            
-+---------------+----------------------------------------------------------------------------------------------------------+                        
+|               | by the committee.                                                                                        |
++---------------+----------------------------------------------------------------------------------------------------------+
 
 ---------------
 
 |
 
-.. include:: llc_permissions.rst 
+.. include:: llc_permissions.rst
 
-.. include:: llc_multi-sign.rst 
-		
-.. include:: voting.rst  
+.. include:: llc_multi-sign.rst
 
-.. include:: referral.rst  
+.. include:: voting.rst
 
-.. include:: vesting_balances.rst  
+.. include:: referral.rst
+
+.. include:: vesting_balances.rst
 
 
 |
-
-
-
-		
-		
-		

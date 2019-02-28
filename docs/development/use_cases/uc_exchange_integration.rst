@@ -29,8 +29,8 @@ For exchanges we recommend to also read :ref:`what-is-different` and
 
 .. contents:: Table of Contents
    :local:
-   
-   
+
+
 Step-By-Step Instructions for Exchanges
 ============================================
 
@@ -47,11 +47,11 @@ In this step-by-step instruction we assume you have successfully built from the 
 For security reasons we will run two daemons and a wallet according to these diagram:
 
 .. image:: exchange-demons.png
-        :alt: LocalCoin 
+        :alt: LocalCoin
         :width: 600px
         :align: center
-		
-		
+
+
 In this tutorial we will run all deamons and the wallet on the same machine and use different ports to distinguish them::
 
 * port ``8090``: trusted full node
@@ -194,8 +194,8 @@ above).
 
 - Watching Deposits with Python
 
- For watching deposits, we recommend pylocalcoin' *Notify* module. The full documentation is available on  `pylocalcoin.com <http://pylocalcoin.com>`_
+ For watching deposits, we recommend docspy.localcoin.is' *Notify* module. The full documentation is available on  `docspy.localcoin.is <http://docspy.localcoin.is>`_
 
 - Executing Transfers for Withdrawals
 
- For transfering funds, we recommend pylocalcoin. This python module enables all features required to operated on/with LocalCoin. The full documentation is available on `pylocalcoin.com <http://pylocalcoin.com>`_.
+ For transfering funds, we recommend docspy.localcoin.is. This python module enables all features required to operated on/with LocalCoin. The full documentation is available on `docspy.localcoin.is <http://docspy.localcoin.is>`_.
