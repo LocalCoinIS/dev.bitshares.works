@@ -63,7 +63,7 @@ The below section shows two example patterns how to launch the cli_wallet. The f
 
 **\<Example 1\> Connecting a Cli-Wallet by using the public API server node**
 
-We use the public API node of OpenLedger ``wss://moscow.localcoin.is`` and connect via secured WebSocket connection:
+We use the public API node of LocalCoin ``wss://moscow.localcoin.is`` and connect via secured WebSocket connection:
 
 ::
 
