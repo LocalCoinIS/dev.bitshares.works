@@ -11,13 +11,13 @@ The below links take you to LocalCoin API calls list page. They are ES Wrappers 
 
 * LocalCoin Explorer API uses to query the **MAINNET**
 
-  - http://LLC.is/apidocs/
+  - https://api.llc.is/apidocs/
 
 
 
 * LocalCoin Explorer Testnet API uses to query the **TESTNET**
 
-  - http://test.LLC.is/apidocs/
+  - https://test.LLC.is/apidocs/
 
 
 ------------

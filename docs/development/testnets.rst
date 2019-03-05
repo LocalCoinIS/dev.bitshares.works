@@ -55,14 +55,14 @@ This tool allows you to check LocalCoin blockchain detailed health. You can obse
 
 .. Note:: In the Testnet explorer, you may not find many activities. If you want to see the currest activities, pleaser check the Mainnet Explorer.
 
-* **Localcoin Blockchain Explorer for Testnet:** http://test.llc.is/ 
+* **Localcoin Blockchain Explorer for Testnet:** http://test.llc.is/
 
 The below API tools allow you to try LocalCoin APIs. You can set a value and click [Try it out!], then you will get a return. The return include a used Curl path format, Requested URL, and Response Body. Those information are very valuable to learn LocalCoin.
 
 
 * APIs - the Teatnet Explorer uses to query the **Testnet**
 
-  - http://148.251.10.231:5000/apidocs/ -> ES Wrapper : Wrapper to expose **Elasticsearch** Localcoin node data to  clients
+  - https://api.llc.is/apidocs/ -> ES Wrapper : Wrapper to expose **Elasticsearch** Localcoin node data to  clients
 
 On this page, we introduced a tool for the Testnet. We have the same tool for :ref:`the Mainnet of LocalCoin blockchain <explorer-wrappers>`.
 

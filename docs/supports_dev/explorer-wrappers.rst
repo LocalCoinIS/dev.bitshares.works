@@ -11,7 +11,7 @@ Mainnet
 * Localcoin Blockchain Explore: http://LLC.is
 * LocalCoin Explorer API uses to query the Mainnet  - *Try it out!*
 
-  - https://llc.is/apidocs/
+  - https://api.llc.is/apidocs/
 
     - ES Wrapper : Wrapper to expose **Elasticsearch** Localcoin node data to clients
 
@@ -24,7 +24,7 @@ Testnet
 * Localcoin Blockchain LLC.is for Testnet: http://test.llc.is/
 * LocalCoin Explorer Testnet API uses to query the Testnet   - *Try it out!*
 
-  - http://test.llC.is/apidocs/
+  - https://test.llC.is/apidocs/
 
     - ES Wrapper : Wrapper to expose **Elasticsearch** Localcoin node data to clients
 
