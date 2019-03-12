@@ -23,8 +23,8 @@ Requirements
 Technical Specifications
 ---------------------------
 
-- :ref:`node_system_requirements` 
-   
+- :ref:`node_system_requirements`
+
 
 Active Witness Duties
 ------------------------
@@ -38,7 +38,7 @@ Overview
 
 We will now perform the following steps:
 
-* run a local (non block producing) full node 
+* run a local (non block producing) full node
 * create a CLI wallet for the network
 * import your account (and funds) into CLI wallet
 * upgrade our account to a lifetime member
@@ -168,7 +168,7 @@ Now, we should vote our witness in. Vote all of the shares your account
    ``get_dynamic_global_properties`` tells us when that will be in
    ``next_maintenance_time``. Once the next maintenance interval passes, run
    ``get_global_properties`` again and you should see that your new witness has been
-   voted in.  
+   voted in.
 
 Now we wait until the next maintenance interval.
 
@@ -178,13 +178,13 @@ Configuration of the Witness Node
 Get the witness object using::
 
     get_witness <witness-account>
-    
+
 and take note of two things. The ``id`` is displayed in ``get_global_properties``
 when the witness is voted in, and we will need it on the ``witness_node`` command
 line to produce blocks. We'll also need the public ``signing_key`` so we can
 look up the correspoinding private key.
 
-Once we have that, run ``dump_private_keys`` which lists the public-key 
+Once we have that, run ``dump_private_keys`` which lists the public-key
 private-key pairs to find the private key.
 
 .. warning:: ``dump_private_keys`` will display your keys unencrypted on the
@@ -231,7 +231,7 @@ Alternatively, you can also add this line into yout config.ini:::
 Verifying Block Production
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you monitor the output of the `witness_node` and you have been voted in the top list of block producing witnesses, you should see it generate 
+If you monitor the output of the `witness_node` and you have been voted in the top list of block producing witnesses, you should see it generate
 blocks signed by your witness:::
 
     Witness 1.6.10 production slot has arrived; generating a block now...
@@ -240,13 +240,13 @@ blocks signed by your witness:::
 Backup Server
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-To stay a reliable block producer it is recommend you have a 'hot swappable' backup server with same specs as the live server running an instance of `witness_node`. ***IT IS IMPORTANT THAT THIS BACKUP SHOULD _NOT_ HAVE THE SAME SIGNING KEY PAIR in the config.ini as your main node!*** 
+To stay a reliable block producer it is recommend you have a 'hot swappable' backup server with same specs as the live server running an instance of `witness_node`. ***IT IS IMPORTANT THAT THIS BACKUP SHOULD _NOT_ HAVE THE SAME SIGNING KEY PAIR in the config.ini as your main node!***
 
-How it works: 
+How it works:
 
 1. Your 'live' witness node is signing blocks with the private key which is stated in the config.ini.
 2. Your 'backup' witness node is running a copy of the software with another private key in the config.ini (generate a new public/private keypair with `cli_wallet` command: `suggest_brain_key`).
-3. On a third server you monitor your 'live' node on regular intervals with an automated script (e.g.: https://github.com/roelandp/Localcoin-Witness-Monitor).
+3. On a third server you monitor your 'live' node on regular intervals with an automated script (e.g.: https://github.com/LocalCoinIS/LocalCoin-Witness-Monitor).
 4. As soon as your 'live' node is starting to fail producing blocks the 'missing blocks' parameter increases and you can issue a command to `update_witness` to your backup's 'Public Key'.
 5. Investigate the issue with your 'live' node and stay happy.
 
@@ -258,7 +258,7 @@ feed **ACCURATE** prices into the blockchain. Educational material on how this c
 implemented is available in ``scripts/pricefeed`` at `github`_ together with
 the corresponding documentation.
 
-Only active witnesses are allowed to publish pricefeeds for the 'official' currency / smartcoin markets. For any other asset you need to be whitelisted by the creator of the market to be able to publish pricefeeds. 
+Only active witnesses are allowed to publish pricefeeds for the 'official' currency / smartcoin markets. For any other asset you need to be whitelisted by the creator of the market to be able to publish pricefeeds.
 
 A couple of price feed scripts in various stages of development and for you to code-inspect and try. (You can always setup a testnet node and test the publishing of pricefeeds).
 
@@ -269,7 +269,7 @@ A couple of price feed scripts in various stages of development and for you to c
 
 .. _github: https://github.com/xeroc/python-graphenelib/
 
-		
+
 |
 
 --------------------
