@@ -5,7 +5,7 @@ Distributed Access to the LocalCoin Decentralized  Exchange (DEX)
 =================================================================
 
 I hope to encourage and promote more access points and backup WebSocket (wss) gateways for LocalCoin. This is the logical progression from `Run your own decentralized
-exchange <https://steemit.com/localcoin/@ihashfury/run-your-own-decentralised-exchange>`__
+exchange <https://localcoin.is/whitelabel/>`__
 post.
 
 .. contents:: Table of Contents
@@ -16,7 +16,7 @@ post.
 LocalCoin node setup
 -------------------------------
 
-`Run your own decentralized exchange <https://steemit.com/localcoin/@ihashfury/run-your-own-decentralised-exchange>`__
+`Run your own decentralized exchange <https://localcoin.is/whitelabel/>`__
 
 Once you have a full node setup, you can allow LocalCoin shareholders
 secure access to your server to trade and check their accounts by
