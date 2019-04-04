@@ -9,7 +9,7 @@ Communities
 ======================
 
 * `LocalCoin Community <https://t.me/localcoin_community>`_
-* `Forum - LocalCoinTalk`_
+* `Forum - LocalTalk`_
 * `Telegram - LocalCoin English`_
 * `Telegram - LocalCoin Russian`_
 * `Telegram - LocalCoin Chinese`_
@@ -23,7 +23,7 @@ Communities
 * `BitcoinTalk`_
 * (*will be added more*)
 
-.. _Forum - LocalCoinTalk: https://localcointalk.is/
+.. _Forum - LocalTalk: https://localtalk.is/
 .. _Telegram - LocalCoin English: https://t.me/LocalCoinIS
 .. _Telegram - LocalCoin Russian: https://t.me/LocalCoinRU
 .. _Telegram - LocalCoin Chinese: https://t.me/LocalCoinCN

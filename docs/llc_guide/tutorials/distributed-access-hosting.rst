@@ -309,10 +309,7 @@ Edit yourdomain.com
     CTRL+X to save (^X Exit)
 
 You have now setup an SSL secured web server with a WebSocket connected
-to your LocalCoin witness\_node (listening on port 8090 - see
-`this
-post <https://steemit.com/localcoin/@ihashfury/run-your-own-decentralised-exchange>`__
-for more information) ###Update yourdomain.com www virtual host
+to your LocalCoin witness\_node (listening on port 8090) ###Update yourdomain.com www virtual host
 
 ::
 

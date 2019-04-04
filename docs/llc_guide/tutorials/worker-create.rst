@@ -121,7 +121,7 @@ You also can inspect all the objects 1.4.*::
         "total_votes_for": "14632377015617",
         "total_votes_against": 0,
         "name": "bitasset-fund-pool",
-        "url": "https://localcointalk.is/index.php/topic,19317.0.html"
+        "url": "https://LocalTalk.is"
       }
     ]
 

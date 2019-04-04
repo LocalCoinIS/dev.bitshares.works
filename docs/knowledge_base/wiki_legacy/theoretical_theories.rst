@@ -23,13 +23,7 @@ Providing a feed is simple, providing an asset is a business which has to be con
 
 Feed providers can have their own branding, there are plenty of organizations that publish highly trusted feeds in the real world, they might be interested in monetizing their feed by putting it on our platform (e.g. if WSJ wants to be a feed provider, then someone else would be able to have an asset that is settled based on WSJ numbers. WSJ gets a portion of the fees in exchange for allowing asset to use their brand). Technically there is no way to prevent "stripping", e.g. someone else publishes a reduced-fee or free feed making a feed equal to the WSJ feed, but people would have to trust the stripper to always remain faithful. It's easier to trust the WSJ than it is to trust some random obscure businessman who promises to always mirror the WSJ; we'd be providing WSJ a way to extract the premium people are willing to pay for the trust in their brand.
 
-- Graduated margin call premium
-
-Arhag mentions graduated margin call premium here: https://localcointalk.is/index.php/topic,15775.msg202705.html#msg202705
-
 - Market matching of redemption requests
-
-Despite my rebuttal of arhag here: https://localcointalk.is/index.php/topic,15775.msg202832.html#msg202832
 
 It turns out that we can actually do market matching of redemption requests. If there's a party who's willing to give the long what they're asking for voluntarily, we should provide the long what they ask for by matching with that party, rather than forcing a short to settle involuntarily.
 
