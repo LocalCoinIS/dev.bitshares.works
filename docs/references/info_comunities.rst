@@ -51,7 +51,7 @@ LocalCoin UI Wallet
 - `LocalCoin UI wallet <https://wallet.LocalCoin.is>`_
 
 
-Localcoin Block Exploer
+Localcoin Block Explorer
 =============================
 
 - `LLC.is <https://www.LLC.is/>`_
