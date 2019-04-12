@@ -47,8 +47,8 @@ Active FAQ
 **4. Why your node doesn work Windows 7?** -
 *Windows 7 is more than 10 years old and not supported by Microsoft anymore. We recommend using any Windows not older than Windows 10 or any Linux based OS or macOS*
 
-**5. Haw many LLC do i need to hold on my account in order for active node to make profit?** - 
-*Minimum balance when activenode stopes getting rewards is 511 LLC. If Your balance goes lower than 511 you will stop getting paid/reward and you will be burning LLC and lose money. Make sure you have anought LLC on your balance to keep your activenode running, because when your node get its turn, it must burn 1 LLC as a fuel to confirm the activity and support LocalCoin blockchain network and in return your node will get reward of 1.065 LLC. So your node must have a fuels(LLC) to burn before you can cash the vesting balance out.*
+**5. Haw many LLC do i need to hold on my account in order for active node to make profit?** -
+*Minimum balance when activenode stopes getting rewards is 511 LLC. If Your balance goes lower than 511 you will stop getting paid/rewarded, your node will be burning LLC and lose money. Make sure you have enough LLC on your balance to keep your activenode running, because when your node get it's turn, it must burn 1 LLC as a fuel to confirm the activity and support LocalCoin blockchain network and in return your node will get reward of 1.065 LLC. So your node must have a fuels(LLC) to burn before you can cash the vesting balance out.*
 
 
 ---------------------------
