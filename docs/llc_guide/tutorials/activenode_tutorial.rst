@@ -19,7 +19,7 @@ Each activenode gets paid with 0.065 LLC per block divided by total online Activ
 Let say the current total amount of activenodes is 1000 online nodes.
 So each activenode receives 0.065/1000*24hours*60minutes*30blocks=2.808 LLC per day
 
-Activenode requirements
+ActiveNode requirements
 ----------------
 
 - A registered account in the corresponding network
@@ -33,7 +33,7 @@ Active Node Duties
 - Maintaining a public seed-node
 - Maintaining the CommonCloud
 
-Active FAQ
+ActiveNode FAQ
 ------------------------
 **1. What are min minimum system and hardware requirements?** -
 *Windows 10, Linux or macOS, 8GB ram, CPU-core i5, 100GB HDD or SSD,*
