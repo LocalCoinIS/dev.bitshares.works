@@ -33,6 +33,13 @@ Active Node Duties
 - Maintaining a public seed-node
 - Maintaining the CommonCloud
 
+Active FAQ
+------------------------
+1. **What are hardware requirements?**
+2. **Is it also possible to run multiple active nodes under the same ip?**
+3. **Hey guys. Is it possible to run multiple active nodes under the same account?**
+
+
 ---------------------------
 
 How to become an Active Node
