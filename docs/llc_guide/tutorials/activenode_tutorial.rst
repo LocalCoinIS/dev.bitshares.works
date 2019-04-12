@@ -33,7 +33,7 @@ Active Node Duties
 - Maintaining a public seed-node
 - Maintaining the CommonCloud
 
-ActiveNode FAQ
+Active Node FAQ
 ------------------------
 **1. What are min minimum system and hardware requirements?** -
 *Windows 10, Linux or macOS, 8GB ram, CPU-core i5, 100GB HDD or SSD,*
