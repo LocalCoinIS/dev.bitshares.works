@@ -35,7 +35,7 @@ Active Node Duties
 
 Active FAQ
 ------------------------
-1. **What are min hardware requirements?**
+1. **What are min minimum system and hardware requirements?**
 Windows 10, Linux or macOS, 8GB ram, CPU-core i5, 100GB HDD or SSD,
 
 2. **Is it also possible to run multiple active nodes under the same ip?**
