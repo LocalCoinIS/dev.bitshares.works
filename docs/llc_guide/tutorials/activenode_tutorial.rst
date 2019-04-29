@@ -17,8 +17,9 @@ Each activenode gets paid with 0.065 LLC per block divided by total online Activ
 ``Example``::
 >>>
 Let's assume, the current total amount of activenodes equal 100.
-Total daily activenode payout is 2749.5 LLC is constant
-Under this terms, each activenode will earn 2749.5/100=27.495 LLC per day
+0.065 LLC activenode reward per block is the LocalCoin blockchain constant
+Total daily activenode payout equal 2808 LLC is a constant calculated by the formula 24h*60min*30blocks*0.065 LLC
+Under this terms, each activenode will earn 2808/100=28.08 LLC per day
 
 ActiveNode requirements
 ----------------
