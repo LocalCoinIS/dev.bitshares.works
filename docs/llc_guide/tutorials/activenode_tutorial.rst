@@ -16,14 +16,15 @@ Each activenode gets paid with 0.065 LLC per block divided by total online Activ
 
 ``Example``::
 >>>
-Let say the current total amount of activenodes is 1000 online nodes.
-So each activenode receives 0.065/1000*24hours*60minutes*30blocks=2.808 LLC per day
+Let's assume, the current total amount of activenodes equal 100.
+Total daily activenode payout is 2749.5 LLC is constant
+Under this terms, each activenode will earn 2749.5/100=27.495 LLC per day
 
 ActiveNode requirements
 ----------------
 
 - A registered account in the corresponding network
-- Minimum balance is 1111 LLC to pay for the registration fee and to stay active node to receive the reward
+- Minimum balance is 1111 LLC to pay for the registration fee(10 LLC) and to stay active node to receive the reward
 - Executable binary
 - Lifetime Member (LTM) status
 
@@ -44,11 +45,11 @@ Active Node FAQ
 **3. Hey guys. Is it possible to run multiple active nodes under the same account?** -
 *No, One activenode = One IP = One Computer = One account*
 
-**4. Why your node doesn work Windows 7?** -
-*Windows 7 is more than 10 years old and not supported by Microsoft anymore. We recommend using any Windows not older than Windows 10 or any Linux based OS or macOS*
+**4. Why your node doesn't work Windows 7?** -
+*Windows 7 is more than 10 years old and it isn't supported by Microsoft anymore. We recommend using any Windows not older than Windows 10 or any Linux based OS or macOS*
 
 **5. Haw many LLC do i need to hold on my account in order for active node to make profit?** -
-*Minimum balance when activenode stopes getting rewards is 511 LLC. If Your balance goes lower than 511 you will stop getting paid/rewarded, your node will be burning LLC and lose money. Make sure you have enough LLC on your balance to keep your activenode running. When your node get it's turn, it must burn 1 LLC per block as a fuel to confirm the activity and support LocalCoin blockchain network. In return your node will get reward of 1.065 LLC pre block. So your node must have a fuel(LLC) in it's tank to burn, before you can cash the vesting balance out.*
+*Minimum balance when activenode stopes getting rewards is 511 LLC. If Your balance goes lower than 511 you will stop getting paid/rewarded. Make sure you have enough LLC to keep your activenode running. When your node get it's turn to do the work, it must burn 0.1 LLC per block as a fuel to confirm the activity and support LocalCoin blockchain network. In return your node will get reward of 0.165 LLC pre block. So your node must have LLC(fuel) in it's "tank" to burn, before you can cash the vesting balance out.*
 
 
 ---------------------------
