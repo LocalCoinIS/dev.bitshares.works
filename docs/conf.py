@@ -15,10 +15,14 @@ import sys
 import os
 import subprocess
 
+##import sphinx_rtd_theme
 
 sys.path.append(os.path.abspath('./docs/'))
 #sys.path.append(os.path.abspath('./demo/'))
+#sys.path.append( "./ext/breathe/" )
+sys.path.append(os.path.abspath('./ext/breathe/'))
 
+from sphinx.locale import _
 from sphinx_rtd_theme import __version__
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -34,6 +38,7 @@ from sphinx_rtd_theme import __version__
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
+
 extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.autodoc',
@@ -41,6 +46,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinxcontrib.httpdomain',
     'sphinx.ext.autosectionlabel',
+	'sphinx.ext.todo', 
     'breathe',
 ]
 
@@ -60,8 +66,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'LocalCoin Developers Portal'
-copyright = u'2018 LocalCoin Blockchain Foundation'
+project = u'BItShares Developers Portal'
+copyright = u'2019 BitShares Blockchain Foundation'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -84,7 +90,7 @@ language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns =  ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -106,8 +112,21 @@ pygments_style = 'default'
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
-intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
+#intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
 
+intersphinx_mapping = {
+  #  'rtd': ('https://docs.readthedocs.io/en/latest/', None),
+    'sphinx': ('http://www.sphinx-doc.org/en/stable/', None),
+    'python': ('https://docs.python.org/', None),
+}
+
+##intersphinx_mapping = {
+##    'python': ('https://python.readthedocs.io/en/latest/', None),
+##    'sphinx': ('https://sphinx.readthedocs.io/en/latest/', None),
+##}
+
+# Example configuration for intersphinx: refer to the Python standard library.
+# intersphinx_mapping = {'https://docs.python.org/': None}
 
 # -- Options for HTML output ---------------------------------------------------
 
@@ -138,7 +157,7 @@ html_theme_path = ['_themes']
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-# html_logo = "images/localcoin_logo.png"
+# html_logo = "images/bitshares_logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -166,10 +185,10 @@ html_static_path = ['_static']
 #html_additional_pages = {}
 
 # If false, no module index is generated.
-#html_domain_indices = True
+html_domain_indices = True
 
 # If false, no index is generated.
-#html_use_index = True
+html_use_index = True
 
 # If true, the index is split into individual pages for each letter.
 #html_split_index = False
@@ -182,7 +201,7 @@ html_show_sourcelink = False
 #html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-#html_show_copyright = True
+html_show_copyright = True
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
@@ -193,7 +212,7 @@ html_show_sourcelink = False
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'LocalCoinDevdoc'
+htmlhelp_basename = 'BitSharesDevdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -216,8 +235,8 @@ latex_elements = {
 #   u'Dave Snider, Read the Docs, Inc. & contributors', 'manual'),
 #]
 latex_documents = [
-  ('index', 'BBF.tex', u'LocalCoin developer Documentation',
-   u'LocalCoin-Core & contributors', 'manual'),
+  ('index', 'BBF.tex', u'BitShares developer Documentation',
+   u'BitShares-Core & contributors', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -245,19 +264,50 @@ latex_documents = [
 # Breathe configuration
 ###############################################################################
 try :
-    import breathe
+  ##  import breathe
 
-    extensions.append( "breathe" )
+  ## extensions.append( "breathe" )
     breathe_projects = {
-        "localcoin": "../doxygen/xml/",
+        "bitshares": "../doxygen/xml/",
     }
-    breathe_default_project = "localcoin"
+    breathe_default_project = "bitshares"
 except :
     print("="*80)
     print("Please install 'breathe' as described in README.md to also have API documentation available!")
     print("="*80)
 
+###############################################################################
+#   styles  
+###############################################################################
+def setup(app):
+    app.add_stylesheet("btsdefault.css") # also can be a full URL
+    # app.add_stylesheet("ANOTHER.css")
+	# from sphinx.domains.python import PyField
+    # from sphinx.util.docfields import Field
 
+    # app.add_object_type(
+        # 'confval',
+        # 'confval',
+        # objname='configuration value',
+        # indextemplate='pair: %s; configuration value',
+        # doc_field_types=[
+            # PyField(
+                # 'type',
+                # label=_('Type'),
+                # has_arg=False,
+                # names=('type',),
+                # bodyrolename='class'
+            # ),
+            # Field(
+                # 'default',
+                # label=_('Default'),
+                # has_arg=False,
+                # names=('default',),
+            # ),
+        # ]
+# )
+
+	
 # -- Options for manual page output --------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -267,8 +317,8 @@ except :
 #     [u'Dave Snider, Read the Docs, Inc. & contributors'], 1)
 #]
 man_pages = [
-    ('index', 'BBF.tex', u'LocalCoin developer Documentation',
-     [u'LocalCoin-Core & contributors'], 1)
+    ('index', 'BBF.tex', u'BitShares developer Documentation',
+     [u'BitShares-Core & contributors'], 1)
 ]
 
 
@@ -287,8 +337,8 @@ man_pages = [
 #   'One line description of project.', 'Miscellaneous'),
 #]
 texinfo_documents = [
-  ('index', 'LocalCoinDeveloperPortal', u'LocalCoin developer  Documentation',
-   u'LocalCoin-Core & contributors', 'LocalCoinDeveloperPortal',
+  ('index', 'BitSharesDeveloperPortal', u'BitShares developer  Documentation',
+   u'BitShares-Core & contributors', 'BitSharesDeveloperPortal',
    'BBF project.', 'Miscellaneous'),
 ]
 
