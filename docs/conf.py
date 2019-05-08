@@ -66,8 +66,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BItShares Developers Portal'
-copyright = u'2019 BitShares Blockchain Foundation'
+project = u'Localcoin Developers Portal'
+copyright = u'2019 Localcoin Blockchain'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -157,7 +157,7 @@ html_theme_path = ['_themes']
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-# html_logo = "images/bitshares_logo.png"
+# html_logo = "images/Localcoin_logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -212,7 +212,7 @@ html_show_copyright = True
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BitSharesDevdoc'
+htmlhelp_basename = 'LocalcoinDevdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -235,8 +235,8 @@ latex_elements = {
 #   u'Dave Snider, Read the Docs, Inc. & contributors', 'manual'),
 #]
 latex_documents = [
-  ('index', 'BBF.tex', u'BitShares developer Documentation',
-   u'BitShares-Core & contributors', 'manual'),
+  ('index', 'BBF.tex', u'Localcoin developer Documentation',
+   u'Localcoin-Core & contributors', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -268,9 +268,9 @@ try :
 
   ## extensions.append( "breathe" )
     breathe_projects = {
-        "bitshares": "../doxygen/xml/",
+        "localcoin": "../doxygen/xml/",
     }
-    breathe_default_project = "bitshares"
+    breathe_default_project = "localcoin"
 except :
     print("="*80)
     print("Please install 'breathe' as described in README.md to also have API documentation available!")
@@ -317,8 +317,8 @@ def setup(app):
 #     [u'Dave Snider, Read the Docs, Inc. & contributors'], 1)
 #]
 man_pages = [
-    ('index', 'BBF.tex', u'BitShares developer Documentation',
-     [u'BitShares-Core & contributors'], 1)
+    ('index', 'BBF.tex', u'Localcoin developer Documentation',
+     [u'Localcoin-Core & contributors'], 1)
 ]
 
 
@@ -337,8 +337,8 @@ man_pages = [
 #   'One line description of project.', 'Miscellaneous'),
 #]
 texinfo_documents = [
-  ('index', 'BitSharesDeveloperPortal', u'BitShares developer  Documentation',
-   u'BitShares-Core & contributors', 'BitSharesDeveloperPortal',
+  ('index', 'LocalcoinDeveloperPortal', u'Localcoin developer  Documentation',
+   u'Localcoin-Core & contributors', 'LocalcoinDeveloperPortal',
    'BBF project.', 'Miscellaneous'),
 ]
 
