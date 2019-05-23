@@ -8,7 +8,7 @@ LocalCoin Community
 Communities
 ======================
 
-* `LocalCoin Community <https://t.me/localcoin_community>`_
+* `LocalCoin Community <https://t.me/localcoinis>`_
 * `Forum - LocalTalk`_
 * `Telegram - LocalCoin English`_
 * `Telegram - LocalCoin Russian`_
@@ -33,7 +33,7 @@ Communities
 .. _Discord - LocalCoin: https://discord.gg/vzxSzYN
 .. _LocalCoin on Steemit: https://steemit.com/@localcoin
 .. _Twitter: https://twitter.com/localcoinis
-.. _Reddit: https://reddit.com/user/LocalCoinIS
+.. _Reddit: https://www.reddit.com/r/LocalCoinIs
 .. _BitcoinTalk: https://bitcointalk.org/index.php?topic=5125670
 
 ************************
