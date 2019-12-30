@@ -11,6 +11,7 @@ configure and run a witness node in the following steps:
 -  create a wallet for the testnet
 -  import an account and funds
 -  upgrade our account to a lifetime member
+-  buy 100k LLC
 -  register a new witness
 -  upvote the witness with our funds
 -  sign blocks
@@ -196,7 +197,7 @@ generate blocks signed by your witness:
 
     Witness 1.6.10 production slot has arrived; generating a block now...
     Generated block #367 with timestamp 2015-07-05T20:46:30 at time 2015-07-05T20:46:30
-		
+
 |
 
 --------------------

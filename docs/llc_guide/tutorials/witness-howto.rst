@@ -18,6 +18,7 @@ Requirements
 - A registered account in the corresponding network
 - Some funds in the account to pay for the registration fee
 - Executable binary
+- 100k LLC min balance
 - Lifetime Member (LTM) status
 
 Technical Specifications

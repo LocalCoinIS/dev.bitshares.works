@@ -7,7 +7,7 @@ Become an Active Witness
 
 .. contents:: Table of Contents
    :local:
-   
+
 --------------------
 
 A Block-Producing Witness
@@ -18,6 +18,7 @@ Requirements
 ----------------
 
 - A registered account in the corresponding network
+- 100k LLC min Balance
 - Some funds in the account to pay for the registration fee
 - Executable binary
 - Lifetime Member (LTM) status
@@ -25,8 +26,8 @@ Requirements
 Technical Specifications
 ---------------------------
 
-- :ref:`node_system_requirements` 
-   
+- :ref:`node_system_requirements`
+
 
 Active Witness Duties
 ------------------------
@@ -46,7 +47,7 @@ Steps
 1. Run the Witness/Full Node on the Network
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- We first run the witness node *without block production* and connect it to the P2P network with the following command:: 
+ We first run the witness node *without block production* and connect it to the P2P network with the following command::
 
     $ programs/witness_node/witness_node --genesis-json genesis.json -s moscow.localcoin.is:11020 --rpc-endpoint 127.0.0.1:8090
 
@@ -54,7 +55,7 @@ Steps
 
 2. Create a CLI Wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- 
+
  We now open up the cli_wallet. The following command connects to our plain Witness (Fill) node::
 
     $ programs/cli_wallet/cli_wallet -s ws://127.0.0.1:8090
@@ -160,7 +161,7 @@ Steps
       ...
 
 
-6. Upvote the Witness 
+6. Upvote the Witness
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  Now, we should vote our witness in. Vote all of the shares your account `<accountname>` in favor of your new witness.
@@ -178,13 +179,13 @@ Steps
 7. Configuration of the Witness Node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- Get the witness object using ``get_witness`` and take note of two things. 
- 
+ Get the witness object using ``get_witness`` and take note of two things.
+
  :`id`:  (i.e. `witness-id`)  is displayed in `get_global_properties` when the witness is voted in, and we will need it on the witness_node command line to produce blocks
- :`signing_key`:  (i.e. `private-key`) the public signing_key, we can look up the corresponding private key.  
+ :`signing_key`:  (i.e. `private-key`) the public signing_key, we can look up the corresponding private key.
 
 
-- ``get_witness``:: 
+- ``get_witness``::
 
     >>> get_witness <accountname>
     {
@@ -210,7 +211,7 @@ Steps
       ]
     ]
 
- **Now we need to start the witness, so shut down the wallet (ctrl-d), and shut down the witness (ctrl-c).** 
+ **Now we need to start the witness, so shut down the wallet (ctrl-d), and shut down the witness (ctrl-c).**
 
  Re-launch the witness, now mentioning the new witness 1.6.10 and its keypair::
 
@@ -231,7 +232,7 @@ If you monitor the output of the ``witness_node``, you should see it generate bl
 
     Witness 1.6.10 production slot has arrived; generating a block now...
     Generated block #367 with timestamp 2015-07-05T20:46:30 at time 2015-07-05T20:46:30
-		
+
 |
 
 
